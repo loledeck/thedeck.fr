@@ -89,9 +89,7 @@ And one of those features is the build systems.&lt;/p&gt;
       <item>
         <title>Best escalator ever</title>
         
-          <description>&lt;figure&gt;
-  &lt;amp-img width=&quot;600&quot; height=&quot;400&quot; layout=&quot;responsive&quot; src=&quot;/assets/images/best-escalator-ever.jpg&quot;&gt;&lt;/amp-img&gt;
-&lt;/figure&gt;
+          <description>&lt;p&gt;&lt;img src=&quot;/assets/images/best-escalator-ever.jpg&quot; alt=&quot;Best escalator ever&quot; /&gt;!&lt;/p&gt;
 </description>
         
         <pubDate>Wed, 13 Feb 2013 00:00:00 +0100</pubDate>
