@@ -1,0 +1,14 @@
+title: The Deck
+description: >
+  The Deck is a repository of my thoughts, rants and musings.<br>
+  I am The Deck.
+baseurl: ""
+url: "http://thedeck.fr"
+paginate:	4 # The number of posts to show per page on your homepage
+name: "Lau Siaw Young"
+markdown: kramdown
+permalink: none
+kramdown:
+  parse_block_html: true
+gems:
+  - jekyll-paginate
