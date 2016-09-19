@@ -20,8 +20,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "http://thedeck.fr/page3/",
   "headline": "The Deck",
-  "datePublished": "2016-09-19T18:32:55+02:00",
-  "dateModified": "2016-09-19T18:32:55+02:00",
+  "datePublished": "2016-09-19T18:48:05+02:00",
+  "dateModified": "2016-09-19T18:48:05+02:00",
   "description": "The Deck is a repository of my thoughts, rants and musings.<br> I am The Deck.
 ",
   "author": {
@@ -446,6 +446,12 @@ code {
     
       
     
+      
+    
+      
+    
+      
+    
   </div>
 </header>
 
@@ -465,35 +471,42 @@ code {
       <article itemscope itemtype="http://schema.org/BlogPosting" role="article">
 
           <header>
-            <h2 itemprop="name"><a href="/dr-wxho-killed-my-adsense.html" itemprop="url">Doctor Who killed my Adsense</a></h2>
+            <h2 itemprop="name"><a href="/sublime-3-build-system-django.html" itemprop="url">Sublime 3 build system for Django</a></h2>
           </header>
 
           <div class="post-meta">
-            <time datetime="03 February 2013">03 February 2013</time>
+            <time datetime="22 February 2013">22 February 2013</time>
           </div>
 
           <section itemprop="description">
-            <p>A lot of you, dear readers, probably don’t know that one of my side projects is a little web site called pdfy.me</p>
+            <p>I’m a longtime user of Sublime Text. If you’ve never tried it I really advise you to give it a look, it’s really worth it.
+The beta version of Sublime 3 has been out for a few weeks now and I’m using it in parallel with the stable version 2 to test the new features.
+While those new features are interesting by themselves trying a new version is also the moment where I dig in the documentation to understand the features I have not used yet in the previous versions.
+And one of those features is the build systems.</p>
 
-<p>As the name imply (at least that’s my hope), it is meant to convert a web page to a pdf file for archival / latter or offline reading.
-It works through a bookmarklet, a Chrome extension or a simple api.
-This project comes from a client of mine who needed to be able to convert the pages of its wordpress site to pdf. Rather than running the code from his shared hosting  I decided to turn it in a webservice and host it myself on a spare server I had.</p>
+<p>In Sublime I mostly code in Python so I’ve never been attracted to this build concept … how wrong I’ve been !
+You can type a script in a file in Sublime and just by hitting Ctrl+B have your script run in a python interpreter and the result displayed inside your editor. What a time saver.</p>
 
-<p>Most of the users come from the Chrome extension so I decided to add an adsense baner for them in order to recoup their bandwith costs. To help adsense target their ads, I created a special page that would open when a pdf conversion was done and would use the title of the converted page to give adsense a little context.</p>
+<p>No more going back and forth between Sublime and that pesky windows command prompt (yes, I use windows at work …) to test my code.</p>
 
-<p>The whole thing was more to experiment with adsense targetting than for money … I only made a few bucks out of the whole experiment.</p>
+<p>But there was still a problem : I do a lot of django coding and the default python build system does know how to import my django models. After a few more digging in the docs I came up with the following solution :</p>
 
-<p>But really, that’s not my problem with adsense. At all.</p>
+<div class="language-python highlighter-rouge">
+  <pre class="highlight"><code><span class="p">{</span>
+    <span class="s">"working_dir"</span><span class="p">:</span> <span class="s">"c:/path/to/your/django/project"</span><span class="p">,</span>
+    <span class="s">"path"</span><span class="p">:</span> <span class="s">"c:/path/to/your/python/binary;c:/path/to/site-packages"</span><span class="p">,</span>
+    <span class="s">"env"</span><span class="p">:</span> <span class="p">{</span>
+         <span class="s">"DJANGO_SETTINGS_MODULE"</span><span class="p">:</span> <span class="s">"your.settings.module"</span><span class="p">,</span>
+     <span class="p">},</span>
+    <span class="s">"cmd"</span><span class="p">:</span> <span class="p">[</span><span class="s">"python"</span><span class="p">,</span> <span class="s">"manage.py"</span><span class="p">,</span> <span class="s">"shell"</span><span class="p">,</span> <span class="s">"&lt;"</span><span class="p">,</span> <span class="s">"$file"</span><span class="p">],</span>
+    <span class="s">"file_regex"</span><span class="p">:</span> <span class="s">"^[ ]*File </span><span class="se">\"</span><span class="s">(...*?)</span><span class="se">\"</span><span class="s">, line ([0-9]*)"</span><span class="p">,</span>
+    <span class="s">"selector"</span><span class="p">:</span> <span class="s">"source.python"</span><span class="p">,</span>
+    <span class="s">"shell"</span><span class="p">:</span> <span class="n">true</span>
+<span class="p">}</span>
+</code></pre>
+</div>
 
-<p>My problem is that a few weeks latter my account was suspended. And why would you ask ? Well because one of the user of my site converted to pdf a bittorent tracker page that (probably) linked to an episode of the “Doctor Who” show. Not that Google may know which url was converted, that information is never disclosed to anybody of course.</p>
-
-<p>But the simple fact to have on a page of your site the words “Doctor Who” close to “DVDRip” is enough for Google to ban you.</p>
-
-<p>Seriously, fellow bloggers, watch out for what you write on your site. The big Mountain View Eye That Never Sleeps is watching you.</p>
-
-<p>Suffice to say that I’m personally done with Adsense for my more serious projects. As a publisher and as a client.</p>
-
-<p>Well played Google.</p>
+<p>Et voilà !</p>
 
           </section>
 
@@ -502,85 +515,17 @@ This project comes from a client of mine who needed to be able to convert the pa
       <article itemscope itemtype="http://schema.org/BlogPosting" role="article">
 
           <header>
-            <h2 itemprop="name"><a href="/i-want-to-believe.html" itemprop="url">I want to believe</a></h2>
+            <h2 itemprop="name"><a href="/best-escalator-ever.html" itemprop="url">Best escalator ever</a></h2>
           </header>
 
           <div class="post-meta">
-            <time datetime="01 February 2013">01 February 2013</time>
+            <time datetime="13 February 2013">13 February 2013</time>
           </div>
 
           <section itemprop="description">
-            <p>Just to reiterate on my yesterday’s post about the Apple TV : Ars Technica is running today an article titled “The rumor that won’t die: Apple’s perpetually pending video game console”.
-In this piece, the author try to dismiss the possibility of exactly what I was implying : that the silent refresh of the Apple TV may be the harbinger of third parties apps.</p>
-
-<p>One of the argument used I find interesting to refute : basically it goes by saying that third party apps aren’t coming anytime soon because current iOS game apps are not designed to be controled by anything other than touch (obviously a non-starter for a “gaming console”).</p>
-
-<p>But what the autor is missing in my opinion is this:</p>
-
-<ol>
-  <li>If the Apple TV is to get third party apps, those apps will have to be updated anyway to adapt to the 1080p resolution. Today, only the iPhone 5 has a 16/9 aspect ratio so I don’t think that there’s a simple efficient way to upscale all those iPad titles to native HDTV resolution.</li>
-  <li>While the developers are busy updating their apps’ resolution, why not allow users to make use of a bluetooth controller as permitted by the lastest iOS Apple TV update ? (see for exemple <a href="http://www.tgdaily.com/software-features/69084-apple-ios-updated-to-61-tv-gets-bluetooth-keyboard-support">this article</a>)</li>
-  <li>Granted, the only bluetooth hardware currently supported is a keyboard. But is it really far fetched to imagine a bluetooth connection with an iPhone or … gasps … a joypad ?</li>
-</ol>
-
-<p>As usual, time will tell. But I think the days of the gameless Apple TV are numbered. Just ask Nintendo … <a href="http://parislemon.com/post/41884561719">Nintendo Cuts Outlook After Soft Demand for Wii U</a></p>
-
-
-          </section>
-
-      </article>
-    
-      <article itemscope itemtype="http://schema.org/BlogPosting" role="article">
-
-          <header>
-            <h2 itemprop="name"><a href="/what-does-appletv-soc-mean.html" itemprop="url">What does the new Apple TV SOC really mean ?</a></h2>
-          </header>
-
-          <div class="post-meta">
-            <time datetime="31 January 2013">31 January 2013</time>
-          </div>
-
-          <section itemprop="description">
-            <p>The news has come yesterday that a new Apple TV version is on its way.
-According to AnandTech, the updated device should sport a new SOC which would be a 32 nm version of the ipad 3 A5X.</p>
-
-<p>From this point, Marco Arment speculates that this new SOC is probably a test run of the one that would be used latter during the year in a future Retina iPad Mini.</p>
-
-<p>The may very well be true … but I think there’s another compelling reason that may drive this upgrade and that is really specific to the Apple TV:
-Apps. At last …</p>
-
-<p>Let’s do some math:</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>iPhone 4 resolution (A5)</td>
-      <td>960*640     =    614,400 pxls</td>
-    </tr>
-    <tr>
-      <td>iPad 2 resolution (A5)</td>
-      <td>1024*768   =    786,432 pxls</td>
-    </tr>
-    <tr>
-      <td>ATV 3rd gen (1080p A5)</td>
-      <td>1920*1080 = 2,073,600 pxls</td>
-    </tr>
-    <tr>
-      <td>iPad 3 resolution (A5X)</td>
-      <td>2048*1536 = 3,145,728 pxls</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>What we can see here is that the A5 SOC is pushing relatively small resolutions except on the 3rd generation Apple TV. But on the ATV, the 1080p is used only to display video which is a hardware accelerated process.
-The conclusion is that the current ATV is probably not able to run iOS apps at a HDTV resolution.
-If you upgrade it with a A5X that’s a completely different story: although the A5X is not lightening fast on the iPad 3, at 1080p it would have almost 1/3 less pixels to push and would probably be a very good fit.</p>
-
-<p>And if you wonder of what kind of apps I’m thinking, the answer if of course games.
-And I’m not the only one to think that games on the ATV would be a. Pretty. Big. Deal :</p>
-
-<p><a href="http://m.9to5mac.com/9to5mac/%23!/entry/valves-gabe-newell-says-apple-tv-not-consoles-is-the,5109ac74d7fc7b56700eadb5">Valve’s Gabe Newell says Apple TV, not consoles, is the biggest threat to Steam Box</a></p>
-
+            <figure>
+  <amp-img width="600" height="400" layout="responsive" src="/assets/images/best-escalator-ever.jpg"></amp-img>
+</figure>
 
           </section>
 
@@ -608,9 +553,21 @@ And I’m not the only one to think that games on the ATV would be a. Pretty. Bi
           <em>3</em>
         
       
+        
+          <a href="/page4">4</a>
+        
+      
+        
+          <a href="/page5">5</a>
+        
+      
+        
+          <a href="/page6">6</a>
+        
+      
 
       
-        <span>&raquo;</span>
+        <a href="/page4">Next &raquo;</a>
       
     </div>
     
