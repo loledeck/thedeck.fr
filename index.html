@@ -21,6 +21,16 @@ layout: default
 				<div class="entry-content">
 					{{ post.content }}
 				</div>
+
+        <div>
+  {% if post.tags %}
+    <hr style="color: #787065;">
+    {% for tag in post.tags %}
+      <a class="tag" href="/tags/#{{ tag | slugify }}"> {{ tag }} </a>&nbsp;
+    {% endfor %}
+  {% endif %}
+  </div>
+
 			</article>
 		</li>
 		{% endfor %}

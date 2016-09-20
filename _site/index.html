@@ -52,6 +52,47 @@
 			<article>
 				<header class="post-header">
 					<div>
+						<span>Posted on </span><span class="post-meta">September 20, 2016</span>
+					</div>
+
+					<h2>
+						<a class="post-link" href="/2016/09/20/red-flag.html">Red flag</a>
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					<p>Flag is a startup sending you 20 prints of your pictures a month for <em>free</em>.</p>
+
+<p><br />
+From <a href="https://www.kickstarter.com/projects/flag/flagfree-photo-prints-forever">Flag’s Kickstarter</a> :</p>
+
+<blockquote>
+  <p>Flag’s free printing and shipping are paid for with ads. We use the blank space on the back of each print, that’s been wasted for the last 100 years, to deliver extra photos, captions and targeted advertising.</p>
+</blockquote>
+
+<p>Speaking of wasted ad real estate, I’d like to remember those nice marketers that the back of my iMac is still available. Hurry up, won’t last for ever !</p>
+
+
+				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+      <a class="tag" href="/tags/#fun"> fun </a>&nbsp;
+    
+      <a class="tag" href="/tags/#startup"> startup </a>&nbsp;
+    
+  
+  </div>
+
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
 						<span>Posted on </span><span class="post-meta">December 21, 2013</span>
 					</div>
 
@@ -61,9 +102,19 @@
 				</header>
 
 				<div class="entry-content">
-					<p>If you want more information on Librairie, the official site is: <a href="http://librairie.cubesoft.fr">http://librairie.cubesoft.fr</a></p>
+					<p>If you want more information on Librairie, the official site is: <a href="http://librairie.cubesoft.fr">http://librairie.cubesoft.fr</a>
+<br />
+<br /></p>
 
 				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+  
+  </div>
+
 			</article>
 		</li>
 		
@@ -89,6 +140,14 @@
 <p>More coming soon …</p>
 
 				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+  
+  </div>
+
 			</article>
 		</li>
 		
@@ -146,6 +205,14 @@ If I buy a service I expect it to function as long as I pay. The way M. Rizzi ha
 
 
 				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+  
+  </div>
+
 			</article>
 		</li>
 		
@@ -170,56 +237,19 @@ Thankfully Mika happens to be a competent developer, and after a few late-night 
 Following the successful endeavor, Mika shared some details of how he swapped the characters on a YouTube page demonstrating the hack. “I’ve redrawn  Mario’s frames and I swapped the palettes in the ROM,” he wrote. “I replaced the M at the top with a P for Pauline.”</p>
 </blockquote>
 
-<p><img src="/assets/images/pauline-donkey-kong.png" alt="Pauline Donkey Kong" />!</p>
+<p><img src="/assets/images/pauline-donkey-kong.png" alt="Pauline Donkey Kong" /></p>
 
 <p>As a father (of a Mario loving boy so I saved myself the trouble …), I can only think to one word for this man : Respect.</p>
 
 				</div>
-			</article>
-		</li>
-		
-		<li>
-			<article>
-				<header class="post-header">
-					<div>
-						<span>Posted on </span><span class="post-meta">February 22, 2013</span>
-					</div>
 
-					<h2>
-						<a class="post-link" href="/2013/02/22/sublime-3-build-system-django.html">Sublime 3 build system for Django</a>
-					</h2>
-				</header>
+        <div>
+  
+    <hr style="color: #787065;">
+    
+  
+  </div>
 
-				<div class="entry-content">
-					<p>I’m a longtime user of Sublime Text. If you’ve never tried it I really advise you to give it a look, it’s really worth it.
-The beta version of Sublime 3 has been out for a few weeks now and I’m using it in parallel with the stable version 2 to test the new features.
-While those new features are interesting by themselves trying a new version is also the moment where I dig in the documentation to understand the features I have not used yet in the previous versions.
-And one of those features is the build systems.</p>
-
-<p>In Sublime I mostly code in Python so I’ve never been attracted to this build concept … how wrong I’ve been !
-You can type a script in a file in Sublime and just by hitting Ctrl+B have your script run in a python interpreter and the result displayed inside your editor. What a time saver.</p>
-
-<p>No more going back and forth between Sublime and that pesky windows command prompt (yes, I use windows at work …) to test my code.</p>
-
-<p>But there was still a problem : I do a lot of django coding and the default python build system does know how to import my django models. After a few more digging in the docs I came up with the following solution :</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="p">{</span>
-    <span class="s">"working_dir"</span><span class="p">:</span> <span class="s">"c:/path/to/your/django/project"</span><span class="p">,</span>
-    <span class="s">"path"</span><span class="p">:</span> <span class="s">"c:/path/to/your/python/binary;c:/path/to/site-packages"</span><span class="p">,</span>
-    <span class="s">"env"</span><span class="p">:</span> <span class="p">{</span>
-         <span class="s">"DJANGO_SETTINGS_MODULE"</span><span class="p">:</span> <span class="s">"your.settings.module"</span><span class="p">,</span>
-     <span class="p">},</span>
-    <span class="s">"cmd"</span><span class="p">:</span> <span class="p">[</span><span class="s">"python"</span><span class="p">,</span> <span class="s">"manage.py"</span><span class="p">,</span> <span class="s">"shell"</span><span class="p">,</span> <span class="s">"&lt;"</span><span class="p">,</span> <span class="s">"$file"</span><span class="p">],</span>
-    <span class="s">"file_regex"</span><span class="p">:</span> <span class="s">"^[ ]*File </span><span class="se">\"</span><span class="s">(...*?)</span><span class="se">\"</span><span class="s">, line ([0-9]*)"</span><span class="p">,</span>
-    <span class="s">"selector"</span><span class="p">:</span> <span class="s">"source.python"</span><span class="p">,</span>
-    <span class="s">"shell"</span><span class="p">:</span> <span class="n">true</span>
-<span class="p">}</span>
-</code></pre>
-</div>
-
-<p>Et voilà !</p>
-
-				</div>
 			</article>
 		</li>
 		

@@ -6,13 +6,40 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Sep 2016 12:24:52 +0200</pubDate>
-    <lastBuildDate>Tue, 20 Sep 2016 12:24:52 +0200</lastBuildDate>
+    <pubDate>Tue, 20 Sep 2016 17:09:30 +0200</pubDate>
+    <lastBuildDate>Tue, 20 Sep 2016 17:09:30 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
+        <title>Red flag</title>
+        <description>&lt;p&gt;Flag is a startup sending you 20 prints of your pictures a month for &lt;em&gt;free&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+From &lt;a href=&quot;https://www.kickstarter.com/projects/flag/flagfree-photo-prints-forever&quot;&gt;Flag’s Kickstarter&lt;/a&gt; :&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Flag’s free printing and shipping are paid for with ads. We use the blank space on the back of each print, that’s been wasted for the last 100 years, to deliver extra photos, captions and targeted advertising.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Speaking of wasted ad real estate, I’d like to remember those nice marketers that the back of my iMac is still available. Hurry up, won’t last for ever !&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 20 Sep 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016/09/20/red-flag.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/09/20/red-flag.html</guid>
+        
+        <category>fun</category>
+        
+        <category>startup</category>
+        
+        
+      </item>
+    
+      <item>
         <title>More information on Librairie</title>
-        <description>&lt;p&gt;If you want more information on Librairie, the official site is: &lt;a href=&quot;http://librairie.cubesoft.fr&quot;&gt;http://librairie.cubesoft.fr&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;If you want more information on Librairie, the official site is: &lt;a href=&quot;http://librairie.cubesoft.fr&quot;&gt;http://librairie.cubesoft.fr&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Dec 2013 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/2013/12/21/more-info-on-librairie.html</link>
@@ -97,7 +124,7 @@ Thankfully Mika happens to be a competent developer, and after a few late-night 
 Following the successful endeavor, Mika shared some details of how he swapped the characters on a YouTube page demonstrating the hack. “I’ve redrawn  Mario’s frames and I swapped the palettes in the ROM,” he wrote. “I replaced the M at the top with a P for Pauline.”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/pauline-donkey-kong.png&quot; alt=&quot;Pauline Donkey Kong&quot; /&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/pauline-donkey-kong.png&quot; alt=&quot;Pauline Donkey Kong&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;As a father (of a Mario loving boy so I saved myself the trouble …), I can only think to one word for this man : Respect.&lt;/p&gt;
 </description>
@@ -235,31 +262,6 @@ This project comes from a client of mine who needed to be able to convert the pa
         <pubDate>Sun, 03 Feb 2013 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/2013/02/03/dr-wxho-killed-my-adsense.html</link>
         <guid isPermaLink="true">http://localhost:4000/2013/02/03/dr-wxho-killed-my-adsense.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>I want to believe</title>
-        <description>&lt;p&gt;Just to reiterate on my yesterday’s post about the Apple TV : Ars Technica is running today an article titled “The rumor that won’t die: Apple’s perpetually pending video game console”.
-In this piece, the author try to dismiss the possibility of exactly what I was implying : that the silent refresh of the Apple TV may be the harbinger of third parties apps.&lt;/p&gt;
-
-&lt;p&gt;One of the argument used I find interesting to refute : basically it goes by saying that third party apps aren’t coming anytime soon because current iOS game apps are not designed to be controled by anything other than touch (obviously a non-starter for a “gaming console”).&lt;/p&gt;
-
-&lt;p&gt;But what the autor is missing in my opinion is this:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;If the Apple TV is to get third party apps, those apps will have to be updated anyway to adapt to the 1080p resolution. Today, only the iPhone 5 has a 16/9 aspect ratio so I don’t think that there’s a simple efficient way to upscale all those iPad titles to native HDTV resolution.&lt;/li&gt;
-  &lt;li&gt;While the developers are busy updating their apps’ resolution, why not allow users to make use of a bluetooth controller as permitted by the lastest iOS Apple TV update ? (see for exemple &lt;a href=&quot;http://www.tgdaily.com/software-features/69084-apple-ios-updated-to-61-tv-gets-bluetooth-keyboard-support&quot;&gt;this article&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;Granted, the only bluetooth hardware currently supported is a keyboard. But is it really far fetched to imagine a bluetooth connection with an iPhone or … gasps … a joypad ?&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;As usual, time will tell. But I think the days of the gameless Apple TV are numbered. Just ask Nintendo … &lt;a href=&quot;http://parislemon.com/post/41884561719&quot;&gt;Nintendo Cuts Outlook After Soft Demand for Wii U&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 01 Feb 2013 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2013/02/01/i-want-to-believe.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/02/01/i-want-to-believe.html</guid>
         
         
       </item>
