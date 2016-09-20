@@ -19,7 +19,7 @@ layout: default
 	{% if page.tags %}
 		<hr>
 		{% for tag in page.tags %}
-			<a class="tag" href="/tags/#{{ tag | slugify }}"> {{ tag }} </a>&nbsp;
+			<a class="tag" href="/tags#{{ tag | slugify }}"> {{ tag }} </a>&nbsp;
 		{% endfor %}
 	{% endif %}
 	</div>
