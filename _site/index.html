@@ -1,502 +1,86 @@
 <!DOCTYPE html>
-<html ⚡ lang="en">
-  <head>
-  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,minimum-scale=1">
+<html>
 
-  <title>The Deck</title>
-  <meta name="description" content="The Deck is a repository of my thoughts, rants and musings.<br> I am The Deck.
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#943526">
+
+	
+	<meta property="og:image" content="http://localhost:4000/thumbnail.jpg">
+	
+
+	
+	<meta property="og:title" content="The Deck">
+	
+
+	<link rel="icon" href="/favicon.png" type="image/png">
+
+	<title>The Deck</title>
+	<meta name="description" content="The Deck is a repository of my thoughts, rants and musings.<br> I am The Deck.
 ">
 
-  <link rel="canonical" href="http://thedeck.fr/">
-  <link rel="alternate" type="application/rss+xml" title="The Deck" href="http://thedeck.fr/feed.xml">
-
-  <script type="application/ld+json">
-  
-{
-  "@context": "http://schema.org",
-  "@type": "NewsArticle",
-  "mainEntityOfPage": "http://thedeck.fr/",
-  "headline": "The Deck",
-  "datePublished": "2016-09-19T18:56:50+02:00",
-  "dateModified": "2016-09-19T18:56:50+02:00",
-  "description": "The Deck is a repository of my thoughts, rants and musings.<br> I am The Deck.
-",
-  "author": {
-    "@type": "Person",
-    "name": "Lau Siaw Young"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "The Deck",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "http://thedeck.fr",
-      "width": 60,
-      "height": 60
-    }
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "http://thedeck.fr",
-    "height": 60,
-    "width": 60
-  }
-}
-
-  </script>
-
-  <style amp-custom>
-  
-  /* Import ET Book styles
-   adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
-@font-face {
-  font-family: "et-book";
-  src: url("/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
-  src: url("/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "et-book";
-  src: url("/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
-  src: url("/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: "et-book";
-  src: url("/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
-  src: url("/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: "et-book-roman-old-style";
-  src: url("/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
-  src: url("/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/* Tufte CSS styles */
-html {
-  font-size: 15px; }
-
-body {
-  width: 87.5%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 12.5%;
-  font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-  background-color: #fffff8;
-  color: #111;
-  max-width: 1400px;
-  counter-reset: sidenote-counter; }
-
-h1 {
-  font-weight: 400;
-  margin-top: 4rem;
-  margin-bottom: 1.5rem;
-  font-size: 3.2rem;
-  line-height: 1; }
-
-h2 {
-  font-style: italic;
-  font-weight: 400;
-  margin-top: 2.1rem;
-  margin-bottom: 0;
-  font-size: 2.2rem;
-  line-height: 1; }
-
-h3 {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 1.7rem;
-  margin-top: 2rem;
-  margin-bottom: 0;
-  line-height: 1; }
-
-p.subtitle {
-  font-style: italic;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  display: block;
-  line-height: 1; }
-
-.numeral {
-  font-family: et-book-roman-old-style; }
-
-.danger {
-  color: red; }
-
-article {
-  position: relative;
-  padding: 5rem 0rem; }
-
-section {
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-
-p, ol, ul, .pagination a, .pagination em, table {
-  font-size: 1.4rem; }
-
-p {
-  line-height: 2rem;
-  margin-top: 1.4rem;
-  margin-bottom: 1.4rem;
-  padding-right: 0;
-  vertical-align: baseline; }
-
-/* Chapter Epigraphs */
-div.epigraph {
-  margin: 5em 0; }
-
-div.epigraph > blockquote {
-  margin-top: 3em;
-  margin-bottom: 3em; }
-
-div.epigraph > blockquote, div.epigraph > blockquote > p {
-  font-style: italic; }
-
-div.epigraph > blockquote > footer {
-  font-style: normal; }
-
-div.epigraph > blockquote > footer > cite {
-  font-style: italic; }
-
-/* end chapter epigraphs styles */
-blockquote {
-  font-size: 1.4rem; }
-
-blockquote p {
-  width: 50%; }
-
-blockquote .footer {
-  width: 50%;
-  font-size: 1.1rem;
-  text-align: right; }
-
-ol, ul {
-  width: 45%;
-  -webkit-padding-start: 5%;
-  -webkit-padding-end: 5%; }
-
-li {
-  padding: 0.5rem 0; }
-
-figure {
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  max-width: 55%;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  margin: 0 0 3em 0; }
-
-figcaption {
-  float: right;
-  clear: right;
-  margin-right: -48%;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  vertical-align: baseline;
-  position: relative;
-  max-width: 40%; }
-
-figure.fullwidth figcaption {
-  margin-right: 24%; }
-
-/* Links: replicate underline that clears descenders */
-a:link, a:visited {
-  color: inherit; }
-
-a:link {
-  text-decoration: none;
-  background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#333, #333);
-  background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(#333, #333);
-  -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
-  background-position: 0% 93%, 100% 93%, 0% 93%; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  a:link {
-    background-position-y: 87%, 87%, 87%; } }
-a:link::selection {
-  text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
-  background: #b4d5fe; }
-
-a:link::-moz-selection {
-  text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
-  background: #b4d5fe; }
-
-/* Sidenotes, margin notes, figures, captions */
-img {
-  max-width: 100%; }
-
-.sidenote, .marginnote {
-  float: right;
-  clear: right;
-  margin-right: -60%;
-  width: 50%;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1.1rem;
-  line-height: 1.3;
-  vertical-align: baseline;
-  position: relative; }
-
-.table-caption {
-  float: right;
-  clear: right;
-  margin-right: -60%;
-  width: 50%;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1.0rem;
-  line-height: 1.6; }
-
-.sidenote-number {
-  counter-increment: sidenote-counter; }
-
-.sidenote-number:after, .sidenote:before {
-  content: counter(sidenote-counter) " ";
-  font-family: et-book-roman-old-style;
-  position: relative;
-  vertical-align: baseline; }
-
-.sidenote-number:after {
-  content: counter(sidenote-counter);
-  font-size: 1rem;
-  top: -0.5rem;
-  left: 0.1rem; }
-
-.sidenote:before {
-  content: counter(sidenote-counter) " ";
-  top: -0.5rem; }
-
-p, footer, table, div.table-wrapper-small, div.supertable-wrapper > p, div.booktabs-wrapper {
-  width: 55%; }
-
-div.fullwidth, table.fullwidth {
-  width: 100%; }
-
-div.table-wrapper {
-  overflow-x: auto;
-  font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif; }
-
-@media screen and (max-width: 760px) {
-  p, h1, h2, h3, footer {
-    width: 90%; }
-
-  pre.code {
-    width: 87.5%; }
-
-  ul {
-    width: 85%; }
-
-  figure {
-    max-width: 90%; }
-
-  figcaption, figure.fullwidth figcaption {
-    margin-right: 0%;
-    max-width: none; }
-
-  blockquote p, blockquote .footer {
-    width: 90%; } }
-.sans {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  letter-spacing: .03em; }
-
-.code {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 1.125rem;
-  line-height: 1.6; }
-
-h1 .code, h2 .code, h3 .code {
-  font-size: 0.80em; }
-
-.marginnote .code, .sidenote .code {
-  font-size: 1rem; }
-
-pre.code {
-  width: 52.5%;
-  padding-left: 2.5%;
-  overflow-x: auto; }
-
-.fullwidth {
-  max-width: 90%;
-  clear: both; }
-
-span.newthought {
-  font-variant: small-caps;
-  font-size: 1.2em; }
-
-.margin-toggle {
-  display: none; }
-
-.sidenote-number {
-  display: inline; }
-
-.margin-toggle:not(.sidenote-number) {
-  display: none; }
-
-@media (max-width: 760px) {
-  .margin-toggle:not(.sidenote-number) {
-    display: none; }
-
-  .sidenote, .marginnote {
-    display: none; }
-
-  .margin-toggle:checked + .sidenote,
-  .margin-toggle:checked + .marginnote {
-    display: block;
-    float: left;
-    left: 1rem;
-    clear: both;
-    width: 95%;
-    margin: 1rem 2.5%;
-    vertical-align: baseline;
-    position: relative; }
-
-  label {
-    cursor: pointer; }
-
-  pre.code {
-    width: 90%;
-    padding: 0; }
-
-  .table-caption {
-    display: block;
-    float: right;
-    clear: both;
-    width: 98%;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    margin-left: 1%;
-    margin-right: 1%;
-    vertical-align: baseline;
-    position: relative; }
-
-  div.table-wrapper, table, table.booktabs {
-    width: 85%; }
-
-  div.table-wrapper {
-    border-right: 1px solid #efefef; }
-
-  img {
-    width: 100%; } }
-main {
-  margin-top: 20px; }
-
-amp-img {
-  background-color: grey; }
-
-article {
-  padding: 2.5rem 0; }
-
-header {
-  margin-top: 20px; }
-
-.post-meta {
-  margin-top: 10px; }
-
-pre {
-  width: 52.5%;
-  padding-left: 2.5%;
-  overflow-x: auto; }
-
-@media (max-width: 760px) {
-  pre {
-    width: 90%;
-    padding: 0; } }
-code {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 1.125rem;
-  line-height: 1.6; }
-
-  </style>
-
-
-
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
+	<link rel='stylesheet' id='libretto-fonts-css'  href='https://fonts.googleapis.com/css?family=Libre+Baskerville%3A400%2C700%2C400italic%7CPlayfair+Display%3A400%2C700%2C400italic%2C700italic%7CPlayfair+Display+SC%3A700%2C700italic%7CMontserrat%3A400%7CDroid+Sans+Mono%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all'>
+
+	<link rel="stylesheet" href="http://localhost:4000/css/main.css">
+	<link rel="canonical" href="http://localhost:4000/">
+	<link rel="alternate" type="application/rss+xml" title="The Deck" href="http://localhost:4000/feed.xml">
 </head>
 
-  <body>
-    <header>
-  <div class="page-links">
-    <a class="page-link" href="/">Home</a>
-    
-      
-      • <a class="page-link" href="/contact/">Contact</a>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
+
+<body>
+
+	<header class="site-header">
+
+	<div class="wrapper">
+
+		<a class="site-title" href="/">The Deck</a>
+
+	</div>
+
 </header>
 
 
-    <main>
+	<div class="page-content">
+		<div class="wrapper">
+			<div class="home">
 
-  <img src="/assets/images/deck-header.png" alt="A real deck !" height="300" width="1400">
+	<ul class="post-list">
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
+						<span>Posted on </span><span class="post-meta">December 21, 2013</span>
+					</div>
 
-  <section>
-      <h1>The Deck</h1>
-      <h3>The Deck is a repository of my thoughts, rants and musings.<br> I am The Deck.
-</h3>
-  </section>
+					<h2>
+						<a class="post-link" href="/2013/12/21/more-info-on-librairie.html">More information on Librairie</a>
+					</h2>
+				</header>
 
-  <div>
-    
-      <article itemscope itemtype="http://schema.org/BlogPosting" role="article">
+				<div class="entry-content">
+					<p>If you want more information on Librairie, the official site is: <a href="http://librairie.cubesoft.fr">http://librairie.cubesoft.fr</a></p>
 
-          <header>
-            <h2 itemprop="name"><a href="/more-info-on-librairie.html" itemprop="url">More information on Librairie</a></h2>
-          </header>
+				</div>
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
+						<span>Posted on </span><span class="post-meta">December 20, 2013</span>
+					</div>
 
-          <div class="post-meta">
-            <time datetime="21 December 2013">21 December 2013</time>
-          </div>
+					<h2>
+						<a class="post-link" href="/2013/12/20/welcome-librairie-app.html">Welcome Librairie App</a>
+					</h2>
+				</header>
 
-          <section itemprop="description">
-            <p>If you want more information on Librairie, the official site is: <a href="http://librairie.cubesoft.fr">http://librairie.me/app/</a></p>
-
-          </section>
-
-      </article>
-    
-      <article itemscope itemtype="http://schema.org/BlogPosting" role="article">
-
-          <header>
-            <h2 itemprop="name"><a href="/welcome-librairie-app.html" itemprop="url">Welcome Librairie App</a></h2>
-          </header>
-
-          <div class="post-meta">
-            <time datetime="20 December 2013">20 December 2013</time>
-          </div>
-
-          <section itemprop="description">
-            <p>Librairie is my new iOS app. You can find it here:</p>
+				<div class="entry-content">
+					<p>Librairie is my new iOS app. You can find it here:</p>
 
 <p><a href="https://itunes.apple.com/us/app/librairie/id742022507?l=fr&amp;ls=1&amp;mt=8">Librairie on the App Store</a></p>
 
@@ -504,69 +88,230 @@ code {
 
 <p>More coming soon …</p>
 
-          </section>
+				</div>
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
+						<span>Posted on </span><span class="post-meta">September 12, 2013</span>
+					</div>
 
-      </article>
-    
-  </div>
+					<h2>
+						<a class="post-link" href="/2013/09/12/thoughts-app-upgrade-case-study-reeder.html">Thougths about iOS apps upgrade, a case study - Reeder</a>
+					</h2>
+				</header>
 
-  <nav role="navigation">
-    
-    <div class="pagination">
-      
-        <span>&laquo;</span>
-      
+				<div class="entry-content">
+					<p>There has been a lot of discussions recently about the strategies app developers may use to upgrade their apps to a new version.
+The argument is along the lines of the following points :</p>
 
-      
-        
-          <em>1</em>
-        
-      
-        
-          <a href="/page2">2</a>
-        
-      
-        
-          <a href="/page3">3</a>
-        
-      
-        
-          <a href="/page4">4</a>
-        
-      
-        
-          <a href="/page5">5</a>
-        
-      
-        
-          <a href="/page6">6</a>
-        
-      
+<ul>
+  <li>The app devs rigthfully expect to be able to charge for the work they do to upgrade their apps in the long run</li>
+  <li>An part of the apps users understand this and are willing to pay regularly for upgraded apps</li>
+  <li>An other part of the apps users feels that they have already paid for an app and that should be enough</li>
+</ul>
 
-      
-        <a href="/page2">Next &raquo;</a>
-      
-    </div>
-    
-  </nav>
+<p>At first, I thought I was strongly in the camp of the users feeling that we should pay for upgrades. After all, I am a professional developer (even though I’m not an app dev … yet) so I can very easily see the point of a dev who needs to bill customers for a living :)</p>
 
-</main>
+<p>But then, the case of one of my most beloved app came into light : Reeder.</p>
 
-<footer class="site-footer">
-   <section class="copyright">All content copyright cubesoft &copy; 2016 &bull; All rights reserved.</section>
+<p>I’m a longtime fan and daily user of Reeder. I had bought the iPhone version, the iPad version and then the OSX version. Enough to say that I was very pleased with all those versions and never regretted to shell out good euros for those.</p>
 
-   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<p>But then came the Google Readerapocalypse …</p>
 
-  ga('create', 'UA-4108240-7', 'auto');
-  ga('send', 'pageview');
+<p>Silvio Rizzi, the Reeder developer, quickly released an update for the iPhone version allowing to sync your RSS feeds to feedbin, fever and (later I think) a few other services. But the iPad and OSX users were left in the cold, waiting for an update that would turn the stale pile of bits that those apps had become to a once again useful state.
+Unfortunately, that update never came.</p>
 
-	</script>
+<p>Today he release Reeder 2, a new paid universal version of his iOS app.
+The problem is not to upgrade to a new paid version. The problem is twofold :</p>
+
+<ol>
+  <li>The app description does not make a good case of why I should upgrade. It states that Reeder 2 is a feedbin / fever / whatever … client and that you can share things with a lot of services. But that’s exactly what was the previous Reeder iPhone version. So why I’m upgrading exactly ??</li>
+  <li>I feel kind of strong-armed here. Because the iPad version never got an update to allow to sync with anything else that Google Reader I kind of have to upgrade if I want to continue (or start again in this case) to use Reeder.</li>
+</ol>
+
+<p>So, what’s the takeaway from this exactly ?</p>
+
+<p>I think there is a big difference between an application and a service. If I buy an application, I expect it to work for as long as the underlying OS allows it to run.
+If I buy a service I expect it to function as long as I pay. The way M. Rizzi handled this upgrade makes me feel I’m paying for a service, not for an app. The fact that there’s no additional functionality described (except that the app is now running again on iPad) reinforce this feeling.</p>
+
+<p>I understand that it was not his fault if Google Reader passed away and the iPad version broke. But then why update the iPhone version back to a functioning state before the upgrade and not the iPad one ?</p>
+
+<p>Of course, I bought the new version anyway but I cannot help to feel that there’s a lot of goodwill lost in a case like this. And honestly, I’m not sure I’m going to buy the new OSX version when it will come out later this year. It was the version I used the least and I bought it mainly as a sign of support for the developer.</p>
+
+<p>I think that in this brave new iOS app store world, an app upgrade needs to articulate clearly what the value proposition is for the customer. If you need a recurring income to support your service, ask for a subscription.</p>
+
+
+				</div>
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
+						<span>Posted on </span><span class="post-meta">March 13, 2013</span>
+					</div>
+
+					<h2>
+						<a class="post-link" href="/2013/03/13/so-cute.html">So cute</a>
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					<p>From <a href="http://www.theverge.com/2013/3/10/4086458/father-hacks-donkey-kong-for-daughter-swaps-mario-pauline">TheVerge</a>:</p>
+
+<blockquote>
+  <p>“When Mike Mika saw the disappointment on his daughter’s face when she realized Pauline wasn’t a playable character in Donkey Kong, he felt a call to action.
+Thankfully Mika happens to be a competent developer, and after a few late-night hours spent hacking the NES version of Nintendo’s classic, he accomplished the role reversal his daughter had wished for. Mario was now under Donkey Kong’s control, and Pauline was tasked with rescuing the plumber in distress.
+Following the successful endeavor, Mika shared some details of how he swapped the characters on a YouTube page demonstrating the hack. “I’ve redrawn  Mario’s frames and I swapped the palettes in the ROM,” he wrote. “I replaced the M at the top with a P for Pauline.”</p>
+</blockquote>
+
+<p><img src="/assets/images/pauline-donkey-kong.png" alt="Pauline Donkey Kong" />!</p>
+
+<p>As a father (of a Mario loving boy so I saved myself the trouble …), I can only think to one word for this man : Respect.</p>
+
+				</div>
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
+						<span>Posted on </span><span class="post-meta">February 22, 2013</span>
+					</div>
+
+					<h2>
+						<a class="post-link" href="/2013/02/22/sublime-3-build-system-django.html">Sublime 3 build system for Django</a>
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					<p>I’m a longtime user of Sublime Text. If you’ve never tried it I really advise you to give it a look, it’s really worth it.
+The beta version of Sublime 3 has been out for a few weeks now and I’m using it in parallel with the stable version 2 to test the new features.
+While those new features are interesting by themselves trying a new version is also the moment where I dig in the documentation to understand the features I have not used yet in the previous versions.
+And one of those features is the build systems.</p>
+
+<p>In Sublime I mostly code in Python so I’ve never been attracted to this build concept … how wrong I’ve been !
+You can type a script in a file in Sublime and just by hitting Ctrl+B have your script run in a python interpreter and the result displayed inside your editor. What a time saver.</p>
+
+<p>No more going back and forth between Sublime and that pesky windows command prompt (yes, I use windows at work …) to test my code.</p>
+
+<p>But there was still a problem : I do a lot of django coding and the default python build system does know how to import my django models. After a few more digging in the docs I came up with the following solution :</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="p">{</span>
+    <span class="s">"working_dir"</span><span class="p">:</span> <span class="s">"c:/path/to/your/django/project"</span><span class="p">,</span>
+    <span class="s">"path"</span><span class="p">:</span> <span class="s">"c:/path/to/your/python/binary;c:/path/to/site-packages"</span><span class="p">,</span>
+    <span class="s">"env"</span><span class="p">:</span> <span class="p">{</span>
+         <span class="s">"DJANGO_SETTINGS_MODULE"</span><span class="p">:</span> <span class="s">"your.settings.module"</span><span class="p">,</span>
+     <span class="p">},</span>
+    <span class="s">"cmd"</span><span class="p">:</span> <span class="p">[</span><span class="s">"python"</span><span class="p">,</span> <span class="s">"manage.py"</span><span class="p">,</span> <span class="s">"shell"</span><span class="p">,</span> <span class="s">"&lt;"</span><span class="p">,</span> <span class="s">"$file"</span><span class="p">],</span>
+    <span class="s">"file_regex"</span><span class="p">:</span> <span class="s">"^[ ]*File </span><span class="se">\"</span><span class="s">(...*?)</span><span class="se">\"</span><span class="s">, line ([0-9]*)"</span><span class="p">,</span>
+    <span class="s">"selector"</span><span class="p">:</span> <span class="s">"source.python"</span><span class="p">,</span>
+    <span class="s">"shell"</span><span class="p">:</span> <span class="n">true</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Et voilà !</p>
+
+				</div>
+			</article>
+		</li>
+		
+	</ul>
+
+
+	<nav role="navigation">
+    	
+    	<div class="pagination">
+      		
+        	<span>&laquo;</span>
+      		
+
+      		
+        		
+          		<em>1</em>
+        		
+      		
+        		
+          		<a href="/page2">2</a>
+        		
+      		
+        		
+          		<a href="/page3">3</a>
+        		
+      		
+
+      		
+    		<a href="/page2">Next &raquo;</a>
+      		
+    	</div>
+    	
+	</nav>
+
+	<br>
+
+	<br>
+
+	<p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+
+</div>
+
+		</div>
+	</div>
+
+	<footer class="site-footer">
+
+	<div class="wrapper">
+
+		<h2 class="footer-heading">The Deck • <a href="/table-of-contents">Table of Contents</a></h2>
+
+		<div class="footer-col-wrapper">
+			<div class="footer-col footer-col-1">
+				<ul class="contact-list">
+					<li>The Deck</li>
+					<li><a href="mailto:laurent@cubesoft.fr">laurent@cubesoft.fr</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col footer-col-2">
+				<ul class="social-media-list">
+					
+					<li>
+						<a href="https://github.com/loledeck"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">loledeck</span></a>
+
+					</li>
+					
+
+					
+
+					
+					<li>
+						<a href="https://twitter.com/thedeckfr"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">thedeckfr</span></a>
+
+					</li>
+					
+				</ul>
+			</div>
+
+			<div class="footer-col footer-col-3">
+				<p>The Deck is a repository of my thoughts, rants and musings.<br> I am The Deck.
+</p>
+			</div>
+		</div>
+
+	</div>
+
 </footer>
 
 
-  </body>
+</body>
+
 </html>
