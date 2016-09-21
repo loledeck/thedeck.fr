@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Doctor Who killed my Adsense
+tags: [projects]
 ---
 
 A lot of you, dear readers, probably don't know that one of my side projects is a little web site called pdfy.me

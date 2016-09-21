@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Game changer
+tags: [clean tech]
 ---
 
 From cleantechnica.com :

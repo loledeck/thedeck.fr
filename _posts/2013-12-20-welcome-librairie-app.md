@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Welcome Librairie App
+tags: [projects]
 ---
 
 Librairie is my new iOS app. You can find it here: 

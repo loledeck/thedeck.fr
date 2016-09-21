@@ -1,6 +1,7 @@
 ---
 layout: post
 title: I want to believe
+tags: [apple, apple tv]
 ---
 
 Just to reiterate on my yesterday's post about the Apple TV : Ars Technica is running today an article titled "The rumor that won’t die: Apple’s perpetually pending video game console".

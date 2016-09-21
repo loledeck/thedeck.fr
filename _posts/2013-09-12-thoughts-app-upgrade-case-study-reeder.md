@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Thougths about iOS apps upgrade, a case study - Reeder
+tags: [app store]
 ---
 
 There has been a lot of discussions recently about the strategies app developers may use to upgrade their apps to a new version.

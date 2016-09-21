@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The gOLEDen iWatch
+tags: [apple, apple watch]
 ---
 
 I'm on a prediction streak ! My new one is based on the two following pieces of information that surfaced recently :

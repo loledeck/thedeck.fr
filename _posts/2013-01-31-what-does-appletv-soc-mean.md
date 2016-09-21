@@ -1,6 +1,7 @@
 ---
 layout: post
 title: What does the new Apple TV SOC really mean ?
+tags: [apple, apple tv]
 ---
 
 The news has come yesterday that a new Apple TV version is on its way.

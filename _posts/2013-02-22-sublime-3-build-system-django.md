@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Sublime 3 build system for Django
+tags: [coding]
 ---
 
 I'm a longtime user of Sublime Text. If you've never tried it I really advise you to give it a look, it's really worth it.
