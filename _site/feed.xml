@@ -6,9 +6,42 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Sep 2016 19:33:59 +0200</pubDate>
-    <lastBuildDate>Tue, 27 Sep 2016 19:33:59 +0200</lastBuildDate>
+    <pubDate>Thu, 29 Sep 2016 18:48:49 +0200</pubDate>
+    <lastBuildDate>Thu, 29 Sep 2016 18:48:49 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>App Action Extension icon in XCode 8</title>
+        <description>&lt;p&gt;Aaaarrgghhhh !!!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+That’s generaly what I say when XCode decides to mess with me. Today I was writing an new action extension for my &lt;a href=&quot;http://librairie.cubesoft.fr&quot;&gt;Librairie app&lt;/a&gt; (note that it’s the first one I write with XCode 8).&lt;/p&gt;
+
+&lt;p&gt;Everything goes fine until I decide to give an icon to this sad little white square used to launch my extension. Normaly I’d go to your target settings “General” tab and choose the asset catalog containing your icon.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2016-09-29-app-extention-icon-xcode-8/general-tab.png&quot; alt=&quot;General tab&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But no, no dice …&lt;/p&gt;
+
+&lt;p&gt;Some smart product manager at Apple decided that it would be fun to see how long it would take me to do my job if they just removed the UI that they previously designed just for this purpose. The answer to this question is precisely … quite some time.&lt;/p&gt;
+
+&lt;p&gt;Turns out, you have to go to the build settings of your target and find the “Asset Catalog App Icon Set Name”. There, you enter the name you have given to your app icon folder (the folder with all the different icon sizes &lt;em&gt;inside&lt;/em&gt; your asset catalog).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2016-09-29-app-extention-icon-xcode-8/build-settings.png&quot; alt=&quot;Build settings&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Good job Apple …&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Sep 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016/09/29/app-extention-icon-xcode-8.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/09/29/app-extention-icon-xcode-8.html</guid>
+        
+        <category>coding</category>
+        
+        <category>xcode</category>
+        
+        
+      </item>
     
       <item>
         <title>Commit version 1.0.1</title>
@@ -234,43 +267,6 @@ You can type a script in a file in Sublime and just by hitting Ctrl+B have your 
         <guid isPermaLink="true">http://localhost:4000/2013/02/13/best-escalator-ever.html</guid>
         
         <category>fun</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>The gOLEDen iWatch</title>
-        <description>&lt;p&gt;I’m on a prediction streak ! My new one is based on the two following pieces of information that surfaced recently :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;the New York Times writer Nick Bilton says Apple is developing a curved screen watch (and it’s been also “confirmed” by the WSJ)&lt;/li&gt;
-  &lt;li&gt;the numerous reports of last week stating that Apple has recruited a Samsung’s OLED expert.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Well, that’s easy enough now to join my mental dots : the future Apple Watch will sport an OLED screen and is therefore, real.&lt;/p&gt;
-
-&lt;p&gt;I think that a great case has been laid last week by an ex-Apple designer on his blog about &lt;a href=&quot;http://asktog.com/atc/apple-iwatch/&quot;&gt;the potential of such a device&lt;/a&gt;. Go read, it’s a fascinating (and lengthy !) piece describing a lot of possibilities that an iWatch may unlock. Of course, this potential won’t be fulfilled overnight and will take many years to be realized. But I think we’re very close of the release of a first version in a very Apple-like way :
-- release a first very limited version
-- refine
-- refine more
-- repeat steps 2 and 3&lt;/p&gt;
-
-&lt;p&gt;And what about OLED I hear you, dear readers, say ? Well, that’s a part in the solution to the main problem that such a device would face : power consumption.
-Nobody want to plug its watch in a power outlet every day. Let alone several times a day …
-According to wikipedia, OLED displays consume only 40% only the power used by an equivalent LCD. It’s not enough by itself but if you combine it with the new low power bluetooth connections, specially crafted private APIs in iOS and maybe one or two new secret innovation … you’re much closer of a working first step towards this new iWatch.&lt;/p&gt;
-
-&lt;p&gt;Oh, one more thing (ever heard that sentence somewhere ?) : yesterday Tim Cook disparaged the possible use of OLED screens by Apple at a Goldman Sachs conference. I think that his point what about the use of OLED as a replacement of LCD in its current usages at Apple. Image quality, colors saturation … etc. are much less important on a 1 or 2” screen tucked on your wrist than on a 27” iMac screen. And to put this argument in context, it’s important to remember that another of OLED strength is a very good readability in direct ligth.&lt;/p&gt;
-
-&lt;p&gt;Might be useful for a watch, don’t you think ?&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 11 Feb 2013 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2013/02/11/the-goleden-iwatch.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/02/11/the-goleden-iwatch.html</guid>
-        
-        <category>apple</category>
-        
-        <category>apple watch</category>
         
         
       </item>
