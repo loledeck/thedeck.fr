@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Constant freezes with macOS Sierra
+tags: [macOS]
 ---
 
 Since upgrading to Sierra last week, my 5K iMac late 2015 has been quite flaky. More precisely, it has experienced regular freezes that required hard reboots of the machine. When I say regular, I mean 5 or 6 times a day. 

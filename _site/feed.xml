@@ -6,9 +6,31 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Oct 2016 14:04:00 +0200</pubDate>
-    <lastBuildDate>Tue, 04 Oct 2016 14:04:00 +0200</lastBuildDate>
+    <pubDate>Wed, 05 Oct 2016 10:22:34 +0200</pubDate>
+    <lastBuildDate>Wed, 05 Oct 2016 10:22:34 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Spoken Editions debut</title>
+        <description>&lt;p&gt;Spoken Editions are articles in audio form accessible through iTunes.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;a href=&quot;http://appleinsider.com/articles/16/10/03/spoken-editions-section-makes-official-debut-on-apples-itunes&quot;&gt;Appleinsider&lt;/a&gt; :&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The section currently includes articles from over 40 sources, such as Reuters, Wired, IGN, Jezebel, Playboy, and the Huffington Post. People can also access the material from Apple’s dedicated Podcasts app.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Audio only version of Playboy articles. Looks like a winner to me.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 05 Oct 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016/10/05/spoken-edition-debut.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/10/05/spoken-edition-debut.html</guid>
+        
+        <category>fun</category>
+        
+        
+      </item>
     
       <item>
         <title>Constant freezes with macOS Sierra</title>
@@ -23,6 +45,8 @@
         <pubDate>Tue, 04 Oct 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2016/10/04/constant-freezes-sierra.html</link>
         <guid isPermaLink="true">http://localhost:4000/2016/10/04/constant-freezes-sierra.html</guid>
+        
+        <category>macOS</category>
         
         
       </item>
@@ -232,45 +256,6 @@ Following the successful endeavor, Mika shared some details of how he swapped th
         <guid isPermaLink="true">http://localhost:4000/2013/03/13/so-cute.html</guid>
         
         <category>gaming</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Sublime 3 build system for Django</title>
-        <description>&lt;p&gt;I’m a longtime user of Sublime Text. If you’ve never tried it I really advise you to give it a look, it’s really worth it.
-The beta version of Sublime 3 has been out for a few weeks now and I’m using it in parallel with the stable version 2 to test the new features.
-While those new features are interesting by themselves trying a new version is also the moment where I dig in the documentation to understand the features I have not used yet in the previous versions.
-And one of those features is the build systems.&lt;/p&gt;
-
-&lt;p&gt;In Sublime I mostly code in Python so I’ve never been attracted to this build concept … how wrong I’ve been !
-You can type a script in a file in Sublime and just by hitting Ctrl+B have your script run in a python interpreter and the result displayed inside your editor. What a time saver.&lt;/p&gt;
-
-&lt;p&gt;No more going back and forth between Sublime and that pesky windows command prompt (yes, I use windows at work …) to test my code.&lt;/p&gt;
-
-&lt;p&gt;But there was still a problem : I do a lot of django coding and the default python build system does know how to import my django models. After a few more digging in the docs I came up with the following solution :&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&quot;working_dir&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;c:/path/to/your/django/project&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&quot;path&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;c:/path/to/your/python/binary;c:/path/to/site-packages&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&quot;env&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-         &lt;span class=&quot;s&quot;&gt;&quot;DJANGO_SETTINGS_MODULE&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;your.settings.module&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-     &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&quot;cmd&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;python&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;manage.py&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;shell&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;$file&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&quot;file_regex&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;^[ ]*File &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;(...*?)&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, line ([0-9]*)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&quot;selector&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;source.python&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&quot;shell&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Et voilà !&lt;/p&gt;
-</description>
-        <pubDate>Fri, 22 Feb 2013 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2013/02/22/sublime-3-build-system-django.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/02/22/sublime-3-build-system-django.html</guid>
-        
-        <category>coding</category>
         
         
       </item>
