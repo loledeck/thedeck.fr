@@ -6,9 +6,48 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 16 Oct 2016 17:20:30 +0200</pubDate>
-    <lastBuildDate>Sun, 16 Oct 2016 17:20:30 +0200</lastBuildDate>
+    <pubDate>Tue, 18 Oct 2016 17:44:25 +0200</pubDate>
+    <lastBuildDate>Tue, 18 Oct 2016 17:44:25 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Siri ? Are you there ?</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://512pixels.net/2016/10/the-inward-looking-siri/&quot;&gt;Stephen Hackett on 512pixels.net&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;On this week’s episode of Ctrl-Walt-Delete, Walt Mossberg and Nilay Patel spoke about Siri and how Apple views the service and what it can do.&lt;/p&gt;
+
+  &lt;p&gt;You should go listen to the episode, but in it, Mossberg shares that Apple is focused on improving the parts of Siri that people use most, like making phone calls and setting timers. This comes at the expense of expanding Siri’s knowledge about other things, including common, everyday questions […]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If Siri continues to get better at placing phone calls, but not at searching basic information, people will just stop trying to use it for anything but placing phone calls. Siri, its uses, and where Apple improves it will just be one infinite loop of development instead of seeing substantial expansion.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’m not sure I agree with Stephen on this one. Searching for information with Siri and getting accurate and reliable results sure would be nice. But I’m afraid that a lot of people won’t even think to try until Siri is bulletproof at controling their own phone.&lt;/p&gt;
+
+&lt;p&gt;Why bother to ask complex questions to Siri if you can’t even set a reminder reliably with it ? I sure don’t. Why can I write a text with Siri on my watch but not send it ? How can an assistant be useful if you have to do half its work yourself ?&lt;/p&gt;
+
+&lt;p&gt;That’s why I think Apple is smart to first improve Siri for device manipulation before extending it to further domains.&lt;/p&gt;
+
+&lt;p&gt;Which brings us to an uncomfortable discussion about Siri extensions: &lt;em&gt;SiriKit&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I think that the intent (no pun intended) behind SiriKit is good: nail a few domains to make Siri bulletproof about them before extending to other domains.&lt;/p&gt;
+
+&lt;p&gt;Unfortunatly, seeing the past speed of Siri’s evolution I think it’s highly unlikely that Apple will be able to iterate fast enough on those domains to keep up with the growth of other digital assitants (Alexa, Google assistant …). And their strategy mostly precludes external developers to help with empowering Siri.&lt;/p&gt;
+
+&lt;p&gt;I’m affraid that Siri will soon be stuck between a rock and a hard place.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 16 Oct 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016/10/16/Siri-what.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/10/16/Siri-what.html</guid>
+        
+        <category>apple</category>
+        
+        
+      </item>
     
       <item>
         <title>NSTimer as a chronometer</title>
@@ -231,57 +270,6 @@ From &lt;a href=&quot;https://www.kickstarter.com/projects/flag/flagfree-photo-p
         <guid isPermaLink="true">http://localhost:4000/2013/12/20/welcome-librairie-app.html</guid>
         
         <category>projects</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Thougths about iOS apps upgrade, a case study - Reeder</title>
-        <description>&lt;p&gt;There has been a lot of discussions recently about the strategies app developers may use to upgrade their apps to a new version.
-The argument is along the lines of the following points :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The app devs rigthfully expect to be able to charge for the work they do to upgrade their apps in the long run&lt;/li&gt;
-  &lt;li&gt;An part of the apps users understand this and are willing to pay regularly for upgraded apps&lt;/li&gt;
-  &lt;li&gt;An other part of the apps users feels that they have already paid for an app and that should be enough&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;At first, I thought I was strongly in the camp of the users feeling that we should pay for upgrades. After all, I am a professional developer (even though I’m not an app dev … yet) so I can very easily see the point of a dev who needs to bill customers for a living :)&lt;/p&gt;
-
-&lt;p&gt;But then, the case of one of my most beloved app came into light : Reeder.&lt;/p&gt;
-
-&lt;p&gt;I’m a longtime fan and daily user of Reeder. I had bought the iPhone version, the iPad version and then the OSX version. Enough to say that I was very pleased with all those versions and never regretted to shell out good euros for those.&lt;/p&gt;
-
-&lt;p&gt;But then came the Google Readerapocalypse …&lt;/p&gt;
-
-&lt;p&gt;Silvio Rizzi, the Reeder developer, quickly released an update for the iPhone version allowing to sync your RSS feeds to feedbin, fever and (later I think) a few other services. But the iPad and OSX users were left in the cold, waiting for an update that would turn the stale pile of bits that those apps had become to a once again useful state.
-Unfortunately, that update never came.&lt;/p&gt;
-
-&lt;p&gt;Today he release Reeder 2, a new paid universal version of his iOS app.
-The problem is not to upgrade to a new paid version. The problem is twofold :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;The app description does not make a good case of why I should upgrade. It states that Reeder 2 is a feedbin / fever / whatever … client and that you can share things with a lot of services. But that’s exactly what was the previous Reeder iPhone version. So why I’m upgrading exactly ??&lt;/li&gt;
-  &lt;li&gt;I feel kind of strong-armed here. Because the iPad version never got an update to allow to sync with anything else that Google Reader I kind of have to upgrade if I want to continue (or start again in this case) to use Reeder.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;So, what’s the takeaway from this exactly ?&lt;/p&gt;
-
-&lt;p&gt;I think there is a big difference between an application and a service. If I buy an application, I expect it to work for as long as the underlying OS allows it to run.
-If I buy a service I expect it to function as long as I pay. The way M. Rizzi handled this upgrade makes me feel I’m paying for a service, not for an app. The fact that there’s no additional functionality described (except that the app is now running again on iPad) reinforce this feeling.&lt;/p&gt;
-
-&lt;p&gt;I understand that it was not his fault if Google Reader passed away and the iPad version broke. But then why update the iPhone version back to a functioning state before the upgrade and not the iPad one ?&lt;/p&gt;
-
-&lt;p&gt;Of course, I bought the new version anyway but I cannot help to feel that there’s a lot of goodwill lost in a case like this. And honestly, I’m not sure I’m going to buy the new OSX version when it will come out later this year. It was the version I used the least and I bought it mainly as a sign of support for the developer.&lt;/p&gt;
-
-&lt;p&gt;I think that in this brave new iOS app store world, an app upgrade needs to articulate clearly what the value proposition is for the customer. If you need a recurring income to support your service, ask for a subscription.&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 12 Sep 2013 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2013/09/12/thoughts-app-upgrade-case-study-reeder.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/09/12/thoughts-app-upgrade-case-study-reeder.html</guid>
-        
-        <category>app store</category>
         
         
       </item>
