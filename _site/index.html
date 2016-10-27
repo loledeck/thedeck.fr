@@ -56,6 +56,62 @@
 					</div>
 
 					<h2>
+						<a class="post-link" href="/2016/10/27/surface-studio-next-follow-up.html">Surface Studio follow-up</a>
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					<p>Brent Simmons, speaking about the <a href="http://inessential.com/2016/10/26/surface_studio_notes">Surface Studio</a>:
+<br />
+<br /></p>
+
+<blockquote>
+  <p>Except — and this part shouldn’t be underestimated — many of these Mac developers are here because Macs are the computer for creative professionals and artists. That’s what attracted us to Macs in the first place.</p>
+</blockquote>
+
+<blockquote>
+  <p>It’s more than a niche. It’s our identity as Mac developers: we write apps for people who make things. But what if the Surface Studio takes over as the computer for people who make things? And what if we could bring over some of our investment (such as learning Swift) with us?</p>
+</blockquote>
+
+<blockquote>
+  <p>I never thought to even consider that as a possible future.</p>
+</blockquote>
+
+<p>You don’t find much more hardcore mac developper than Simmons. The fact he’s even thinking about the faintest possibility of jumping ship shows two things</p>
+
+<ol>
+  <li>
+    <p>that Microsoft has desgined a very audacious and interresting product</p>
+  </li>
+  <li>
+    <p>that Apple has so much neglected its core audience of old that the cracks are starting to show</p>
+  </li>
+</ol>
+
+				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+      <a class="tag" href="/tags#apple"> apple </a>&nbsp;
+    
+      <a class="tag" href="/tags#microsoft"> microsoft </a>&nbsp;
+    
+  
+  </div>
+
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
+						<span>Posted on </span><span class="post-meta">October 27, 2016</span>
+					</div>
+
+					<h2>
 						<a class="post-link" href="/2016/10/27/surface-studio-new-mac-pro.html">Microsoft Surface Studio, the new Mac Pro ?</a>
 					</h2>
 				</header>
@@ -233,71 +289,6 @@ Highlights features:</p>
     <hr style="color: #787065;">
     
       <a class="tag" href="/tags#apple"> apple </a>&nbsp;
-    
-  
-  </div>
-
-			</article>
-		</li>
-		
-		<li>
-			<article>
-				<header class="post-header">
-					<div>
-						<span>Posted on </span><span class="post-meta">October 13, 2016</span>
-					</div>
-
-					<h2>
-						<a class="post-link" href="/2016/10/13/nstimer-as-a-chronometer.html">NSTimer as a chronometer</a>
-					</h2>
-				</header>
-
-				<div class="entry-content">
-					<p>NB: This post is mainly a reminder for myself.
-How to create a chronometer in Objective C ? I’m glad you asked:</p>
-
-<p>First, create your NSTimer</p>
-
-<div class="language-objc highlighter-rouge"><pre class="highlight"><code><span class="n">NSTimer</span> <span class="o">*</span><span class="n">chronometer</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSTimer</span> <span class="nf">scheduledTimerWithTimeInterval</span><span class="p">:</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
-    <span class="nf">target</span><span class="p">:</span><span class="n">self</span>
-    <span class="n">selector</span><span class="o">:</span><span class="k">@selector</span><span class="p">(</span><span class="n">addToChronometer</span><span class="p">)</span>
-    <span class="n">userInfo</span><span class="o">:</span><span class="nb">nil</span>
-    <span class="n">repeats</span><span class="o">:</span><span class="nb">YES</span>
-<span class="p">];</span>
-</code></pre>
-</div>
-
-<p>And store the current time in an instance variable</p>
-
-<div class="language-objc highlighter-rouge"><pre class="highlight"><code><span class="n">NSDate</span> <span class="o">*</span><span class="n">startTime</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSDate</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
-</code></pre>
-</div>
-
-<p>The timer will call a function aproximatively every second (<em>the chronometer will not provide an exact measure of time. It will be used to show time passing in the format 00:00:00</em>).</p>
-
-<div class="language-objc highlighter-rouge"><pre class="highlight"><code><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">addToChronometer</span> <span class="p">{</span>	
-    <span class="n">NSTimeInterval</span> <span class="n">interval</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="p">[</span><span class="n">startTime</span> <span class="nf">timeIntervalSinceNow</span><span class="p">];</span>
-
-    <span class="n">NSInteger</span> <span class="n">ti</span> <span class="o">=</span> <span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="n">interval</span><span class="p">;</span>
-    <span class="n">NSInteger</span> <span class="n">seconds</span> <span class="o">=</span> <span class="n">ti</span> <span class="o">%</span> <span class="mi">60</span><span class="p">;</span>
-    <span class="n">NSInteger</span> <span class="n">minutes</span> <span class="o">=</span> <span class="p">(</span><span class="n">ti</span> <span class="o">/</span> <span class="mi">60</span><span class="p">)</span> <span class="o">%</span> <span class="mi">60</span><span class="p">;</span>
-    <span class="n">NSInteger</span> <span class="n">hours</span> <span class="o">=</span> <span class="p">(</span><span class="n">ti</span> <span class="o">/</span> <span class="mi">3600</span><span class="p">);</span>
-
-    <span class="n">self</span><span class="p">.</span><span class="n">chronoLabel</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"%02ld:%02ld:%02ld"</span><span class="p">,</span> <span class="p">(</span><span class="kt">long</span><span class="p">)</span><span class="n">hours</span><span class="p">,</span> <span class="p">(</span><span class="kt">long</span><span class="p">)</span><span class="n">minutes</span><span class="p">,</span> <span class="p">(</span><span class="kt">long</span><span class="p">)</span><span class="n">seconds</span><span class="p">];</span>
-<span class="p">}</span>
-</code></pre>
-</div>
-
-<p>Et voilà !</p>
-
-
-				</div>
-
-        <div>
-  
-    <hr style="color: #787065;">
-    
-      <a class="tag" href="/tags#coding"> coding </a>&nbsp;
     
   
   </div>

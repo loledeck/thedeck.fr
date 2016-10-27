@@ -520,40 +520,49 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/2016-09-23-introducing-commit.md",
+			"file": "_posts/2016/201610/2016-10-16-Siri-what.md",
 			"settings":
 			{
-				"buffer_size": 722,
-				"line_ending": "Unix",
-				"name": "---"
-			}
-		},
-		{
-			"file": "_posts/2016-09-20-red-flag.md",
-			"settings":
-			{
-				"buffer_size": 607,
+				"buffer_size": 2188,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_posts/2016-10-04-constant-freezes-sierra.md",
+			"file": "_posts/2016/201610/2016-10-19-itunes-needs-a-lot-of-love.md",
 			"settings":
 			{
-				"buffer_size": 954,
+				"buffer_size": 1191,
 				"encoding": "UTF-8",
 				"line_ending": "Unix",
 				"name": "---"
 			}
 		},
 		{
-			"file": "_posts/2016-10-05-spoken-edition-debut.md",
+			"file": "_posts/2016/201610/2016-10-27-surface-studio-new-mac-pro.md",
 			"settings":
 			{
-				"buffer_size": 537,
+				"buffer_size": 1034,
 				"encoding": "UTF-8",
 				"line_ending": "Unix",
 				"name": "---"
+			}
+		},
+		{
+			"file": "_posts/2016/201609/2016-09-27-commit-version-101.md",
+			"settings":
+			{
+				"buffer_size": 296,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2016/201610/2016-10-13-nstimer-as-a-chronometer.md",
+			"settings":
+			{
+				"buffer_size": 1073,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -570,6 +579,7 @@
 			"settings":
 			{
 				"buffer_size": 1097,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -644,10 +654,24 @@
 	"expanded_folders":
 	[
 		"/Users/laurent/Repositories/thedeck.fr",
-		"/Users/laurent/Repositories/thedeck.fr/_posts"
+		"/Users/laurent/Repositories/thedeck.fr/_posts",
+		"/Users/laurent/Repositories/thedeck.fr/_posts/2016",
+		"/Users/laurent/Repositories/thedeck.fr/_posts/2016/201609",
+		"/Users/laurent/Repositories/thedeck.fr/_posts/2016/201610"
 	],
 	"file_history":
 	[
+		"/Users/laurent/Repositories/thedeck.fr/_posts/2016/201610/2016-10-22-librairie-version-28.md",
+		"/Users/laurent/Repositories/thedeck.fr/_posts/2016-09-23-introducing-commit.md",
+		"/Users/laurent/Repositories/thedeck.fr/_posts/2016-10-04-constant-freezes-sierra.md",
+		"/Users/laurent/Repositories/thedeck.fr/_posts/2016-10-05-spoken-edition-debut.md",
+		"/Users/laurent/Repositories/thedeck.fr/_posts/2016-10-13-nstimer-as-a-chronometer.md",
+		"/Users/laurent/Repositories/thedeck.fr/_posts/2016/201610/---.mdown",
+		"/Users/laurent/Library/Developer/CoreSimulator/Devices/F08E8DB7-0C11-4912-B211-7FD01B6BC66C/data/Containers/Data/Application/0D05B7F7-1AE3-435B-8994-A9B919F7E6AA/Documents/465441/chap_6.html",
+		"/Users/laurent/Library/Developer/CoreSimulator/Devices/F08E8DB7-0C11-4912-B211-7FD01B6BC66C/data/Containers/Data/Application/E565FA70-6886-468C-8CCA-B52019AC27A9/Documents/465441/paginate.json",
+		"/Users/laurent/Library/Developer/CoreSimulator/Devices/F08E8DB7-0C11-4912-B211-7FD01B6BC66C/data/Containers/Data/Application/E565FA70-6886-468C-8CCA-B52019AC27A9/Documents/465441/toc.json",
+		"/Users/laurent/Library/Developer/CoreSimulator/Devices/F08E8DB7-0C11-4912-B211-7FD01B6BC66C/data/Containers/Data/Application/E565FA70-6886-468C-8CCA-B52019AC27A9/Documents/465441/chapters_list.json",
+		"/Users/laurent/Library/Developer/CoreSimulator/Devices/F08E8DB7-0C11-4912-B211-7FD01B6BC66C/data/Containers/Data/Application/0D05B7F7-1AE3-435B-8994-A9B919F7E6AA/Documents/465441/chap_5.html",
 		"/Users/laurent/Repositories/thedeck.fr/_posts/2016-09-29-app-extention-icon-xcode-8.md",
 		"/Users/laurent/Dropbox/bin/save_pictures.sh",
 		"/Users/laurent/Repositories/thedeck.fr/_posts/2016-09-20-red-flag.md",
@@ -764,18 +788,7 @@
 		"/Users/laurent/Dropbox/Code/librairie/librairie/static/js/core/mod_bookmarks.js",
 		"/Users/laurent/Dropbox/Code/librairie/librairie/templates/reading.html",
 		"/Users/laurent/Dropbox/Code/librairie/librairie/templates/toc.html",
-		"/Users/laurent/Dropbox/Code/librairie/librairie/static/js/core/mod_textformat.js",
-		"/Users/laurent/Dropbox/Code/librairie/librairie/settings/devwd.py",
-		"/Users/laurent/Dropbox/Code/librairie/nginx/my.cnf",
-		"/Users/laurent/Dropbox/Code/librairie/librairie/static/js/cache/core.js",
-		"/Users/laurent/Dropbox/Code/librairie/librairie/static/js/core/mod_decorators.js",
-		"/Users/laurent/Dropbox/Code/librairie/nginx/librairie_uwsgi.ini",
-		"/Users/laurent/Dropbox/Code/librairie/librairie/static/js/modernizr.js",
-		"/Users/laurent/Dropbox/Code/librairie/librairie/minifier/views.py",
-		"/Users/laurent/Dropbox/bin/save_backups.sh",
-		"/Users/laurent/Dropbox/Code/librairie/librairie/static/js/core/mod_mock.js",
-		"/Users/laurent/Dropbox/Code/librairie/librairie/templates/_js_includes.html",
-		"/Users/laurent/Dropbox/Code/librairie/nginx/librairie_nginx.conf"
+		"/Users/laurent/Dropbox/Code/librairie/librairie/static/js/core/mod_textformat.js"
 	],
 	"find":
 	{
@@ -864,6 +877,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			":\n",
 			"Hello",
 			"url",
 			"itemProvider",
@@ -990,8 +1004,7 @@
 			"format",
 			"db-v49rvbe8gc67fxx",
 			"UserID:",
-			"DBSession",
-			"gutenberg"
+			"DBSession"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1011,57 +1024,57 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2016-09-23-introducing-commit.md",
+					"file": "_posts/2016/201610/2016-10-16-Siri-what.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 722,
+						"buffer_size": 2188,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								720,
-								720
+								59,
+								59
 							]
 						],
 						"settings":
 						{
-							"auto_name": "---",
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "_posts/2016-09-20-red-flag.md",
-					"semi_transient": true,
+					"file": "_posts/2016/201610/2016-10-19-itunes-needs-a-lot-of-love.md",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 607,
+						"buffer_size": 1191,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								138,
-								450
+								146,
+								168
 							]
 						],
 						"settings":
 						{
+							"auto_name": "---",
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
@@ -1073,48 +1086,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "_posts/2016-10-04-constant-freezes-sierra.md",
+					"file": "_posts/2016/201610/2016-10-27-surface-studio-new-mac-pro.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 954,
+						"buffer_size": 1034,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								71,
-								71
-							]
-						],
-						"settings":
-						{
-							"auto_name": "---",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "_posts/2016-10-05-spoken-edition-debut.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 537,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								56,
-								56
+								24,
+								67
 							]
 						],
 						"settings":
@@ -1132,11 +1116,69 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
+					"buffer": 3,
+					"file": "_posts/2016/201609/2016-09-27-commit-version-101.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								295
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
 					"buffer": 4,
+					"file": "_posts/2016/201610/2016-10-13-nstimer-as-a-chronometer.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1073,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "_config_dev.yml",
 					"semi_transient": false,
 					"settings":
@@ -1160,11 +1202,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "_posts/2013-03-13-so-cute.md",
 					"semi_transient": false,
 					"settings":
@@ -1176,8 +1218,8 @@
 						"selection":
 						[
 							[
-								1097,
-								1097
+								971,
+								909
 							]
 						],
 						"settings":
@@ -1188,7 +1230,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
