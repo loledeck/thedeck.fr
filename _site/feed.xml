@@ -6,9 +6,37 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 22 Oct 2016 19:40:11 +0200</pubDate>
-    <lastBuildDate>Sat, 22 Oct 2016 19:40:11 +0200</lastBuildDate>
+    <pubDate>Thu, 27 Oct 2016 10:34:42 +0200</pubDate>
+    <lastBuildDate>Thu, 27 Oct 2016 10:34:42 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Microsoft Surface Studio, the new Mac Pro ?</title>
+        <description>&lt;p&gt;Interresting concept from Microsoft, the new &lt;a href=&quot;https://www.microsoft.com/en-us/surface/devices/surface-studio/tech-specs&quot;&gt;Surface Studio&lt;/a&gt;.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;/assets/images/201610/Surface_Studio.jpg&quot; alt=&quot;Surface Studio&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s squarely aimed at creative professionals, a demographic that has always been the bread and butter of Apple pro hardware.&lt;/p&gt;
+
+&lt;p&gt;Seems a little light specswise compared to a Mac Pro (I mean, compared to what could be a Mac Pro today if it had been updated less than three years ago).&lt;/p&gt;
+
+&lt;p&gt;I hope it will succeed to shame Apple into caring more about its pro line.&lt;/p&gt;
+
+&lt;p&gt;However, it is clearly not for me. For one, I couldn’t draw anything to save my life so I wouldn’t use it for that purpose. But it seems to be a really clever use of touch for a desktop computer.&lt;/p&gt;
+
+&lt;p&gt;The big drawback: the smudges it will create on the screen. I’m already mad at the rare finger traces on my non-touch iMac screen, it would &lt;em&gt;positively&lt;/em&gt; drive me crazy !&lt;/p&gt;
+</description>
+        <pubDate>Thu, 27 Oct 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016/10/27/surface-studio-new-mac-pro.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/10/27/surface-studio-new-mac-pro.html</guid>
+        
+        <category>apple</category>
+        
+        <category>microsoft</category>
+        
+        
+      </item>
     
       <item>
         <title>Librairie version 2.8</title>
@@ -274,29 +302,6 @@ Grab it while it’s hot !&lt;/p&gt;
         <category>projects</category>
         
         <category>coding</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Red flag</title>
-        <description>&lt;p&gt;Flag is a startup sending you 20 prints of your pictures a month for &lt;em&gt;free&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-From &lt;a href=&quot;https://www.kickstarter.com/projects/flag/flagfree-photo-prints-forever&quot;&gt;Flag’s Kickstarter&lt;/a&gt; :&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Flag’s free printing and shipping are paid for with ads. We use the blank space on the back of each print, that’s been wasted for the last 100 years, to deliver extra photos, captions and targeted advertising.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Speaking of wasted ad real estate, I’d like to remember those nice marketers that the back of my iMac is still available. Hurry up, won’t last for ever !&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 20 Sep 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2016/09/20/red-flag.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/09/20/red-flag.html</guid>
-        
-        <category>startups</category>
         
         
       </item>
