@@ -52,6 +52,90 @@
 			<article>
 				<header class="post-header">
 					<div>
+						<span>Posted on </span><span class="post-meta">October 4, 2016</span>
+					</div>
+
+					<h2>
+						<a class="post-link" href="/2016/10/04/constant-freezes-sierra.html">Constant freezes with macOS Sierra</a>
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					<p>Since upgrading to Sierra last week, my 5K iMac late 2015 has been quite flaky. More precisely, it has experienced regular freezes that required hard reboots of the machine. When I say regular, I mean 5 or 6 times a day.</p>
+
+<p>During those freezes, the mouse and keyboard would become unresponsive and the screen saver would never kick in. At the same time, the audio would continue to play and the icons in the menu bar would still be updated.</p>
+
+<p>After trolling the internet and Apple forums for a while, I think I found the culprit: Logitech Control Center.</p>
+
+<p>This is a small utility that let’s you fine tune your Logitech mouse and keyboard but requires a kernel extension for doing its magic. Since I disabled it my iMac has not been frozen once (fingers crossed …). I have lost the butter smooth scrolling of my mouse wheel but that’s much better than rebooting all day long.</p>
+
+				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+      <a class="tag" href="/tags#macos"> macOS </a>&nbsp;
+    
+  
+  </div>
+
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
+						<span>Posted on </span><span class="post-meta">September 29, 2016</span>
+					</div>
+
+					<h2>
+						<a class="post-link" href="/2016/09/29/app-extention-icon-xcode-8.html">App Action Extension icon in XCode 8</a>
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					<p>Aaaarrgghhhh !!!</p>
+
+<p><br />
+<br />
+That’s generaly what I say when XCode decides to mess with me. Today I was writing an new action extension for my <a href="http://librairie.cubesoft.fr">Librairie app</a> (note that it’s the first one I write with XCode 8).</p>
+
+<p>Everything goes fine until I decide to give an icon to this sad little white square used to launch my extension. Normaly I’d go to your target settings “General” tab and choose the asset catalog containing your icon.</p>
+
+<p><img src="/assets/images/2016-09-29-app-extention-icon-xcode-8/general-tab.png" alt="General tab" /></p>
+
+<p>But no, no dice …</p>
+
+<p>Some smart product manager at Apple decided that it would be fun to see how long it would take me to do my job if they just removed the UI that they previously designed just for this purpose. The answer to this question is precisely … quite some time.</p>
+
+<p>Turns out, you have to go to the build settings of your target and find the “Asset Catalog App Icon Set Name”. There, you enter the name you have given to your app icon folder (the folder with all the different icon sizes <em>inside</em> your asset catalog).</p>
+
+<p><img src="/assets/images/2016-09-29-app-extention-icon-xcode-8/build-settings.png" alt="Build settings" /></p>
+
+<p>Good job Apple …</p>
+
+				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+      <a class="tag" href="/tags#coding"> coding </a>&nbsp;
+    
+      <a class="tag" href="/tags#xcode"> xcode </a>&nbsp;
+    
+  
+  </div>
+
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
 						<span>Posted on </span><span class="post-meta">September 27, 2016</span>
 					</div>
 
@@ -164,72 +248,6 @@ From <a href="https://www.kickstarter.com/projects/flag/flagfree-photo-prints-fo
 			</article>
 		</li>
 		
-		<li>
-			<article>
-				<header class="post-header">
-					<div>
-						<span>Posted on </span><span class="post-meta">December 21, 2013</span>
-					</div>
-
-					<h2>
-						<a class="post-link" href="/2013/12/21/more-info-on-librairie.html">More information on Librairie</a>
-					</h2>
-				</header>
-
-				<div class="entry-content">
-					<p>If you want more information on Librairie, the official site is: <a href="http://librairie.cubesoft.fr">http://librairie.cubesoft.fr</a>
-<br />
-<br /></p>
-
-				</div>
-
-        <div>
-  
-    <hr style="color: #787065;">
-    
-      <a class="tag" href="/tags#projects"> projects </a>&nbsp;
-    
-  
-  </div>
-
-			</article>
-		</li>
-		
-		<li>
-			<article>
-				<header class="post-header">
-					<div>
-						<span>Posted on </span><span class="post-meta">December 20, 2013</span>
-					</div>
-
-					<h2>
-						<a class="post-link" href="/2013/12/20/welcome-librairie-app.html">Welcome Librairie App</a>
-					</h2>
-				</header>
-
-				<div class="entry-content">
-					<p>Librairie is my new iOS app. You can find it here:</p>
-
-<p><a href="https://itunes.apple.com/us/app/librairie/id742022507?l=fr&amp;ls=1&amp;mt=8">Librairie on the App Store</a></p>
-
-<p>It’s an ebook reading app that scans your Dropbox account to find your epub files. They’re automatically classified and available for streaming or download from the app.</p>
-
-<p>More coming soon …</p>
-
-				</div>
-
-        <div>
-  
-    <hr style="color: #787065;">
-    
-      <a class="tag" href="/tags#projects"> projects </a>&nbsp;
-    
-  
-  </div>
-
-			</article>
-		</li>
-		
 	</ul>
 
 
@@ -259,6 +277,10 @@ From <a href="https://www.kickstarter.com/projects/flag/flagfree-photo-prints-fo
       		
         		
           		<a href="/page5">5</a>
+        		
+      		
+        		
+          		<a href="/page6">6</a>
         		
       		
 

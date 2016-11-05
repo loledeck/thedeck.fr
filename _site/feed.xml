@@ -6,9 +6,68 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Oct 2016 16:33:55 +0200</pubDate>
-    <lastBuildDate>Sat, 29 Oct 2016 16:33:55 +0200</lastBuildDate>
+    <pubDate>Sat, 05 Nov 2016 15:01:21 +0100</pubDate>
+    <lastBuildDate>Sat, 05 Nov 2016 15:01:21 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Pricing courage</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.macrumors.com/2016/11/04/apple-lg-display-major-price-cut/&quot;&gt;MacRumors&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Apple has also introduced some significant price cuts to the 4K and 5K LG UltraFine Displays that were announced at its October 27 Mac event.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Dan Moren at &lt;a href=&quot;https://sixcolors.com/post/2016/11/apple-cuts-prices-on-usb-cthunderbolt-3-adapters-peripherals/&quot;&gt;SixColors&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Friday afternoon: the place where news goes to die.
+Apple dropped a statement to a number of outlets that it’s discounting USB-C/Thunderbolt 3 adapters and peripherals in its stores—both those of its own manufacture as well as those made by partners through the end of the year.&lt;br /&gt;
+…&lt;br /&gt;
+So, it’s easy to read this as purely being a response to complaints over the new MacBook Pro’s reliance on USB-C/Thunderbolt 3…and, yeah, that’s pretty much what’s happening here. Dropping the news on a late Friday afternoon suggests that Apple doesn’t want to garner a lot of attention about the fact it needs to make this move.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Meanwhile, Phil Schiller at the &lt;a href=&quot;http://www.independent.co.uk/life-style/gadgets-and-tech/features/apple-macbook-pro-new-philip-schiller-interview-phil-iphone-ios-criticism-a7393156.html&quot;&gt;Independent&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;And we are proud to tell you that so far our online store has had more orders for the new MacBook Pro than any other pro notebook before. So there certainly are a lot of people as excited as we are about it.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sat, 05 Nov 2016 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2016/11/05/pricing-courage.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/11/05/pricing-courage.html</guid>
+        
+        <category>apple</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Commit DB version 1.1</title>
+        <description>&lt;p&gt;A new version of my &lt;a href=&quot;http://commit.cubesoft.fr&quot;&gt;iOS MySQL client&lt;/a&gt; has been released in the App Store.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;New features include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fullscreen view of a record by tapping the line number in a resultset&lt;/li&gt;
+  &lt;li&gt;JSON export of a resultset&lt;/li&gt;
+  &lt;li&gt;Color setting for your connections&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And of course, multiple bug fixes !&lt;/p&gt;
+</description>
+        <pubDate>Sat, 05 Nov 2016 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2016/11/05/commit-version-1-1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/11/05/commit-version-1-1.html</guid>
+        
+        <category>projects</category>
+        
+        
+      </item>
     
       <item>
         <title>Out of luck (again)</title>
@@ -298,58 +357,6 @@ How to create a chronometer in Objective C ? I’m glad you asked:&lt;/p&gt;
         <guid isPermaLink="true">http://localhost:4000/2016/10/05/spoken-edition-debut.html</guid>
         
         <category>fun</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Constant freezes with macOS Sierra</title>
-        <description>&lt;p&gt;Since upgrading to Sierra last week, my 5K iMac late 2015 has been quite flaky. More precisely, it has experienced regular freezes that required hard reboots of the machine. When I say regular, I mean 5 or 6 times a day.&lt;/p&gt;
-
-&lt;p&gt;During those freezes, the mouse and keyboard would become unresponsive and the screen saver would never kick in. At the same time, the audio would continue to play and the icons in the menu bar would still be updated.&lt;/p&gt;
-
-&lt;p&gt;After trolling the internet and Apple forums for a while, I think I found the culprit: Logitech Control Center.&lt;/p&gt;
-
-&lt;p&gt;This is a small utility that let’s you fine tune your Logitech mouse and keyboard but requires a kernel extension for doing its magic. Since I disabled it my iMac has not been frozen once (fingers crossed …). I have lost the butter smooth scrolling of my mouse wheel but that’s much better than rebooting all day long.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 04 Oct 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2016/10/04/constant-freezes-sierra.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/10/04/constant-freezes-sierra.html</guid>
-        
-        <category>macOS</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>App Action Extension icon in XCode 8</title>
-        <description>&lt;p&gt;Aaaarrgghhhh !!!&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;
-That’s generaly what I say when XCode decides to mess with me. Today I was writing an new action extension for my &lt;a href=&quot;http://librairie.cubesoft.fr&quot;&gt;Librairie app&lt;/a&gt; (note that it’s the first one I write with XCode 8).&lt;/p&gt;
-
-&lt;p&gt;Everything goes fine until I decide to give an icon to this sad little white square used to launch my extension. Normaly I’d go to your target settings “General” tab and choose the asset catalog containing your icon.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/2016-09-29-app-extention-icon-xcode-8/general-tab.png&quot; alt=&quot;General tab&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But no, no dice …&lt;/p&gt;
-
-&lt;p&gt;Some smart product manager at Apple decided that it would be fun to see how long it would take me to do my job if they just removed the UI that they previously designed just for this purpose. The answer to this question is precisely … quite some time.&lt;/p&gt;
-
-&lt;p&gt;Turns out, you have to go to the build settings of your target and find the “Asset Catalog App Icon Set Name”. There, you enter the name you have given to your app icon folder (the folder with all the different icon sizes &lt;em&gt;inside&lt;/em&gt; your asset catalog).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/2016-09-29-app-extention-icon-xcode-8/build-settings.png&quot; alt=&quot;Build settings&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Good job Apple …&lt;/p&gt;
-</description>
-        <pubDate>Thu, 29 Sep 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2016/09/29/app-extention-icon-xcode-8.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/09/29/app-extention-icon-xcode-8.html</guid>
-        
-        <category>coding</category>
-        
-        <category>xcode</category>
         
         
       </item>
