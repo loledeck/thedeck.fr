@@ -1,0 +1,23 @@
+---
+layout: post
+title: Visible text in a NSTextContainer backed UITextView
+tags: [coding]
+---
+
+You cannot easilly get the visible text of a `NSTextContainer` backed `UITextView`. If you look at the `text` or `attributedText` properties, you will get the whole text that you gave to your `NSTextStorage` object.
+
+To get the currently displayed text, I use the following method on my `NSTextVIew` subclasses:
+
+```objc
+- (NSAttributedString *)visibleText {
+
+    CGRect bounds = self.bounds;
+    UITextPosition *start = [self characterRangeAtPoint:bounds.origin].start;
+    UITextPosition *end = [self characterRangeAtPoint:CGPointMake(CGRectGetMaxX(bounds), CGRectGetMaxY(bounds))].end;
+    NSRange visibleTextRange = NSMakeRange([self offsetFromPosition:self.beginningOfDocument toPosition:start],
+                                           [self offsetFromPosition:start toPosition:end]);
+    NSAttributedString *attrString = [self.attributedText attributedSubstringFromRange:visibleTextRange];
+    return attrString;
+}
+
+```

@@ -12,18 +12,18 @@
 	
 
 	
-	<meta property="og:title" content="The Deck • Pricing courage">
+	<meta property="og:title" content="The Deck • Visible text in a NSTextContainer backed UITextView">
 	
 
 	<link rel="icon" href="/favicon.png" type="image/png">
 
-	<title>Pricing courage</title>
-	<meta name="description" content="MacRumors">
+	<title>Visible text in a NSTextContainer backed UITextView</title>
+	<meta name="description" content="You cannot easilly get the visible text of a NSTextContainer backed UITextView. If you look at the text or attributedText properties, you will get the whole ...">
 
 	<link rel='stylesheet' id='libretto-fonts-css'  href='https://fonts.googleapis.com/css?family=Libre+Baskerville%3A400%2C700%2C400italic%7CPlayfair+Display%3A400%2C700%2C400italic%2C700italic%7CPlayfair+Display+SC%3A700%2C700italic%7CMontserrat%3A400%7CDroid+Sans+Mono%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all'>
 
 	<link rel="stylesheet" href="http://localhost:4000/css/main.css">
-	<link rel="canonical" href="http://localhost:4000/2016/11/05/pricing-courage.html">
+	<link rel="canonical" href="http://localhost:4000/2016/11/15/visible-text-nstextcontainer-uitextview.html">
 	<link rel="alternate" type="application/rss+xml" title="The Deck" href="http://localhost:4000/feed.xml">
 </head>
 
@@ -45,36 +45,31 @@
 		<div class="wrapper">
 			<header class="post-header">
 	<div>
-		<span>Posted on </span><span class="post-meta">November 5, 2016</span>
+		<span>Posted on </span><span class="post-meta">November 15, 2016</span>
 	</div>
 
-	<h1 class="post-title" itemprop="name headline">Pricing courage</h1>
+	<h1 class="post-title" itemprop="name headline">Visible text in a NSTextContainer backed UITextView</h1>
 </header>
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="entry-content" itemprop="articleBody">
-		<p><a href="http://www.macrumors.com/2016/11/04/apple-lg-display-major-price-cut/">MacRumors</a></p>
+		<p>You cannot easilly get the visible text of a <code class="highlighter-rouge">NSTextContainer</code> backed <code class="highlighter-rouge">UITextView</code>. If you look at the <code class="highlighter-rouge">text</code> or <code class="highlighter-rouge">attributedText</code> properties, you will get the whole text that you gave to your <code class="highlighter-rouge">NSTextStorage</code> object.</p>
 
-<p><br /></p>
+<p>To get the currently displayed text, I use the following method on my <code class="highlighter-rouge">NSTextVIew</code> subclasses:</p>
 
-<blockquote>
-  <p>Apple has also introduced some significant price cuts to the 4K and 5K LG UltraFine Displays that were announced at its October 27 Mac event.</p>
-</blockquote>
+<div class="language-objc highlighter-rouge"><pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSAttributedString</span> <span class="o">*</span><span class="p">)</span><span class="n">visibleText</span> <span class="p">{</span>
 
-<p>Dan Moren at <a href="https://sixcolors.com/post/2016/11/apple-cuts-prices-on-usb-cthunderbolt-3-adapters-peripherals/">SixColors</a></p>
+    <span class="n">CGRect</span> <span class="n">bounds</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">bounds</span><span class="p">;</span>
+    <span class="n">UITextPosition</span> <span class="o">*</span><span class="n">start</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">characterRangeAtPoint</span><span class="p">:</span><span class="n">bounds</span><span class="p">.</span><span class="n">origin</span><span class="p">].</span><span class="n">start</span><span class="p">;</span>
+    <span class="n">UITextPosition</span> <span class="o">*</span><span class="n">end</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">characterRangeAtPoint</span><span class="p">:</span><span class="n">CGPointMake</span><span class="p">(</span><span class="n">CGRectGetMaxX</span><span class="p">(</span><span class="n">bounds</span><span class="p">),</span> <span class="n">CGRectGetMaxY</span><span class="p">(</span><span class="n">bounds</span><span class="p">))].</span><span class="n">end</span><span class="p">;</span>
+    <span class="n">NSRange</span> <span class="n">visibleTextRange</span> <span class="o">=</span> <span class="n">NSMakeRange</span><span class="p">([</span><span class="n">self</span> <span class="nf">offsetFromPosition</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">beginningOfDocument</span> <span class="nf">toPosition</span><span class="p">:</span><span class="n">start</span><span class="p">],</span>
+                                           <span class="p">[</span><span class="n">self</span> <span class="nf">offsetFromPosition</span><span class="p">:</span><span class="n">start</span> <span class="nf">toPosition</span><span class="p">:</span><span class="n">end</span><span class="p">]);</span>
+    <span class="n">NSAttributedString</span> <span class="o">*</span><span class="n">attrString</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">attributedText</span> <span class="nf">attributedSubstringFromRange</span><span class="p">:</span><span class="n">visibleTextRange</span><span class="p">];</span>
+    <span class="k">return</span> <span class="n">attrString</span><span class="p">;</span>
+<span class="p">}</span>
 
-<blockquote>
-  <p>Friday afternoon: the place where news goes to die.
-Apple dropped a statement to a number of outlets that it’s discounting USB-C/Thunderbolt 3 adapters and peripherals in its stores—both those of its own manufacture as well as those made by partners through the end of the year.<br />
-…<br />
-So, it’s easy to read this as purely being a response to complaints over the new MacBook Pro’s reliance on USB-C/Thunderbolt 3…and, yeah, that’s pretty much what’s happening here. Dropping the news on a late Friday afternoon suggests that Apple doesn’t want to garner a lot of attention about the fact it needs to make this move.</p>
-</blockquote>
-
-<p>Meanwhile, Phil Schiller at the <a href="http://www.independent.co.uk/life-style/gadgets-and-tech/features/apple-macbook-pro-new-philip-schiller-interview-phil-iphone-ios-criticism-a7393156.html">Independent</a></p>
-
-<blockquote>
-  <p>And we are proud to tell you that so far our online store has had more orders for the new MacBook Pro than any other pro notebook before. So there certainly are a lot of people as excited as we are about it.</p>
-</blockquote>
+</code></pre>
+</div>
 
 	</div>
 
@@ -82,7 +77,7 @@ So, it’s easy to read this as purely being a response to complaints over the n
 	
 		<hr>
 		
-			<a class="tag" href="/tags#apple"> apple </a>&nbsp;
+			<a class="tag" href="/tags#coding"> coding </a>&nbsp;
 		
 	
 	</div>
@@ -92,18 +87,13 @@ So, it’s easy to read this as purely being a response to complaints over the n
 <div id="post-nav">
 	<div class="next">
 		
-		<a href="/2016/11/15/macbookpro-angst.html">
-			<span>Next entry</span>
-			MacBook Pro angst
-		</a>
-		
 	</div>
 
 	<div class="previous">
 		
-		<a href="/2016/11/05/commit-version-1-1.html">
+		<a href="/2016/11/15/macbookpro-angst.html">
 			<span>Previous entry</span>
-			Commit DB version 1.1
+			MacBook Pro angst
 		</a>
 		
 	</div>
