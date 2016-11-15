@@ -55,7 +55,7 @@
 	<div class="entry-content" itemprop="articleBody">
 		<p>You cannot easilly get the visible text of a <code class="highlighter-rouge">NSTextContainer</code> backed <code class="highlighter-rouge">UITextView</code>. If you look at the <code class="highlighter-rouge">text</code> or <code class="highlighter-rouge">attributedText</code> properties, you will get the whole text that you gave to your <code class="highlighter-rouge">NSTextStorage</code> object.</p>
 
-<p>To get the currently displayed text, I use the following method on my <code class="highlighter-rouge">NSTextVIew</code> subclasses:</p>
+<p>To get the currently displayed text, I use the following method on my `NSTextVIew subclasses:</p>
 
 <div class="language-objc highlighter-rouge"><pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSAttributedString</span> <span class="o">*</span><span class="p">)</span><span class="n">visibleText</span> <span class="p">{</span>
 
