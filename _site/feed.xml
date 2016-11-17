@@ -6,9 +6,34 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Nov 2016 10:08:53 +0100</pubDate>
-    <lastBuildDate>Tue, 15 Nov 2016 10:08:53 +0100</lastBuildDate>
+    <pubDate>Thu, 17 Nov 2016 09:43:20 +0100</pubDate>
+    <lastBuildDate>Thu, 17 Nov 2016 09:43:20 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Apple terminates the position of Product Manager of Automation Technologies for macOS</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://macosxautomation.com/about.html&quot;&gt;Sal Soghoian&lt;/a&gt; (the axed guy) on his website:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Q. What does the termination of the position of Product Manager of Automation Technologies mean for the future of user automation in macOS?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A. Ask Apple. Seriously, if you have any questions or concerns about the future of user automation, ask Apple. If user automation technologies are important to you, then now is the time for all good men and women to reach out, speak up and ask questions. The macOS user automation technologies include: UNIX CLI (shell, python, ruby, perl), System Services, Apple Events (JavaScript, AppleScript, AppleScriptObj-C, Scripting Bridge), Automator, Apple Configurator (AppleScript, Automator), and Application scripting support in Photos, iWork, Finder, Mail, and other Apple applications.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Fall 2016, the season of pro love at Apple !&lt;/p&gt;
+</description>
+        <pubDate>Thu, 17 Nov 2016 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2016/11/17/apple-axes-automation-product-manager.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/11/17/apple-axes-automation-product-manager.html</guid>
+        
+        <category>apple</category>
+        
+        
+      </item>
     
       <item>
         <title>Visible text in a NSTextContainer backed UITextView</title>
@@ -299,45 +324,6 @@ Highlights features:&lt;/p&gt;
         <pubDate>Wed, 19 Oct 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2016/10/19/itunes-needs-a-lot-of-love.html</link>
         <guid isPermaLink="true">http://localhost:4000/2016/10/19/itunes-needs-a-lot-of-love.html</guid>
-        
-        <category>apple</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Siri ? Are you there ?</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://512pixels.net/2016/10/the-inward-looking-siri/&quot;&gt;Stephen Hackett on 512pixels.net&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;On this week’s episode of Ctrl-Walt-Delete, Walt Mossberg and Nilay Patel spoke about Siri and how Apple views the service and what it can do.&lt;/p&gt;
-
-  &lt;p&gt;You should go listen to the episode, but in it, Mossberg shares that Apple is focused on improving the parts of Siri that people use most, like making phone calls and setting timers. This comes at the expense of expanding Siri’s knowledge about other things, including common, everyday questions […]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;If Siri continues to get better at placing phone calls, but not at searching basic information, people will just stop trying to use it for anything but placing phone calls. Siri, its uses, and where Apple improves it will just be one infinite loop of development instead of seeing substantial expansion.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I’m not sure I agree with Stephen on this one. Searching for information with Siri and getting accurate and reliable results sure would be nice. But I’m afraid that a lot of people won’t even think to try until Siri is bulletproof at controling their own phone.&lt;/p&gt;
-
-&lt;p&gt;Why bother to ask complex questions to Siri if you can’t even set a reminder reliably with it ? I sure don’t. Why can I write a text with Siri on my watch but not send it ? How can an assistant be useful if you have to do half its work yourself ?&lt;/p&gt;
-
-&lt;p&gt;That’s why I think Apple is smart to first improve Siri for device manipulation before extending it to further domains.&lt;/p&gt;
-
-&lt;p&gt;Which brings us to an uncomfortable discussion about Siri extensions: &lt;em&gt;SiriKit&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;I think that the intent (no pun intended) behind SiriKit is good: nail a few domains to make Siri bulletproof about them before extending to other domains.&lt;/p&gt;
-
-&lt;p&gt;Unfortunatly, seeing the past speed of Siri’s evolution I think it’s highly unlikely that Apple will be able to iterate fast enough on those domains to keep up with the growth of other digital assitants (Alexa, Google assistant …). And their strategy mostly precludes external developers to help with empowering Siri.&lt;/p&gt;
-
-&lt;p&gt;I’m affraid that Siri will soon be stuck between a rock and a hard place.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 16 Oct 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2016/10/16/Siri-what.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/10/16/Siri-what.html</guid>
         
         <category>apple</category>
         

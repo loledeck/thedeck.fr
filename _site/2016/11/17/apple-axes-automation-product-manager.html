@@ -12,18 +12,18 @@
 	
 
 	
-	<meta property="og:title" content="The Deck • Visible text in a NSTextContainer backed UITextView">
+	<meta property="og:title" content="The Deck • Apple terminates the position of Product Manager of Automation Technologies for macOS">
 	
 
 	<link rel="icon" href="/favicon.png" type="image/png">
 
-	<title>Visible text in a NSTextContainer backed UITextView</title>
-	<meta name="description" content="You cannot easilly get the visible text of a NSTextContainer backed UITextView. If you look at the text or attributedText properties, you will get the whole ...">
+	<title>Apple terminates the position of Product Manager of Automation Technologies for macOS</title>
+	<meta name="description" content="Sal Soghoian (the axed guy) on his website:">
 
 	<link rel='stylesheet' id='libretto-fonts-css'  href='https://fonts.googleapis.com/css?family=Libre+Baskerville%3A400%2C700%2C400italic%7CPlayfair+Display%3A400%2C700%2C400italic%2C700italic%7CPlayfair+Display+SC%3A700%2C700italic%7CMontserrat%3A400%7CDroid+Sans+Mono%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all'>
 
 	<link rel="stylesheet" href="http://localhost:4000/css/main.css">
-	<link rel="canonical" href="http://localhost:4000/2016/11/15/visible-text-nstextcontainer-uitextview.html">
+	<link rel="canonical" href="http://localhost:4000/2016/11/17/apple-axes-automation-product-manager.html">
 	<link rel="alternate" type="application/rss+xml" title="The Deck" href="http://localhost:4000/feed.xml">
 </head>
 
@@ -45,31 +45,27 @@
 		<div class="wrapper">
 			<header class="post-header">
 	<div>
-		<span>Posted on </span><span class="post-meta">November 15, 2016</span>
+		<span>Posted on </span><span class="post-meta">November 17, 2016</span>
 	</div>
 
-	<h1 class="post-title" itemprop="name headline">Visible text in a NSTextContainer backed UITextView</h1>
+	<h1 class="post-title" itemprop="name headline">Apple terminates the position of Product Manager of Automation Technologies for macOS</h1>
 </header>
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="entry-content" itemprop="articleBody">
-		<p>You cannot easilly get the visible text of a <code class="highlighter-rouge">NSTextContainer</code> backed <code class="highlighter-rouge">UITextView</code>. If you look at the <code class="highlighter-rouge">text</code> or <code class="highlighter-rouge">attributedText</code> properties, you will get the whole text that you gave to your <code class="highlighter-rouge">NSTextStorage</code> object.</p>
+		<p><a href="https://macosxautomation.com/about.html">Sal Soghoian</a> (the axed guy) on his website:</p>
 
-<p>To get the currently displayed text, I use the following method on my `NSTextVIew subclasses:</p>
+<p><br /></p>
 
-<div class="language-objc highlighter-rouge"><pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSAttributedString</span> <span class="o">*</span><span class="p">)</span><span class="n">visibleText</span> <span class="p">{</span>
+<blockquote>
+  <p>Q. What does the termination of the position of Product Manager of Automation Technologies mean for the future of user automation in macOS?</p>
+</blockquote>
 
-    <span class="n">CGRect</span> <span class="n">bounds</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">bounds</span><span class="p">;</span>
-    <span class="n">UITextPosition</span> <span class="o">*</span><span class="n">start</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">characterRangeAtPoint</span><span class="p">:</span><span class="n">bounds</span><span class="p">.</span><span class="n">origin</span><span class="p">].</span><span class="n">start</span><span class="p">;</span>
-    <span class="n">UITextPosition</span> <span class="o">*</span><span class="n">end</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">characterRangeAtPoint</span><span class="p">:</span><span class="n">CGPointMake</span><span class="p">(</span><span class="n">CGRectGetMaxX</span><span class="p">(</span><span class="n">bounds</span><span class="p">),</span> <span class="n">CGRectGetMaxY</span><span class="p">(</span><span class="n">bounds</span><span class="p">))].</span><span class="n">end</span><span class="p">;</span>
-    <span class="n">NSRange</span> <span class="n">visibleTextRange</span> <span class="o">=</span> <span class="n">NSMakeRange</span><span class="p">([</span><span class="n">self</span> <span class="nf">offsetFromPosition</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">beginningOfDocument</span> <span class="nf">toPosition</span><span class="p">:</span><span class="n">start</span><span class="p">],</span>
-                                           <span class="p">[</span><span class="n">self</span> <span class="nf">offsetFromPosition</span><span class="p">:</span><span class="n">start</span> <span class="nf">toPosition</span><span class="p">:</span><span class="n">end</span><span class="p">]);</span>
-    <span class="n">NSAttributedString</span> <span class="o">*</span><span class="n">attrString</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">attributedText</span> <span class="nf">attributedSubstringFromRange</span><span class="p">:</span><span class="n">visibleTextRange</span><span class="p">];</span>
-    <span class="k">return</span> <span class="n">attrString</span><span class="p">;</span>
-<span class="p">}</span>
+<blockquote>
+  <p>A. Ask Apple. Seriously, if you have any questions or concerns about the future of user automation, ask Apple. If user automation technologies are important to you, then now is the time for all good men and women to reach out, speak up and ask questions. The macOS user automation technologies include: UNIX CLI (shell, python, ruby, perl), System Services, Apple Events (JavaScript, AppleScript, AppleScriptObj-C, Scripting Bridge), Automator, Apple Configurator (AppleScript, Automator), and Application scripting support in Photos, iWork, Finder, Mail, and other Apple applications.</p>
+</blockquote>
 
-</code></pre>
-</div>
+<p>Fall 2016, the season of pro love at Apple !</p>
 
 	</div>
 
@@ -77,7 +73,7 @@
 	
 		<hr>
 		
-			<a class="tag" href="/tags#coding"> coding </a>&nbsp;
+			<a class="tag" href="/tags#apple"> apple </a>&nbsp;
 		
 	
 	</div>
@@ -87,18 +83,13 @@
 <div id="post-nav">
 	<div class="next">
 		
-		<a href="/2016/11/17/apple-axes-automation-product-manager.html">
-			<span>Next entry</span>
-			Apple terminates the position of Product Manager of Automation Technologies for macOS
-		</a>
-		
 	</div>
 
 	<div class="previous">
 		
-		<a href="/2016/11/15/macbookpro-angst.html">
+		<a href="/2016/11/15/visible-text-nstextcontainer-uitextview.html">
 			<span>Previous entry</span>
-			MacBook Pro angst
+			Visible text in a NSTextContainer backed UITextView
 		</a>
 		
 	</div>
