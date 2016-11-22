@@ -529,39 +529,10 @@
 			}
 		},
 		{
-			"file": "_posts/2016/201610/2016-10-19-itunes-needs-a-lot-of-love.md",
+			"file": "_posts/2016/201611/2016-11-17-apple-axes-automation-product-manager.md",
 			"settings":
 			{
-				"buffer_size": 1191,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "---"
-			}
-		},
-		{
-			"file": "_posts/2016/201611/2016-11-05-pricing-courage.md",
-			"settings":
-			{
-				"buffer_size": 1462,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_posts/2016/201611/2016-11-15-visible-text-nstextcontainer-uitextview.md",
-			"settings":
-			{
-				"buffer_size": 1023,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "---"
-			}
-		},
-		{
-			"file": "_posts/2016/201611/2016-11-15-macbookpro-angst.md",
-			"settings":
-			{
-				"buffer_size": 1217,
+				"buffer_size": 999,
 				"encoding": "UTF-8",
 				"line_ending": "Unix",
 				"name": "---"
@@ -681,6 +652,10 @@
 	],
 	"file_history":
 	[
+		"/Users/laurent/Repositories/thedeck.fr/_posts/2016/201610/2016-10-19-itunes-needs-a-lot-of-love.md",
+		"/Users/laurent/Repositories/thedeck.fr/_posts/2016/201611/2016-11-05-pricing-courage.md",
+		"/Users/laurent/Repositories/thedeck.fr/_posts/2016/201611/2016-11-15-macbookpro-angst.md",
+		"/Users/laurent/Repositories/thedeck.fr/_posts/2016/201611/2016-11-15-visible-text-nstextcontainer-uitextview.md",
 		"/Users/laurent/Repositories/thedeck.fr/_posts/2016/201609/2016-09-27-commit-version-101.md",
 		"/Users/laurent/Repositories/thedeck.fr/_posts/2016/201610/2016-10-27-surface-studio-new-mac-pro.md",
 		"/Users/laurent/Repositories/thedeck.fr/_posts/2016/201611/2016-11-05-commit-version-1-1.md",
@@ -804,11 +779,7 @@
 		"/Users/laurent/Dropbox/Code/librairie/librairie/static/js/core/mod_themes.js",
 		"/Users/laurent/Dropbox/Code/librairie/librairie/settings/production.py",
 		"/Users/laurent/Dropbox/Code/librairie/librairie/templates/cache_manifest.html",
-		"/Users/laurent/Dropbox/Code/librairie/librairie/static/js/core/mod_utils.js",
-		"/Users/laurent/Dropbox/Code/librairie/librairie/templates/cover.html",
-		"/Users/laurent/Dropbox/bin/opensim.sh",
-		"/Users/laurent/Dropbox/ISOs/requiem-4.1-mac/README",
-		"/Users/laurent/Dropbox/Code/htdocs/doc/RELEASE"
+		"/Users/laurent/Dropbox/Code/librairie/librairie/static/js/core/mod_utils.js"
 	],
 	"find":
 	{
@@ -1044,7 +1015,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1072,81 +1043,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "_posts/2016/201610/2016-10-19-itunes-needs-a-lot-of-love.md",
+					"file": "_posts/2016/201611/2016-11-17-apple-axes-automation-product-manager.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1191,
+						"buffer_size": 999,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								146,
-								168
-							]
-						],
-						"settings":
-						{
-							"auto_name": "---",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "_posts/2016/201611/2016-11-05-pricing-courage.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1462,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								151,
-								151
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "_posts/2016/201611/2016-11-15-visible-text-nstextcontainer-uitextview.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1023,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								459,
-								1016
+								24,
+								109
 							]
 						],
 						"settings":
@@ -1160,35 +1074,6 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "_posts/2016/201611/2016-11-15-macbookpro-angst.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1217,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								197,
-								197
-							]
-						],
-						"settings":
-						{
-							"auto_name": "---",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
 				}
 			]
 		},
@@ -1197,7 +1082,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 5,
+					"buffer": 2,
 					"file": "_posts/2016/201610/2016-10-27-surface-studio-next-follow-up.md",
 					"semi_transient": false,
 					"settings":
@@ -1226,7 +1111,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 3,
 					"file": "_posts/2016/201610/2016-10-13-nstimer-as-a-chronometer.md",
 					"semi_transient": true,
 					"settings":
@@ -1256,7 +1141,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 4,
 					"file": "_config_dev.yml",
 					"semi_transient": false,
 					"settings":
@@ -1280,11 +1165,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 5,
 					"file": "_posts/2013-03-13-so-cute.md",
 					"semi_transient": false,
 					"settings":
@@ -1308,7 +1193,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]

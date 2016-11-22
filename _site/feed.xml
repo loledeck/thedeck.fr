@@ -6,9 +6,51 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Nov 2016 09:43:20 +0100</pubDate>
-    <lastBuildDate>Thu, 17 Nov 2016 09:43:20 +0100</lastBuildDate>
+    <pubDate>Tue, 22 Nov 2016 10:34:46 +0100</pubDate>
+    <lastBuildDate>Tue, 22 Nov 2016 10:34:46 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Hit where it hurts</title>
+        <description>&lt;p&gt;Speaking of which, HP is trying to capitalize on the current backlash against Apple among its pro users:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/201611/HP-store.png&quot; alt=&quot;HP Store&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The screen capture is in french, for some reason I couldn’t get the english version. It says that “Pros are moving from the Mac to HP”. And they’re giving a few testimonials of video peoples.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Nov 2016 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2016/11/22/1-hit-where-it-hurts.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/11/22/1-hit-where-it-hurts.html</guid>
+        
+        <category>apple</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Anti-halo effect</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://inessential.com/2016/11/21/the_reverse_of_the_halo_effect&quot;&gt;Brent Simmons&lt;/a&gt; about Apple leaving more and more markets:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I can’t help but think that it’s a kind of an anti-halo effect. I can’t help but think that once we start looking elsewhere, we’ll look elsewhere more and more. We’ll get used to it. We’ll find out that other companies make things that work and are, in some cases, delightful.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I think it’s a very smart analysis. Especially when you remember how Apple climbed out of its grave with the iPod that brought a lot of people to the Mac and the iPhone. Their saving grace (for the moment) is that there’s no single other company that may attract their customers with a large range of excellent products.&lt;/p&gt;
+
+&lt;p&gt;But one thing that Apple should keep in mind: each time they narrow their product line they increase the impact of releasing a potential turd. What if the new MacBook Pros are a failure (I’m not saying they are) ? What if the next iPhone explodes like a Galaxy Note ?&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Nov 2016 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2016/11/22/0-anti-halo-effect.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/11/22/0-anti-halo-effect.html</guid>
+        
+        <category>apple</category>
+        
+        
+      </item>
     
       <item>
         <title>Apple terminates the position of Product Manager of Automation Technologies for macOS</title>
@@ -265,67 +307,6 @@ So, it’s easy to read this as purely being a response to complaints over the n
         <category>apple</category>
         
         <category>microsoft</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Librairie version 2.8</title>
-        <description>&lt;p&gt;Big update for my ebooks reading app, &lt;a href=&quot;http://librairie.cubesoft.fr&quot;&gt;Librairie&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;
-Highlights features:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Dark mode for the UI&lt;/li&gt;
-  &lt;li&gt;Import your ebooks from other apps throught an action extension available in the iOS share sheet&lt;/li&gt;
-  &lt;li&gt;Read aloud your ebooks with speech-to-text&lt;/li&gt;
-  &lt;li&gt;San Francisco font available in the reader&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Plus of course a lot of small fixes and tweaks.&lt;/p&gt;
-
-&lt;p&gt;Grab it while it’s hot !&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/librairie-ebook-cloud-reader/id742022507?l=fr&amp;amp;ls=1&amp;amp;mt=8&quot;&gt;Librairie on the App Store&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 22 Oct 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2016/10/22/librairie-version-28.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/10/22/librairie-version-28.html</guid>
-        
-        <category>projects</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>iTunes needs a lot of love</title>
-        <description>&lt;p&gt;I mean, literaly … Look at this screenshot:&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;
-&lt;img src=&quot;/assets/images/201610/itunes-screenshot-1.png&quot; alt=&quot;lots of love...&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I’m an Apple Music user. And as such, I’m interrested in saying to iTunes that I &lt;em&gt;“like”&lt;/em&gt; a song to get better recommandations in the future.&lt;/p&gt;
-
-&lt;p&gt;In the latest Sierra iTunes, I got used to click on the “…” icon because the heart that was present in El Capitan had disappeard. Or had it ?&lt;/p&gt;
-
-&lt;p&gt;As you can see in the screenshot above there’s in fact still a tiny ♡ that you can click to like a song. Except that it is white on white and that you can’t see it unless you click on it by accident.&lt;/p&gt;
-
-&lt;p&gt;But what is &lt;em&gt;really&lt;/em&gt; weird is that clicking this ♡ does not actually select the &lt;em&gt;“like”&lt;/em&gt; option in the menu for a song. So you can at the same time &lt;em&gt;“like”&lt;/em&gt; and ♡ a song and they’re not the same thing apparently.&lt;/p&gt;
-
-&lt;p&gt;Ok, who I am to say that you can only love a song in a single way ? But what this star means ?&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/201610/itunes-screenshot-2.png&quot; alt=&quot;we&#39;re all made of stars&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Seriously Apple, when you are done fixing Siri, please take a look at the iTunes ratings system. It could use some love …&lt;/p&gt;
-</description>
-        <pubDate>Wed, 19 Oct 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2016/10/19/itunes-needs-a-lot-of-love.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/10/19/itunes-needs-a-lot-of-love.html</guid>
-        
-        <category>apple</category>
         
         
       </item>
