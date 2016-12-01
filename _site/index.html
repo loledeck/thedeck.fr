@@ -56,6 +56,47 @@
 					</div>
 
 					<h2>
+						<a class="post-link" href="/2016/12/01/amazon-introduces-lex.html">Amazon introduces Lex</a>
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					<p>Yesterday, Amazon introduced a new service in beta called <a href="https://aws.amazon.com/fr/about-aws/whats-new/2016/11/introducing-amazon-lex-now-in-preview/">Lex</a>:</p>
+
+<p><br /></p>
+
+<blockquote>
+  <p>Amazon Lex is a service for building conversational interfaces into any application using voice and text. Lex provides the advanced deep learning functionalities of automatic speech recognition (ASR) for converting speech to text, and natural language understanding (NLU) to recognize the intent of the text, to enable you to build applications with highly engaging user experiences and lifelike conversational interactions. With Amazon Lex, the same deep learning technologies that power Amazon Alexa are now available to any developer, enabling you to quickly and easily build sophisticated, natural language, conversational bots (“chatbots”).</p>
+</blockquote>
+
+<p>In a nutshell, this is a Siri competitor available for all developpers. And instead of being limited to the handfull of intents that Apple provides (and won’t extend until at least next year iOS major version) you can use it for whatever use case you want. You can even use text to talk to this “assistant” an often asked feature for Siri.</p>
+
+<p>Obviously the drawback is that you won’t be able to invoke it from outside your app. Still that seems massively interesting.</p>
+
+				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+      <a class="tag" href="/tags#apple"> apple </a>&nbsp;
+    
+      <a class="tag" href="/tags#siri"> siri </a>&nbsp;
+    
+  
+  </div>
+
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
+						<span>Posted on </span><span class="post-meta">December 1, 2016</span>
+					</div>
+
+					<h2>
 						<a class="post-link" href="/2016/12/01/Paris-passerelle-Simone-de-Beauvoir.html">Paris' Passerelle Simone de Beauvoir</a>
 					</h2>
 				</header>
@@ -191,51 +232,6 @@
     <hr style="color: #787065;">
     
       <a class="tag" href="/tags#apple"> apple </a>&nbsp;
-    
-  
-  </div>
-
-			</article>
-		</li>
-		
-		<li>
-			<article>
-				<header class="post-header">
-					<div>
-						<span>Posted on </span><span class="post-meta">November 15, 2016</span>
-					</div>
-
-					<h2>
-						<a class="post-link" href="/2016/11/15/visible-text-nstextcontainer-uitextview.html">Visible text in a NSTextContainer backed UITextView</a>
-					</h2>
-				</header>
-
-				<div class="entry-content">
-					<p>You cannot easilly get the visible text of a <code class="highlighter-rouge">NSTextContainer</code> backed <code class="highlighter-rouge">UITextView</code>. If you look at the <code class="highlighter-rouge">text</code> or <code class="highlighter-rouge">attributedText</code> properties, you will get the whole text that you gave to your <code class="highlighter-rouge">NSTextStorage</code> object.</p>
-
-<p>To get the currently displayed text, I use the following method on my `NSTextVIew subclasses:</p>
-
-<div class="language-objc highlighter-rouge"><pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSAttributedString</span> <span class="o">*</span><span class="p">)</span><span class="n">visibleText</span> <span class="p">{</span>
-
-    <span class="n">CGRect</span> <span class="n">bounds</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">bounds</span><span class="p">;</span>
-    <span class="n">UITextPosition</span> <span class="o">*</span><span class="n">start</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">characterRangeAtPoint</span><span class="p">:</span><span class="n">bounds</span><span class="p">.</span><span class="n">origin</span><span class="p">].</span><span class="n">start</span><span class="p">;</span>
-    <span class="n">UITextPosition</span> <span class="o">*</span><span class="n">end</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">characterRangeAtPoint</span><span class="p">:</span><span class="n">CGPointMake</span><span class="p">(</span><span class="n">CGRectGetMaxX</span><span class="p">(</span><span class="n">bounds</span><span class="p">),</span> <span class="n">CGRectGetMaxY</span><span class="p">(</span><span class="n">bounds</span><span class="p">))].</span><span class="n">end</span><span class="p">;</span>
-    <span class="n">NSRange</span> <span class="n">visibleTextRange</span> <span class="o">=</span> <span class="n">NSMakeRange</span><span class="p">([</span><span class="n">self</span> <span class="nf">offsetFromPosition</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">beginningOfDocument</span> <span class="nf">toPosition</span><span class="p">:</span><span class="n">start</span><span class="p">],</span>
-                                           <span class="p">[</span><span class="n">self</span> <span class="nf">offsetFromPosition</span><span class="p">:</span><span class="n">start</span> <span class="nf">toPosition</span><span class="p">:</span><span class="n">end</span><span class="p">]);</span>
-    <span class="n">NSAttributedString</span> <span class="o">*</span><span class="n">attrString</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">attributedText</span> <span class="nf">attributedSubstringFromRange</span><span class="p">:</span><span class="n">visibleTextRange</span><span class="p">];</span>
-    <span class="k">return</span> <span class="n">attrString</span><span class="p">;</span>
-<span class="p">}</span>
-
-</code></pre>
-</div>
-
-				</div>
-
-        <div>
-  
-    <hr style="color: #787065;">
-    
-      <a class="tag" href="/tags#coding"> coding </a>&nbsp;
     
   
   </div>

@@ -6,9 +6,34 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 01 Dec 2016 10:26:25 +0100</pubDate>
-    <lastBuildDate>Thu, 01 Dec 2016 10:26:25 +0100</lastBuildDate>
+    <pubDate>Thu, 01 Dec 2016 10:33:07 +0100</pubDate>
+    <lastBuildDate>Thu, 01 Dec 2016 10:33:07 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Amazon introduces Lex</title>
+        <description>&lt;p&gt;Yesterday, Amazon introduced a new service in beta called &lt;a href=&quot;https://aws.amazon.com/fr/about-aws/whats-new/2016/11/introducing-amazon-lex-now-in-preview/&quot;&gt;Lex&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Amazon Lex is a service for building conversational interfaces into any application using voice and text. Lex provides the advanced deep learning functionalities of automatic speech recognition (ASR) for converting speech to text, and natural language understanding (NLU) to recognize the intent of the text, to enable you to build applications with highly engaging user experiences and lifelike conversational interactions. With Amazon Lex, the same deep learning technologies that power Amazon Alexa are now available to any developer, enabling you to quickly and easily build sophisticated, natural language, conversational bots (“chatbots”).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In a nutshell, this is a Siri competitor available for all developpers. And instead of being limited to the handfull of intents that Apple provides (and won’t extend until at least next year iOS major version) you can use it for whatever use case you want. You can even use text to talk to this “assistant” an often asked feature for Siri.&lt;/p&gt;
+
+&lt;p&gt;Obviously the drawback is that you won’t be able to invoke it from outside your app. Still that seems massively interesting.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 01 Dec 2016 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2016/12/01/amazon-introduces-lex.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/01/amazon-introduces-lex.html</guid>
+        
+        <category>apple</category>
+        
+        <category>siri</category>
+        
+        
+      </item>
     
       <item>
         <title>Paris&#39; Passerelle Simone de Beauvoir</title>
@@ -258,46 +283,6 @@ So, it’s easy to read this as purely being a response to complaints over the n
         <guid isPermaLink="true">http://localhost:4000/2016/10/29/out-of-luck-again.html</guid>
         
         <category>apple</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Surface Studio follow-up</title>
-        <description>&lt;p&gt;Brent Simmons, speaking about the &lt;a href=&quot;http://inessential.com/2016/10/26/surface_studio_notes&quot;&gt;Surface Studio&lt;/a&gt;:
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Except — and this part shouldn’t be underestimated — many of these Mac developers are here because Macs are the computer for creative professionals and artists. That’s what attracted us to Macs in the first place.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;It’s more than a niche. It’s our identity as Mac developers: we write apps for people who make things. But what if the Surface Studio takes over as the computer for people who make things? And what if we could bring over some of our investment (such as learning Swift) with us?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I never thought to even consider that as a possible future.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;You don’t find much more hardcore mac developper than Simmons. The fact he’s even thinking about the faintest possibility of jumping ship shows two things&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;that Microsoft has desgined a very audacious and interresting product&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;that Apple has so much neglected its core audience of old that the cracks are starting to show&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Thu, 27 Oct 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2016/10/27/surface-studio-next-follow-up.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/10/27/surface-studio-next-follow-up.html</guid>
-        
-        <category>apple</category>
-        
-        <category>microsoft</category>
         
         
       </item>
