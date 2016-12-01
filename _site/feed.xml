@@ -6,9 +6,28 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 Nov 2016 10:51:57 +0100</pubDate>
-    <lastBuildDate>Mon, 28 Nov 2016 10:51:57 +0100</lastBuildDate>
+    <pubDate>Thu, 01 Dec 2016 10:11:01 +0100</pubDate>
+    <lastBuildDate>Thu, 01 Dec 2016 10:11:01 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Paris&#39; Passerelle Simone de Beauvoir</title>
+        <description>&lt;p&gt;For those who have liked the &lt;a href=&quot;http://kottke.org/16/11/chinas-lucky-knot-bridge&quot;&gt;Lucky Knot Bridge&lt;/a&gt; posted by Kotke this morning I humbly present la passerelle &lt;em&gt;Simone de Beauvoir&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/201612/simone_de_beauvoir.jpeg&quot; alt=&quot;Passerelle Simone de Beauvoir&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This bridge is located in Paris and links the 13th district (on the left bank of the Seine river) with the 12th district (on the right bank). It was opened in 2006.&lt;/p&gt;
+
+&lt;p&gt;Paris is a beautifull city, more modern than what one might imagine.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 01 Dec 2016 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2016/12/01/Paris-passerelle-Simone-de-Beauvoir.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/01/Paris-passerelle-Simone-de-Beauvoir.html</guid>
+        
+        <category>paris</category>
+        
+        
+      </item>
     
       <item>
         <title>Hit where it hurts</title>
@@ -275,34 +294,6 @@ So, it’s easy to read this as purely being a response to complaints over the n
         <pubDate>Thu, 27 Oct 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2016/10/27/surface-studio-next-follow-up.html</link>
         <guid isPermaLink="true">http://localhost:4000/2016/10/27/surface-studio-next-follow-up.html</guid>
-        
-        <category>apple</category>
-        
-        <category>microsoft</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Microsoft Surface Studio, the new Mac Pro ?</title>
-        <description>&lt;p&gt;Interresting concept from Microsoft, the new &lt;a href=&quot;https://www.microsoft.com/en-us/surface/devices/surface-studio/tech-specs&quot;&gt;Surface Studio&lt;/a&gt;.
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;img src=&quot;/assets/images/201610/Surface_Studio.jpg&quot; alt=&quot;Surface Studio&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s squarely aimed at creative professionals, a demographic that has always been the bread and butter of Apple pro hardware.&lt;/p&gt;
-
-&lt;p&gt;Seems a little light specswise compared to a Mac Pro (I mean, compared to what could be a Mac Pro today if it had been updated less than three years ago).&lt;/p&gt;
-
-&lt;p&gt;I hope it will succeed to shame Apple into caring more about its pro line.&lt;/p&gt;
-
-&lt;p&gt;However, it is clearly not for me. For one, I couldn’t draw anything to save my life so I wouldn’t use it for that purpose. But it seems to be a really clever use of touch for a desktop computer.&lt;/p&gt;
-
-&lt;p&gt;The big drawback: the smudges it will create on the screen. I’m already mad at the rare finger traces on my non-touch iMac screen, it would &lt;em&gt;positively&lt;/em&gt; drive me crazy !&lt;/p&gt;
-</description>
-        <pubDate>Thu, 27 Oct 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2016/10/27/surface-studio-new-mac-pro.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/10/27/surface-studio-new-mac-pro.html</guid>
         
         <category>apple</category>
         
