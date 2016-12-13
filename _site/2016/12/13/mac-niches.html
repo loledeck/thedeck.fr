@@ -12,18 +12,18 @@
 	
 
 	
-	<meta property="og:title" content="The Deck • Change font size in screenshots created with Frameit">
+	<meta property="og:title" content="The Deck • Mac Niches">
 	
 
 	<link rel="icon" href="/favicon.png" type="image/png">
 
-	<title>Change font size in screenshots created with Frameit</title>
-	<meta name="description" content="Frameit is a very nice utility to create nice looking App Store screenshots. It will take your images, add a device frame around them and optionaly a title o...">
+	<title>Mac Niches</title>
+	<meta name="description" content="Micheal J. Tsai speaking of the mac models used by the users of its macOS apps:">
 
 	<link rel='stylesheet' id='libretto-fonts-css'  href='https://fonts.googleapis.com/css?family=Libre+Baskerville%3A400%2C700%2C400italic%7CPlayfair+Display%3A400%2C700%2C400italic%2C700italic%7CPlayfair+Display+SC%3A700%2C700italic%7CMontserrat%3A400%7CDroid+Sans+Mono%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all'>
 
 	<link rel="stylesheet" href="http://localhost:4000/css/main.css">
-	<link rel="canonical" href="http://localhost:4000/2016/12/06/Change-font-size-screenshots-created-with-frameit.html">
+	<link rel="canonical" href="http://localhost:4000/2016/12/13/mac-niches.html">
 	<link rel="alternate" type="application/rss+xml" title="The Deck" href="http://localhost:4000/feed.xml">
 </head>
 
@@ -45,51 +45,25 @@
 		<div class="wrapper">
 			<header class="post-header">
 	<div>
-		<span>Posted on </span><span class="post-meta">December 6, 2016</span>
+		<span>Posted on </span><span class="post-meta">December 13, 2016</span>
 	</div>
 
-	<h1 class="post-title" itemprop="name headline">Change font size in screenshots created with Frameit</h1>
+	<h1 class="post-title" itemprop="name headline">Mac Niches</h1>
 </header>
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="entry-content" itemprop="articleBody">
-		<p><a href="https://github.com/fastlane/fastlane/tree/master/frameit">Frameit</a> is a very nice utility to create nice looking App Store screenshots. It will take your images, add a device frame around them and optionaly a title of your choosing in multiple language. In short, it’s a godsend.</p>
+		<p><a href="http://mjtsai.com/blog/2016/12/12/which-macs-are-people-using/">Micheal J. Tsai</a> speaking of the mac models used by the users of its macOS apps:</p>
 
-<p>But unfortunatly, as any tool, it has a few shortcomings. One of them (for my use case at least) is that there’s no way to choose the size of the font you’re using for your titles.</p>
+<p><br /></p>
 
-<p>For example, look at this screenshot for my app <a href="https://itunes.apple.com/us/app/librairie-ebook-cloud-reader/id742022507?mt=8&amp;at=1010lrXT">Librairie - Ebook Cloud Reader</a>:</p>
+<blockquote>
+  <p>The numbers for the MacBook seem really low to me. The 2% (1.68% before rounding) includes both the MacBook One and the plastic MacBook that was discontinued in early 2012. The 12-inch MacBook never seemed attractive to me—overpriced and underpowered, not to mention the keyboard—but I would have expected to see more people using it. 
+<br /> […] <br />
+It’s frustrating that Apple sees the MacBook One as a worthwhile niche but doesn’t want to make a high-end MacBook Pro with a larger display, more RAM, a real keyboard and trackpad, etc.</p>
+</blockquote>
 
-<p><img src="/assets/images/201612/screenshot_bad.png" alt="Bad screenshot" /></p>
-
-<p>It’s not bad per se but it could be much better with a bigger font to add some punch. The corresponding json is:</p>
-
-<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="w">        </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"filter"</span><span class="p">:</span><span class="w"> </span><span class="s2">"collection"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#bc1626"</span><span class="w">
-                </span><span class="p">,</span><span class="nt">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Automatically sync and read all your ebooks stored in the cloud"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
-
-<p>The trick is to make Frameit think that the text will take more space and as a consequence use bigger font to fill that space. For this, you can use a new line character in your description. The <em>Framefile.json</em> becomes:</p>
-
-<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="w">        </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"filter"</span><span class="p">:</span><span class="w"> </span><span class="s2">"collection"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#bc1626"</span><span class="w">
-                </span><span class="p">,</span><span class="nt">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Automatically sync and read all\nyour ebooks stored in the cloud"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
-
-<p>And the rendered screenshot:</p>
-
-<p><img src="/assets/images/201612/screenshot_good.png" alt="Good screenshot" /></p>
-
-<p>Et voilà !</p>
+<p>Some niches seem more comfy than other in the new Mac ecosystem.</p>
 
 	</div>
 
@@ -97,7 +71,7 @@
 	
 		<hr>
 		
-			<a class="tag" href="/tags#coding"> coding </a>&nbsp;
+			<a class="tag" href="/tags#apple"> apple </a>&nbsp;
 		
 	
 	</div>
@@ -107,18 +81,13 @@
 <div id="post-nav">
 	<div class="next">
 		
-		<a href="/2016/12/13/mac-niches.html">
-			<span>Next entry</span>
-			Mac Niches
-		</a>
-		
 	</div>
 
 	<div class="previous">
 		
-		<a href="/2016/12/01/amazon-introduces-lex.html">
+		<a href="/2016/12/06/Change-font-size-screenshots-created-with-frameit.html">
 			<span>Previous entry</span>
-			Amazon introduces Lex
+			Change font size in screenshots created with Frameit
 		</a>
 		
 	</div>

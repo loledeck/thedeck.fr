@@ -547,6 +547,25 @@
 			}
 		},
 		{
+			"file": "_posts/2016/201612/2016-12-01-amazon-introduces-lex.md",
+			"settings":
+			{
+				"buffer_size": 1351,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2016/201612/2016-12-06-Change-font-size-screenshots-created-with-frameit.md",
+			"settings":
+			{
+				"buffer_size": 1709,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "---"
+			}
+		},
+		{
 			"file": "_posts/2016/201612/2016-12-01-Paris-passerelle-Simone-de-Beauvoir.md",
 			"settings":
 			{
@@ -554,15 +573,6 @@
 				"encoding": "UTF-8",
 				"line_ending": "Unix",
 				"name": "---"
-			}
-		},
-		{
-			"file": "_posts/2016/201612/2016-12-01-amazon-introduces-lex.md",
-			"settings":
-			{
-				"buffer_size": 1351,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
 			}
 		},
 		{
@@ -1063,7 +1073,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -1093,7 +1103,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -1127,35 +1137,6 @@
 				},
 				{
 					"buffer": 3,
-					"file": "_posts/2016/201612/2016-12-01-Paris-passerelle-Simone-de-Beauvoir.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 577,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								553,
-								553
-							]
-						],
-						"settings":
-						{
-							"auto_name": "---",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "_posts/2016/201612/2016-12-01-amazon-introduces-lex.md",
 					"semi_transient": false,
 					"settings":
@@ -1179,6 +1160,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_posts/2016/201612/2016-12-06-Change-font-size-screenshots-created-with-frameit.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1709,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								76
+							]
+						],
+						"settings":
+						{
+							"auto_name": "---",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
 					"type": "text"
 				}
@@ -1190,6 +1200,35 @@
 			[
 				{
 					"buffer": 5,
+					"file": "_posts/2016/201612/2016-12-01-Paris-passerelle-Simone-de-Beauvoir.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								262
+							]
+						],
+						"settings":
+						{
+							"auto_name": "---",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "_posts/2016/201610/2016-10-27-surface-studio-next-follow-up.md",
 					"semi_transient": false,
 					"settings":
@@ -1214,11 +1253,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "_posts/2016/201610/2016-10-13-nstimer-as-a-chronometer.md",
 					"semi_transient": true,
 					"settings":
@@ -1230,8 +1269,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								217,
+								210
 							]
 						],
 						"settings":
@@ -1244,11 +1283,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "_config_dev.yml",
 					"semi_transient": false,
 					"settings":
@@ -1272,7 +1311,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
