@@ -6,9 +6,48 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 13 Dec 2016 09:47:44 +0100</pubDate>
-    <lastBuildDate>Tue, 13 Dec 2016 09:47:44 +0100</lastBuildDate>
+    <pubDate>Thu, 15 Dec 2016 12:41:59 +0100</pubDate>
+    <lastBuildDate>Thu, 15 Dec 2016 12:41:59 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Nervermind Apple</title>
+        <description>&lt;p&gt;I just wanted to take advantage of one of the coolest looking feature of watchOS 3 : the auto unlocking of your mac.&lt;/p&gt;
+
+&lt;p&gt;Well, the first step is to enable &lt;em&gt;2 factors authentification&lt;/em&gt; for your iCloud account. My account was already on the &lt;em&gt;2 steps authorization&lt;/em&gt; scheme so that should be a piece of cake, right ?&lt;/p&gt;
+
+&lt;p&gt;Wrong, so f***ing wrong.&lt;/p&gt;
+
+&lt;p&gt;You first have to downgrade your account to go back to the classic protection by security questions. By doing so, macOS asked me to create a new user because I used my iCloud account to log into my mac and for some reason that was not possible anymore.&lt;/p&gt;
+
+&lt;p&gt;Okay … I guess ?&lt;/p&gt;
+
+&lt;p&gt;At this point I had no real choice anyway so let’s go ahead : create a new password and that’s it, you have your new user identical to the previous one (or so it seems, keep reading …).&lt;/p&gt;
+
+&lt;p&gt;Then upgrade your iCloud account to &lt;em&gt;2 factors auth&lt;/em&gt; : Oh boy ! There’s nothing that makes me like doing my taxes more than a good old fashioned self imposed Apple nightmare …&lt;/p&gt;
+
+&lt;p&gt;When you activate &lt;em&gt;2 factors auth&lt;/em&gt; you have to validate each device you use (iPhones, iPads, Macs) with a second factor. This second factor being (it’s the only option) a prompt that appears on one of your trusted devices. The problem being that each of my devices were then asking for a validation and that none of them was showing me the said prompt.&lt;/p&gt;
+
+&lt;p&gt;So what can you do ? After several reboots, logout / login again cycles … you give up. That’s for sure what I did. I reverted my iCloud account back to security by &lt;em&gt;security questions&lt;/em&gt; (because of course the &lt;em&gt;2 steps verification&lt;/em&gt; scheme is not available anymore once you have &lt;em&gt;upgraded&lt;/em&gt; to &lt;em&gt;2 factors auth&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;And now, the kicker: remember my macOS account that &lt;em&gt;seemed&lt;/em&gt; OK. Well it was not. The session password was now de-synchronized from the FileVault password that I have to provide at each reboot to decrypt my hard-drive. So each time I rebooted I had to enter the FileVault rescue key.&lt;/p&gt;
+
+&lt;p&gt;Had I not set a FileVault rescue key (which would have been stupid sure, but what if you’ve lost it ?) trying to unlock my Apple Mac with my Apple Watch through my Apple iCloud account would have nixed all my data.&lt;/p&gt;
+
+&lt;p&gt;Let that sink in.&lt;/p&gt;
+
+&lt;p&gt;So thanks Apple and next time would it be possible to … No, you know what, nevermind. It’s on me.&lt;/p&gt;
+
+&lt;p&gt;Next time I won’t even try.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 15 Dec 2016 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2016/12/15/nevermind-apple.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/15/nevermind-apple.html</guid>
+        
+        <category>apple</category>
+        
+        
+      </item>
     
       <item>
         <title>Mac Niches</title>
@@ -241,40 +280,6 @@ It’s frustrating that Apple sees the MacBook One as a worthwhile niche but doe
         <pubDate>Tue, 15 Nov 2016 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/2016/11/15/macbookpro-angst.html</link>
         <guid isPermaLink="true">http://localhost:4000/2016/11/15/macbookpro-angst.html</guid>
-        
-        <category>apple</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Pricing courage</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://www.macrumors.com/2016/11/04/apple-lg-display-major-price-cut/&quot;&gt;MacRumors&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Apple has also introduced some significant price cuts to the 4K and 5K LG UltraFine Displays that were announced at its October 27 Mac event.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Dan Moren at &lt;a href=&quot;https://sixcolors.com/post/2016/11/apple-cuts-prices-on-usb-cthunderbolt-3-adapters-peripherals/&quot;&gt;SixColors&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Friday afternoon: the place where news goes to die.
-Apple dropped a statement to a number of outlets that it’s discounting USB-C/Thunderbolt 3 adapters and peripherals in its stores—both those of its own manufacture as well as those made by partners through the end of the year.&lt;br /&gt;
-…&lt;br /&gt;
-So, it’s easy to read this as purely being a response to complaints over the new MacBook Pro’s reliance on USB-C/Thunderbolt 3…and, yeah, that’s pretty much what’s happening here. Dropping the news on a late Friday afternoon suggests that Apple doesn’t want to garner a lot of attention about the fact it needs to make this move.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Meanwhile, Phil Schiller at the &lt;a href=&quot;http://www.independent.co.uk/life-style/gadgets-and-tech/features/apple-macbook-pro-new-philip-schiller-interview-phil-iphone-ios-criticism-a7393156.html&quot;&gt;Independent&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;And we are proud to tell you that so far our online store has had more orders for the new MacBook Pro than any other pro notebook before. So there certainly are a lot of people as excited as we are about it.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Sat, 05 Nov 2016 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2016/11/05/pricing-courage.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/11/05/pricing-courage.html</guid>
         
         <category>apple</category>
         
