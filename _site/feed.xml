@@ -6,9 +6,46 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Dec 2016 12:41:59 +0100</pubDate>
-    <lastBuildDate>Thu, 15 Dec 2016 12:41:59 +0100</lastBuildDate>
+    <pubDate>Tue, 20 Dec 2016 17:48:49 +0100</pubDate>
+    <lastBuildDate>Tue, 20 Dec 2016 17:48:49 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Mac desktops sign of life, finally</title>
+        <description>&lt;p&gt;Tim Cook in an internal memo reported by &lt;a href=&quot;https://techcrunch.com/2016/12/19/apples-tim-cook-assures-employees-that-it-is-committed-to-the-mac-and-that-great-desktops-are-coming/&quot;&gt;Matthew Panzarino at TechCrunch&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The desktop is very strategic for us. It’s unique compared to the notebook because you can pack a lot more performance in a desktop — the largest screens, the most memory and storage, a greater variety of I/O, and fastest performance. So there are many different reasons why desktops are really important, and in some cases critical, to people.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The current generation iMac is the best desktop we have ever made and its beautiful Retina 5K display is the best desktop display in the world.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Some folks in the media have raised the question about whether we’re committed to desktops. If there’s any doubt about that with our teams, let me be very clear: we have great desktops in our roadmap. Nobody should worry about that.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Was it so hard, Apple ?&lt;/p&gt;
+
+&lt;p&gt;Just acknowledging that your desktop line is still alive ? In my opinion, a lot of virtual ink would have been saved about the new MacBook Pros if they had said it earlier.&lt;/p&gt;
+
+&lt;p&gt;Now, this doesn’t mean that we (“pro” users, whatever that means) are out of the woods the just yet. It may just be an iMac speed bump in the spring for all we know. But still, it feels much better than the void we’ve been living in for a long time.&lt;/p&gt;
+
+&lt;p&gt;On a related note, I thought a bit more about the end of the Apple branded monitors: I now think that it is sign that we will never see again (in the foreseable future at least) a screenless Apple desktop. It’s one thing for Apple to send its customers to LG for a secondary display used with a laptop. It a completly different one to release a brand new machine that &lt;em&gt;cannot&lt;/em&gt; be used without an add-on sold by another company.&lt;/p&gt;
+
+&lt;p&gt;The Mac Pro and the Mac Mini won’t probably ever be updated again in their current form. Brace yourself for some kind of iMac Pro.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Dec 2016 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2016/12/20/mac-desktop-sign-of-life-finally.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/20/mac-desktop-sign-of-life-finally.html</guid>
+        
+        <category>apple</category>
+        
+        
+      </item>
     
       <item>
         <title>Nervermind Apple</title>
@@ -257,31 +294,6 @@ It’s frustrating that Apple sees the MacBook One as a worthwhile niche but doe
         <guid isPermaLink="true">http://localhost:4000/2016/11/15/visible-text-nstextcontainer-uitextview.html</guid>
         
         <category>coding</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>MacBook Pro angst</title>
-        <description>&lt;p&gt;John Gruber’s conclusion in his new &lt;a href=&quot;http://daringfireball.net/2016/11/new_touch_bar_equipped_macbook_pros&quot;&gt;MacBook Pros review&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;There’s much griping about these machines now, just like there was much griping about the original Air then, but these are exactly the MacBooks I want Apple to be making — ones that show that the company is putting very hard work into every aspect of them. I’d be more worried about Apple’s commitment to the Mac if they did the easy thing — easier both technically and in terms of initial critical response — and just stuck a retina display in a MacBook Air and called it a day.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I don’t think anybody is really worried about Apple’s commitment to the Mac in general. All the angst is about the high-performance macs specifically.&lt;/p&gt;
-
-&lt;p&gt;In a time when we don’t know if the Mac Pro is still of this world or not, the fear comes from people who ask themselves: “Can I use these laptops as my &lt;em&gt;only&lt;/em&gt; computer ?”. And whose response is a resounding NO for more and more pros.&lt;/p&gt;
-
-&lt;p&gt;Come on Apple, if you’re working on a new Mac Pro in any way, shape or form just say it. What do you have to loose ? The current Mac Pro sales ? xD&lt;/p&gt;
-</description>
-        <pubDate>Tue, 15 Nov 2016 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2016/11/15/macbookpro-angst.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/11/15/macbookpro-angst.html</guid>
-        
-        <category>apple</category>
         
         
       </item>
