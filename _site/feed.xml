@@ -6,9 +6,30 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Dec 2016 17:48:49 +0100</pubDate>
-    <lastBuildDate>Tue, 20 Dec 2016 17:48:49 +0100</lastBuildDate>
+    <pubDate>Wed, 21 Dec 2016 12:25:11 +0100</pubDate>
+    <lastBuildDate>Wed, 21 Dec 2016 12:25:11 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Raining On My Parade</title>
+        <description>&lt;p&gt;Mark Gurman reporting for &lt;a href=&quot;https://www.bloomberg.com/news/articles/2016-12-20/how-apple-alienated-mac-loyalists&quot;&gt;Bloomberg&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Mac fans shouldn’t hold their breath for radical new designs in 2017 though. Instead, the company is preparing modest updates: USB-C ports and a new Advanced Micro Devices Inc. graphics processor for the iMac, and minor bumps in processing power for the 12-inch MacBook and MacBook Pro. Cue the outrage.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Well, &lt;a href=&quot;http://thedeck.fr/2016/12/20/mac-desktop-sign-of-life-finally.html&quot;&gt;that was quick&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 21 Dec 2016 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2016/12/21/raining-on-my-parade.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/21/raining-on-my-parade.html</guid>
+        
+        <category>apple</category>
+        
+        
+      </item>
     
       <item>
         <title>Mac desktops sign of life, finally</title>
@@ -265,35 +286,6 @@ It’s frustrating that Apple sees the MacBook One as a worthwhile niche but doe
         <guid isPermaLink="true">http://localhost:4000/2016/11/17/apple-axes-automation-product-manager.html</guid>
         
         <category>apple</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Visible text in a NSTextContainer backed UITextView</title>
-        <description>&lt;p&gt;You cannot easilly get the visible text of a &lt;code class=&quot;highlighter-rouge&quot;&gt;NSTextContainer&lt;/code&gt; backed &lt;code class=&quot;highlighter-rouge&quot;&gt;UITextView&lt;/code&gt;. If you look at the &lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;attributedText&lt;/code&gt; properties, you will get the whole text that you gave to your &lt;code class=&quot;highlighter-rouge&quot;&gt;NSTextStorage&lt;/code&gt; object.&lt;/p&gt;
-
-&lt;p&gt;To get the currently displayed text, I use the following method on my `NSTextVIew subclasses:&lt;/p&gt;
-
-&lt;div class=&quot;language-objc highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSAttributedString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;visibleText&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;n&quot;&gt;CGRect&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bounds&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bounds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;UITextPosition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;characterRangeAtPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bounds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;origin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;UITextPosition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;characterRangeAtPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CGPointMake&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CGRectGetMaxX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bounds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CGRectGetMaxY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bounds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;NSRange&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;visibleTextRange&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSMakeRange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;offsetFromPosition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beginningOfDocument&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toPosition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-                                           &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;offsetFromPosition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toPosition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;NSAttributedString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attrString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attributedText&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;attributedSubstringFromRange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;visibleTextRange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 15 Nov 2016 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2016/11/15/visible-text-nstextcontainer-uitextview.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/11/15/visible-text-nstextcontainer-uitextview.html</guid>
-        
-        <category>coding</category>
         
         
       </item>

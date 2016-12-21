@@ -56,6 +56,51 @@
 					</div>
 
 					<h2>
+						<a class="post-link" href="/2016/11/15/visible-text-nstextcontainer-uitextview.html">Visible text in a NSTextContainer backed UITextView</a>
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					<p>You cannot easilly get the visible text of a <code class="highlighter-rouge">NSTextContainer</code> backed <code class="highlighter-rouge">UITextView</code>. If you look at the <code class="highlighter-rouge">text</code> or <code class="highlighter-rouge">attributedText</code> properties, you will get the whole text that you gave to your <code class="highlighter-rouge">NSTextStorage</code> object.</p>
+
+<p>To get the currently displayed text, I use the following method on my `NSTextVIew subclasses:</p>
+
+<div class="language-objc highlighter-rouge"><pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSAttributedString</span> <span class="o">*</span><span class="p">)</span><span class="n">visibleText</span> <span class="p">{</span>
+
+    <span class="n">CGRect</span> <span class="n">bounds</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">bounds</span><span class="p">;</span>
+    <span class="n">UITextPosition</span> <span class="o">*</span><span class="n">start</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">characterRangeAtPoint</span><span class="p">:</span><span class="n">bounds</span><span class="p">.</span><span class="n">origin</span><span class="p">].</span><span class="n">start</span><span class="p">;</span>
+    <span class="n">UITextPosition</span> <span class="o">*</span><span class="n">end</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">characterRangeAtPoint</span><span class="p">:</span><span class="n">CGPointMake</span><span class="p">(</span><span class="n">CGRectGetMaxX</span><span class="p">(</span><span class="n">bounds</span><span class="p">),</span> <span class="n">CGRectGetMaxY</span><span class="p">(</span><span class="n">bounds</span><span class="p">))].</span><span class="n">end</span><span class="p">;</span>
+    <span class="n">NSRange</span> <span class="n">visibleTextRange</span> <span class="o">=</span> <span class="n">NSMakeRange</span><span class="p">([</span><span class="n">self</span> <span class="nf">offsetFromPosition</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">beginningOfDocument</span> <span class="nf">toPosition</span><span class="p">:</span><span class="n">start</span><span class="p">],</span>
+                                           <span class="p">[</span><span class="n">self</span> <span class="nf">offsetFromPosition</span><span class="p">:</span><span class="n">start</span> <span class="nf">toPosition</span><span class="p">:</span><span class="n">end</span><span class="p">]);</span>
+    <span class="n">NSAttributedString</span> <span class="o">*</span><span class="n">attrString</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">attributedText</span> <span class="nf">attributedSubstringFromRange</span><span class="p">:</span><span class="n">visibleTextRange</span><span class="p">];</span>
+    <span class="k">return</span> <span class="n">attrString</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre>
+</div>
+
+				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+      <a class="tag" href="/tags#coding"> coding </a>&nbsp;
+    
+  
+  </div>
+
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
+						<span>Posted on </span><span class="post-meta">November 15, 2016</span>
+					</div>
+
+					<h2>
 						<a class="post-link" href="/2016/11/15/macbookpro-angst.html">MacBook Pro angst</a>
 					</h2>
 				</header>
@@ -242,62 +287,6 @@ So, it’s easy to read this as purely being a response to complaints over the n
     <hr style="color: #787065;">
     
       <a class="tag" href="/tags#apple"> apple </a>&nbsp;
-    
-  
-  </div>
-
-			</article>
-		</li>
-		
-		<li>
-			<article>
-				<header class="post-header">
-					<div>
-						<span>Posted on </span><span class="post-meta">October 27, 2016</span>
-					</div>
-
-					<h2>
-						<a class="post-link" href="/2016/10/27/surface-studio-next-follow-up.html">Surface Studio follow-up</a>
-					</h2>
-				</header>
-
-				<div class="entry-content">
-					<p>Brent Simmons, speaking about the <a href="http://inessential.com/2016/10/26/surface_studio_notes">Surface Studio</a>:
-<br />
-<br /></p>
-
-<blockquote>
-  <p>Except — and this part shouldn’t be underestimated — many of these Mac developers are here because Macs are the computer for creative professionals and artists. That’s what attracted us to Macs in the first place.</p>
-</blockquote>
-
-<blockquote>
-  <p>It’s more than a niche. It’s our identity as Mac developers: we write apps for people who make things. But what if the Surface Studio takes over as the computer for people who make things? And what if we could bring over some of our investment (such as learning Swift) with us?</p>
-</blockquote>
-
-<blockquote>
-  <p>I never thought to even consider that as a possible future.</p>
-</blockquote>
-
-<p>You don’t find much more hardcore mac developper than Simmons. The fact he’s even thinking about the faintest possibility of jumping ship shows two things</p>
-
-<ol>
-  <li>
-    <p>that Microsoft has desgined a very audacious and interresting product</p>
-  </li>
-  <li>
-    <p>that Apple has so much neglected its core audience of old that the cracks are starting to show</p>
-  </li>
-</ol>
-
-				</div>
-
-        <div>
-  
-    <hr style="color: #787065;">
-    
-      <a class="tag" href="/tags#apple"> apple </a>&nbsp;
-    
-      <a class="tag" href="/tags#microsoft"> microsoft </a>&nbsp;
     
   
   </div>
