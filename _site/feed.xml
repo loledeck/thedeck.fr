@@ -6,9 +6,32 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Dec 2016 12:25:11 +0100</pubDate>
-    <lastBuildDate>Wed, 21 Dec 2016 12:25:11 +0100</lastBuildDate>
+    <pubDate>Thu, 22 Dec 2016 11:32:11 +0100</pubDate>
+    <lastBuildDate>Thu, 22 Dec 2016 11:32:11 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>App Transport Security enforcement delay</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/news/?id=12212016b&quot;&gt;Apple developper news&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;App Transport Security (ATS), introduced in iOS 9 and OS X v10.11, improves user security and privacy by requiring apps to use secure network connections over HTTPS. At WWDC 2016 we announced that apps submitted to the App Store will be required to support ATS at the end of the year. To give you additional time to prepare, this deadline has been extended and we will provide another update when a new deadline is confirmed.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is disappointing for the developers who had put in the effort necessary to make their apps comply with ATS. However, I suspect that Apple realized that there are just &lt;em&gt;too many edge cases&lt;/em&gt; to really enforce this rule as is.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Dec 2016 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2016/12/22/App-Transport-Security-enforcement-delay.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/22/App-Transport-Security-enforcement-delay.html</guid>
+        
+        <category>apple</category>
+        
+        <category>coding</category>
+        
+        
+      </item>
     
       <item>
         <title>Raining On My Parade</title>
@@ -259,31 +282,6 @@ It’s frustrating that Apple sees the MacBook One as a worthwhile niche but doe
         <pubDate>Tue, 22 Nov 2016 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/2016/11/22/0-anti-halo-effect.html</link>
         <guid isPermaLink="true">http://localhost:4000/2016/11/22/0-anti-halo-effect.html</guid>
-        
-        <category>apple</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Apple terminates the position of Product Manager of Automation Technologies for macOS</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://macosxautomation.com/about.html&quot;&gt;Sal Soghoian&lt;/a&gt; (the axed guy) on his website:&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Q. What does the termination of the position of Product Manager of Automation Technologies mean for the future of user automation in macOS?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;A. Ask Apple. Seriously, if you have any questions or concerns about the future of user automation, ask Apple. If user automation technologies are important to you, then now is the time for all good men and women to reach out, speak up and ask questions. The macOS user automation technologies include: UNIX CLI (shell, python, ruby, perl), System Services, Apple Events (JavaScript, AppleScript, AppleScriptObj-C, Scripting Bridge), Automator, Apple Configurator (AppleScript, Automator), and Application scripting support in Photos, iWork, Finder, Mail, and other Apple applications.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Fall 2016, the season of pro love at Apple !&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Nov 2016 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2016/11/17/apple-axes-automation-product-manager.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/11/17/apple-axes-automation-product-manager.html</guid>
         
         <category>apple</category>
         
