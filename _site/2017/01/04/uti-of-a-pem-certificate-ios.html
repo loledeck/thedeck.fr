@@ -12,18 +12,18 @@
 	
 
 	
-	<meta property="og:title" content="The Deck • App Transport Security enforcement delay">
+	<meta property="og:title" content="The Deck • Finding the UTI of a PEM certificate on iOS">
 	
 
 	<link rel="icon" href="/favicon.png" type="image/png">
 
-	<title>App Transport Security enforcement delay</title>
-	<meta name="description" content="Apple developper news:">
+	<title>Finding the UTI of a PEM certificate on iOS</title>
+	<meta name="description" content="UTI stands for “Uniform Type Identifiers”.">
 
 	<link rel='stylesheet' id='libretto-fonts-css'  href='https://fonts.googleapis.com/css?family=Libre+Baskerville%3A400%2C700%2C400italic%7CPlayfair+Display%3A400%2C700%2C400italic%2C700italic%7CPlayfair+Display+SC%3A700%2C700italic%7CMontserrat%3A400%7CDroid+Sans+Mono%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all'>
 
 	<link rel="stylesheet" href="http://localhost:4000/css/main.css">
-	<link rel="canonical" href="http://localhost:4000/2016/12/22/App-Transport-Security-enforcement-delay.html">
+	<link rel="canonical" href="http://localhost:4000/2017/01/04/uti-of-a-pem-certificate-ios.html">
 	<link rel="alternate" type="application/rss+xml" title="The Deck" href="http://localhost:4000/feed.xml">
 </head>
 
@@ -45,23 +45,32 @@
 		<div class="wrapper">
 			<header class="post-header">
 	<div>
-		<span>Posted on </span><span class="post-meta">December 22, 2016</span>
+		<span>Posted on </span><span class="post-meta">January 4, 2017</span>
 	</div>
 
-	<h1 class="post-title" itemprop="name headline">App Transport Security enforcement delay</h1>
+	<h1 class="post-title" itemprop="name headline">Finding the UTI of a PEM certificate on iOS</h1>
 </header>
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="entry-content" itemprop="articleBody">
-		<p><a href="https://developer.apple.com/news/?id=12212016b">Apple developper news</a>:</p>
+		<p>UTI stands for “Uniform Type Identifiers”.</p>
 
-<p><br /></p>
+<p>It’s like the definition of a file type tying together files extensions, mime types and higher level UTIs.
+In iOS (and macOS also I guess) you have to provide UTI(s) to initialize the <code class="highlighter-rouge">UIDocumentMenuViewController</code> class, also known as the “iOS Document Picker”. This list will tell the system which type of files your Document Picker will be allowed to open.</p>
 
-<blockquote>
-  <p>App Transport Security (ATS), introduced in iOS 9 and OS X v10.11, improves user security and privacy by requiring apps to use secure network connections over HTTPS. At WWDC 2016 we announced that apps submitted to the App Store will be required to support ATS at the end of the year. To give you additional time to prepare, this deadline has been extended and we will provide another update when a new deadline is confirmed.</p>
-</blockquote>
+<p>This is all good and well unless you don’t know which UTI to use for the file type your looking for.</p>
 
-<p>This is disappointing for the developers who had put in the effort necessary to make their apps comply with ATS. However, I suspect that Apple realized that there are just <em>too many edge cases</em> to really enforce this rule as is.</p>
+<p>I was trying to import pem certificates into one of my apps and didn’t know which UTI to use for this task. Fear not, fair developer, Apple said ! Head to our official list of <a href="https://developer.apple.com/library/content//documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html">System Declared Uniform Type Identifiers</a>.</p>
+
+<p>Of course, no declared UTI covered my use case. Or so I thought …</p>
+
+<p>Having wrestled with this issue for the better part of the day I have at last found this <em>very</em> useful site: <a href="http://uti.schwa.io">UTI type browser</a>.</p>
+
+<p>It’s the UTI list that Apple should have provided. There are much more types available than the one listed in the official Apple documentation. Including the one I needed:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>public.x509-certificate
+</code></pre>
+</div>
 
 	</div>
 
@@ -69,9 +78,9 @@
 	
 		<hr>
 		
-			<a class="tag" href="/tags#apple"> apple </a>&nbsp;
-		
 			<a class="tag" href="/tags#coding"> coding </a>&nbsp;
+		
+			<a class="tag" href="/tags#ios"> iOS </a>&nbsp;
 		
 	
 	</div>
@@ -81,18 +90,13 @@
 <div id="post-nav">
 	<div class="next">
 		
-		<a href="/2017/01/04/uti-of-a-pem-certificate-ios.html">
-			<span>Next entry</span>
-			Finding the UTI of a PEM certificate on iOS
-		</a>
-		
 	</div>
 
 	<div class="previous">
 		
-		<a href="/2016/12/21/raining-on-my-parade.html">
+		<a href="/2016/12/22/App-Transport-Security-enforcement-delay.html">
 			<span>Previous entry</span>
-			Raining On My Parade
+			App Transport Security enforcement delay
 		</a>
 		
 	</div>

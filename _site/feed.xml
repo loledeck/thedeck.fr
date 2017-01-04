@@ -6,9 +6,41 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Dec 2016 11:32:11 +0100</pubDate>
-    <lastBuildDate>Thu, 22 Dec 2016 11:32:11 +0100</lastBuildDate>
+    <pubDate>Wed, 04 Jan 2017 17:43:23 +0100</pubDate>
+    <lastBuildDate>Wed, 04 Jan 2017 17:43:23 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Finding the UTI of a PEM certificate on iOS</title>
+        <description>&lt;p&gt;UTI stands for “Uniform Type Identifiers”.&lt;/p&gt;
+
+&lt;p&gt;It’s like the definition of a file type tying together files extensions, mime types and higher level UTIs.
+In iOS (and macOS also I guess) you have to provide UTI(s) to initialize the &lt;code class=&quot;highlighter-rouge&quot;&gt;UIDocumentMenuViewController&lt;/code&gt; class, also known as the “iOS Document Picker”. This list will tell the system which type of files your Document Picker will be allowed to open.&lt;/p&gt;
+
+&lt;p&gt;This is all good and well unless you don’t know which UTI to use for the file type your looking for.&lt;/p&gt;
+
+&lt;p&gt;I was trying to import pem certificates into one of my apps and didn’t know which UTI to use for this task. Fear not, fair developer, Apple said ! Head to our official list of &lt;a href=&quot;https://developer.apple.com/library/content//documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html&quot;&gt;System Declared Uniform Type Identifiers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Of course, no declared UTI covered my use case. Or so I thought …&lt;/p&gt;
+
+&lt;p&gt;Having wrestled with this issue for the better part of the day I have at last found this &lt;em&gt;very&lt;/em&gt; useful site: &lt;a href=&quot;http://uti.schwa.io&quot;&gt;UTI type browser&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It’s the UTI list that Apple should have provided. There are much more types available than the one listed in the official Apple documentation. Including the one I needed:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public.x509-certificate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 04 Jan 2017 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2017/01/04/uti-of-a-pem-certificate-ios.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/04/uti-of-a-pem-certificate-ios.html</guid>
+        
+        <category>coding</category>
+        
+        <category>iOS</category>
+        
+        
+      </item>
     
       <item>
         <title>App Transport Security enforcement delay</title>
@@ -259,29 +291,6 @@ It’s frustrating that Apple sees the MacBook One as a worthwhile niche but doe
         <pubDate>Tue, 22 Nov 2016 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/2016/11/22/1-hit-where-it-hurts.html</link>
         <guid isPermaLink="true">http://localhost:4000/2016/11/22/1-hit-where-it-hurts.html</guid>
-        
-        <category>apple</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Anti-halo effect</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://inessential.com/2016/11/21/the_reverse_of_the_halo_effect&quot;&gt;Brent Simmons&lt;/a&gt; about Apple leaving more and more markets:&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I can’t help but think that it’s a kind of an anti-halo effect. I can’t help but think that once we start looking elsewhere, we’ll look elsewhere more and more. We’ll get used to it. We’ll find out that other companies make things that work and are, in some cases, delightful.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I think it’s a very smart analysis. Especially when you remember how Apple climbed out of its grave with the iPod that brought a lot of people to the Mac and the iPhone. Their saving grace (for the moment) is that there’s no single other company that may attract their customers with a large range of excellent products.&lt;/p&gt;
-
-&lt;p&gt;But one thing that Apple should keep in mind: each time they narrow their product line they increase the impact of releasing a potential turd. What if the new MacBook Pros are a failure (I’m not saying they are) ? What if the next iPhone explodes like a Galaxy Note ?&lt;/p&gt;
-</description>
-        <pubDate>Tue, 22 Nov 2016 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2016/11/22/0-anti-halo-effect.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/11/22/0-anti-halo-effect.html</guid>
         
         <category>apple</category>
         
