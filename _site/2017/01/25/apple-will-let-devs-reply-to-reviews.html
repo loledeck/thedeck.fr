@@ -12,18 +12,18 @@
 	
 
 	
-	<meta property="og:title" content="The Deck • Finding the UTI of a PEM certificate on iOS">
+	<meta property="og:title" content="The Deck • Apple will let developers reply to reviews in the App Store">
 	
 
 	<link rel="icon" href="/favicon.png" type="image/png">
 
-	<title>Finding the UTI of a PEM certificate on iOS</title>
-	<meta name="description" content="UTI stands for “Uniform Type Identifiers”.">
+	<title>Apple will let developers reply to reviews in the App Store</title>
+	<meta name="description" content="Benjamin Mayo, writting for 9to5mac:">
 
 	<link rel='stylesheet' id='libretto-fonts-css'  href='https://fonts.googleapis.com/css?family=Libre+Baskerville%3A400%2C700%2C400italic%7CPlayfair+Display%3A400%2C700%2C400italic%2C700italic%7CPlayfair+Display+SC%3A700%2C700italic%7CMontserrat%3A400%7CDroid+Sans+Mono%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all'>
 
 	<link rel="stylesheet" href="http://localhost:4000/css/main.css">
-	<link rel="canonical" href="http://localhost:4000/2017/01/04/uti-of-a-pem-certificate-ios.html">
+	<link rel="canonical" href="http://localhost:4000/2017/01/25/apple-will-let-devs-reply-to-reviews.html">
 	<link rel="alternate" type="application/rss+xml" title="The Deck" href="http://localhost:4000/feed.xml">
 </head>
 
@@ -45,32 +45,38 @@
 		<div class="wrapper">
 			<header class="post-header">
 	<div>
-		<span>Posted on </span><span class="post-meta">January 4, 2017</span>
+		<span>Posted on </span><span class="post-meta">January 25, 2017</span>
 	</div>
 
-	<h1 class="post-title" itemprop="name headline">Finding the UTI of a PEM certificate on iOS</h1>
+	<h1 class="post-title" itemprop="name headline">Apple will let developers reply to reviews in the App Store</h1>
 </header>
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="entry-content" itemprop="articleBody">
-		<p>UTI stands for “Uniform Type Identifiers”.</p>
+		<p>Benjamin Mayo, writting for <a href="https://9to5mac.com/2017/01/24/apple-will-let-developers-reply-to-reviews-in-the-app-store-soon-for-ios-and-mac-apps/">9to5mac</a>:</p>
 
-<p>It’s like the definition of a file type tying together files extensions, mime types and higher level UTIs.
-In iOS (and macOS also I guess) you have to provide UTI(s) to initialize the <code class="highlighter-rouge">UIDocumentMenuViewController</code> class, also known as the “iOS Document Picker”. This list will tell the system which type of files your Document Picker will be allowed to open.</p>
+<p><br /></p>
 
-<p>This is all good and well unless you don’t know which UTI to use for the file type your looking for.</p>
+<blockquote>
+  <p>Apple has announced that it will soon let developers reply to reviews on the iPhone, iPad and Mac App Stores. As part of the iOS 10.3 release notes, the company says that by the time iOS 10.3 is available to customers, developers will be able to respond to customer reviews on the App Store.</p>
+</blockquote>
 
-<p>I was trying to import pem certificates into one of my apps and didn’t know which UTI to use for this task. Fear not, fair developer, Apple said ! Head to our official list of <a href="https://developer.apple.com/library/content//documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html">System Declared Uniform Type Identifiers</a>.</p>
+<blockquote>
+  <p>This is a major breakthrough enhancement as developers have been asking Apple for better ways to interact with customers for a long time.</p>
+</blockquote>
 
-<p>Of course, no declared UTI covered my use case. Or so I thought …</p>
+<p>I see a lot of pushback from the developers community this morning along the lines of: “the App Store will now be your public support channel”.</p>
 
-<p>Having wrestled with this issue for the better part of the day I have at last found this <em>very</em> useful site: <a href="http://uti.schwa.io">UTI type browser</a>.</p>
+<p>It might be a problem but I see at least two reasons that it may be a good thing overall:</p>
 
-<p>It’s the UTI list that Apple should have provided. There are much more types available than the one listed in the official Apple documentation. Including the one I needed:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>public.x509-certificate
-</code></pre>
-</div>
+<ul>
+  <li>
+    <p>Good and empathetic support will reflect positively on your app (of course, <a href="https://marco.org/apps">if you provide no support, that might be a problem</a>). I know it seems naive but I really think it will go a long way with the core users of your apps, the ones that buy already knowing what it does and want it to work rather than bash the dev for making them pay a few bucks.</p>
+  </li>
+  <li>
+    <p>If you want Apple to listen to us and (hopefully) implement more substantive changes to the store we really ought to have a constructive attitude to the changes they’re making right now. Sure, many implementation details will probably suck at first but we have to show Apple that they’re right to not be content of the status quo.</p>
+  </li>
+</ul>
 
 	</div>
 
@@ -78,9 +84,7 @@ In iOS (and macOS also I guess) you have to provide UTI(s) to initialize the <co
 	
 		<hr>
 		
-			<a class="tag" href="/tags#coding"> coding </a>&nbsp;
-		
-			<a class="tag" href="/tags#ios"> iOS </a>&nbsp;
+			<a class="tag" href="/tags#apple"> apple </a>&nbsp;
 		
 	
 	</div>
@@ -90,18 +94,13 @@ In iOS (and macOS also I guess) you have to provide UTI(s) to initialize the <co
 <div id="post-nav">
 	<div class="next">
 		
-		<a href="/2017/01/25/apple-will-let-devs-reply-to-reviews.html">
-			<span>Next entry</span>
-			Apple will let developers reply to reviews in the App Store
-		</a>
-		
 	</div>
 
 	<div class="previous">
 		
-		<a href="/2016/12/22/App-Transport-Security-enforcement-delay.html">
+		<a href="/2017/01/04/uti-of-a-pem-certificate-ios.html">
 			<span>Previous entry</span>
-			App Transport Security enforcement delay
+			Finding the UTI of a PEM certificate on iOS
 		</a>
 		
 	</div>
