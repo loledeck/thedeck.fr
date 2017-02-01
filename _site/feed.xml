@@ -6,9 +6,87 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Jan 2017 12:27:21 +0100</pubDate>
-    <lastBuildDate>Wed, 25 Jan 2017 12:27:21 +0100</lastBuildDate>
+    <pubDate>Wed, 01 Feb 2017 10:17:33 +0100</pubDate>
+    <lastBuildDate>Wed, 01 Feb 2017 10:17:33 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Two Mac universes</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://mjtsai.com/blog/2017/01/31/it-just-works/&quot;&gt;Micheal J. Tsai&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Adrian Kosmaczewski (via Andy Lee):&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;I start iTunes. It tells me that I need to log in to Apple Music. I do not remember ever having logged off. I enter my username and password. The dialog goes away. iTunes still does not allow me to listen to music. I close and re-open iTunes. I log off and on a few times. I finally reboot my Mac. I discover that the artist I would love to listen to that morning is not available on iTunes Music. I select another artist. I hit play. Music does not come out from the built-in speakers. I plug in my old 2002 Harman Kardon SoundSticks. I plug the USB 3 to USB dongle first.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;[…]&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;I sit on my Mac and open a Pages file stored on iCloud, one I was working on my iPad Pro during the weekend. The sync fails and I cannot see the last modifications I made on my iPad Pro. Open and close apps on both devices. I reboot them both. Pages for Mac tells me that there is a conflict between the versions in both devices, even though I have never edited the file on the Mac. I select the version on the iPad. My changes are lost.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;[…]&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;I try to open an application I bought yesterday on this Mac. The operating system protests, telling me that I have to login to the App Store because the application was bought in another Mac. It is not true. I log in anyway. The app opens.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This seems too bad to be real, but I’ve had days recently that feel like this. I have an old Mac and sometimes think a new one would be more reliable, until I read about problems people are having with a brand new MacBook Pro and display. At least I don’t have kernel panics.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And at the same time, in a slightly parallel universe &lt;a href=&quot;https://sixcolors.com/post/2017/01/apples-record-quarter-by-the-numbers/&quot;&gt;Jason Snell reports at Sixcolors.com about the latest Apple quartely results&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Mac unit sales weren’t a record, but because of rising average sale prices (thanks, MacBook Pro!), &lt;strong&gt;Mac revenue set a record&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;May be because people are buying new Macs hoping they’ll be more reliable ?&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Feb 2017 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2017/02/01/two-mac-universes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/02/01/two-mac-universes.html</guid>
+        
+        <category>apple</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Commit DB version 1.3</title>
+        <description>&lt;p&gt;Commit DB, the arguably &lt;a href=&quot;http://commit.cubsoft.fr&quot;&gt;best iOS MySQL client&lt;/a&gt; on the market 😉 has a new version. Besides a few bug fixes, the main new feature is the ability to use &lt;em&gt;SSL to secure your MySQL connections&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Happy coding !&lt;/p&gt;
+</description>
+        <pubDate>Tue, 31 Jan 2017 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2017/01/31/commit-db-1-3.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/31/commit-db-1-3.html</guid>
+        
+        <category>projects</category>
+        
+        
+      </item>
     
       <item>
         <title>Apple will let developers reply to reviews in the App Store</title>
@@ -266,50 +344,6 @@ It’s frustrating that Apple sees the MacBook One as a worthwhile niche but doe
         <guid isPermaLink="true">http://localhost:4000/2016/12/06/Change-font-size-screenshots-created-with-frameit.html</guid>
         
         <category>coding</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Amazon introduces Lex</title>
-        <description>&lt;p&gt;Yesterday, Amazon introduced a new service in beta called &lt;a href=&quot;https://aws.amazon.com/fr/about-aws/whats-new/2016/11/introducing-amazon-lex-now-in-preview/&quot;&gt;Lex&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Amazon Lex is a service for building conversational interfaces into any application using voice and text. Lex provides the advanced deep learning functionalities of automatic speech recognition (ASR) for converting speech to text, and natural language understanding (NLU) to recognize the intent of the text, to enable you to build applications with highly engaging user experiences and lifelike conversational interactions. With Amazon Lex, the same deep learning technologies that power Amazon Alexa are now available to any developer, enabling you to quickly and easily build sophisticated, natural language, conversational bots (“chatbots”).&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;In a nutshell, this is a Siri competitor available for all developpers. And instead of being limited to the handfull of intents that Apple provides (and won’t extend until at least next year iOS major version) you can use it for whatever use case you want. You can even use text to talk to this “assistant” an often asked feature for Siri.&lt;/p&gt;
-
-&lt;p&gt;Obviously the drawback is that you won’t be able to invoke it from outside your app. Still that seems massively interesting.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 01 Dec 2016 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2016/12/01/amazon-introduces-lex.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/12/01/amazon-introduces-lex.html</guid>
-        
-        <category>apple</category>
-        
-        <category>siri</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Paris&#39; Passerelle Simone de Beauvoir</title>
-        <description>&lt;p&gt;For those who have liked the &lt;a href=&quot;http://kottke.org/16/11/chinas-lucky-knot-bridge&quot;&gt;Lucky Knot Bridge&lt;/a&gt; posted by Kotke this morning I humbly present la passerelle &lt;em&gt;Simone de Beauvoir&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/201612/simone_de_beauvoir.jpeg&quot; alt=&quot;Passerelle Simone de Beauvoir&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This bridge is located in Paris and links the 13th district (on the left bank of the Seine river) with the 12th district (on the right bank). It was opened in 2006.&lt;/p&gt;
-
-&lt;p&gt;Paris is a beautifull city, more modern than what one might imagine.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 01 Dec 2016 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2016/12/01/Paris-passerelle-Simone-de-Beauvoir.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/12/01/Paris-passerelle-Simone-de-Beauvoir.html</guid>
-        
-        <category>paris</category>
         
         
       </item>

@@ -52,6 +52,100 @@
 			<article>
 				<header class="post-header">
 					<div>
+						<span>Posted on </span><span class="post-meta">March 13, 2013</span>
+					</div>
+
+					<h2>
+						<a class="post-link" href="/2013/03/13/so-cute.html">So cute</a>
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					<p>From <a href="http://www.theverge.com/2013/3/10/4086458/father-hacks-donkey-kong-for-daughter-swaps-mario-pauline">TheVerge</a>:</p>
+
+<blockquote>
+  <p>“When Mike Mika saw the disappointment on his daughter’s face when she realized Pauline wasn’t a playable character in Donkey Kong, he felt a call to action.
+Thankfully Mika happens to be a competent developer, and after a few late-night hours spent hacking the NES version of Nintendo’s classic, he accomplished the role reversal his daughter had wished for. Mario was now under Donkey Kong’s control, and Pauline was tasked with rescuing the plumber in distress.
+Following the successful endeavor, Mika shared some details of how he swapped the characters on a YouTube page demonstrating the hack. “I’ve redrawn  Mario’s frames and I swapped the palettes in the ROM,” he wrote. “I replaced the M at the top with a P for Pauline.”</p>
+</blockquote>
+
+<p><img src="/assets/images/pauline-donkey-kong.png" alt="Pauline Donkey Kong" /></p>
+
+<p>As a father (of a Mario loving boy so I saved myself the trouble …), I can only think of one word for this man : Respect.</p>
+
+				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+      <a class="tag" href="/tags#gaming"> gaming </a>&nbsp;
+    
+  
+  </div>
+
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
+						<span>Posted on </span><span class="post-meta">February 22, 2013</span>
+					</div>
+
+					<h2>
+						<a class="post-link" href="/2013/02/22/sublime-3-build-system-django.html">Sublime 3 build system for Django</a>
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					<p>I’m a longtime user of Sublime Text. If you’ve never tried it I really advise you to give it a look, it’s really worth it.
+The beta version of Sublime 3 has been out for a few weeks now and I’m using it in parallel with the stable version 2 to test the new features.
+While those new features are interesting by themselves trying a new version is also the moment where I dig in the documentation to understand the features I have not used yet in the previous versions.
+And one of those features is the build systems.</p>
+
+<p>In Sublime I mostly code in Python so I’ve never been attracted to this build concept … how wrong I’ve been !
+You can type a script in a file in Sublime and just by hitting Ctrl+B have your script run in a python interpreter and the result displayed inside your editor. What a time saver.</p>
+
+<p>No more going back and forth between Sublime and that pesky windows command prompt (yes, I use windows at work …) to test my code.</p>
+
+<p>But there was still a problem : I do a lot of django coding and the default python build system does know how to import my django models. After a few more digging in the docs I came up with the following solution :</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="p">{</span>
+    <span class="s">"working_dir"</span><span class="p">:</span> <span class="s">"c:/path/to/your/django/project"</span><span class="p">,</span>
+    <span class="s">"path"</span><span class="p">:</span> <span class="s">"c:/path/to/your/python/binary;c:/path/to/site-packages"</span><span class="p">,</span>
+    <span class="s">"env"</span><span class="p">:</span> <span class="p">{</span>
+         <span class="s">"DJANGO_SETTINGS_MODULE"</span><span class="p">:</span> <span class="s">"your.settings.module"</span><span class="p">,</span>
+     <span class="p">},</span>
+    <span class="s">"cmd"</span><span class="p">:</span> <span class="p">[</span><span class="s">"python"</span><span class="p">,</span> <span class="s">"manage.py"</span><span class="p">,</span> <span class="s">"shell"</span><span class="p">,</span> <span class="s">"&lt;"</span><span class="p">,</span> <span class="s">"$file"</span><span class="p">],</span>
+    <span class="s">"file_regex"</span><span class="p">:</span> <span class="s">"^[ ]*File </span><span class="se">\"</span><span class="s">(...*?)</span><span class="se">\"</span><span class="s">, line ([0-9]*)"</span><span class="p">,</span>
+    <span class="s">"selector"</span><span class="p">:</span> <span class="s">"source.python"</span><span class="p">,</span>
+    <span class="s">"shell"</span><span class="p">:</span> <span class="n">true</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Et voilà !</p>
+
+				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+      <a class="tag" href="/tags#coding"> coding </a>&nbsp;
+    
+  
+  </div>
+
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
 						<span>Posted on </span><span class="post-meta">February 13, 2013</span>
 					</div>
 
@@ -160,100 +254,6 @@ The highly unusual thing about this is that the average residential retail cost 
     <hr style="color: #787065;">
     
       <a class="tag" href="/tags#clean-tech"> clean tech </a>&nbsp;
-    
-  
-  </div>
-
-			</article>
-		</li>
-		
-		<li>
-			<article>
-				<header class="post-header">
-					<div>
-						<span>Posted on </span><span class="post-meta">February 3, 2013</span>
-					</div>
-
-					<h2>
-						<a class="post-link" href="/2013/02/03/dr-wxho-killed-my-adsense.html">Doctor Who killed my Adsense</a>
-					</h2>
-				</header>
-
-				<div class="entry-content">
-					<p>A lot of you, dear readers, probably don’t know that one of my side projects is a little web site called pdfy.me</p>
-
-<p>As the name imply (at least that’s my hope), it is meant to convert a web page to a pdf file for archival / latter or offline reading.
-It works through a bookmarklet, a Chrome extension or a simple api.
-This project comes from a client of mine who needed to be able to convert the pages of its wordpress site to pdf. Rather than running the code from his shared hosting  I decided to turn it in a webservice and host it myself on a spare server I had.</p>
-
-<p>Most of the users come from the Chrome extension so I decided to add an adsense baner for them in order to recoup their bandwith costs. To help adsense target their ads, I created a special page that would open when a pdf conversion was done and would use the title of the converted page to give adsense a little context.</p>
-
-<p>The whole thing was more to experiment with adsense targetting than for money … I only made a few bucks out of the whole experiment.</p>
-
-<p>But really, that’s not my problem with adsense. At all.</p>
-
-<p>My problem is that a few weeks latter my account was suspended. And why would you ask ? Well because one of the user of my site converted to pdf a bittorent tracker page that (probably) linked to an episode of the “Doctor Who” show. Not that Google may know which url was converted, that information is never disclosed to anybody of course.</p>
-
-<p>But the simple fact to have on a page of your site the words “Doctor Who” close to “DVDRip” is enough for Google to ban you.</p>
-
-<p>Seriously, fellow bloggers, watch out for what you write on your site. The big Mountain View Eye That Never Sleeps is watching you.</p>
-
-<p>Suffice to say that I’m personally done with Adsense for my more serious projects. As a publisher and as a client.</p>
-
-<p>Well played Google.</p>
-
-				</div>
-
-        <div>
-  
-    <hr style="color: #787065;">
-    
-      <a class="tag" href="/tags#projects"> projects </a>&nbsp;
-    
-  
-  </div>
-
-			</article>
-		</li>
-		
-		<li>
-			<article>
-				<header class="post-header">
-					<div>
-						<span>Posted on </span><span class="post-meta">February 1, 2013</span>
-					</div>
-
-					<h2>
-						<a class="post-link" href="/2013/02/01/i-want-to-believe.html">I want to believe</a>
-					</h2>
-				</header>
-
-				<div class="entry-content">
-					<p>Just to reiterate on my yesterday’s post about the Apple TV : Ars Technica is running today an article titled “The rumor that won’t die: Apple’s perpetually pending video game console”.
-In this piece, the author try to dismiss the possibility of exactly what I was implying : that the silent refresh of the Apple TV may be the harbinger of third parties apps.</p>
-
-<p>One of the argument used I find interesting to refute : basically it goes by saying that third party apps aren’t coming anytime soon because current iOS game apps are not designed to be controled by anything other than touch (obviously a non-starter for a “gaming console”).</p>
-
-<p>But what the autor is missing in my opinion is this:</p>
-
-<ol>
-  <li>If the Apple TV is to get third party apps, those apps will have to be updated anyway to adapt to the 1080p resolution. Today, only the iPhone 5 has a 16/9 aspect ratio so I don’t think that there’s a simple efficient way to upscale all those iPad titles to native HDTV resolution.</li>
-  <li>While the developers are busy updating their apps’ resolution, why not allow users to make use of a bluetooth controller as permitted by the lastest iOS Apple TV update ? (see for exemple <a href="http://www.tgdaily.com/software-features/69084-apple-ios-updated-to-61-tv-gets-bluetooth-keyboard-support">this article</a>)</li>
-  <li>Granted, the only bluetooth hardware currently supported is a keyboard. But is it really far fetched to imagine a bluetooth connection with an iPhone or … gasps … a joypad ?</li>
-</ol>
-
-<p>As usual, time will tell. But I think the days of the gameless Apple TV are numbered. Just ask Nintendo … <a href="http://parislemon.com/post/41884561719">Nintendo Cuts Outlook After Soft Demand for Wii U</a></p>
-
-
-				</div>
-
-        <div>
-  
-    <hr style="color: #787065;">
-    
-      <a class="tag" href="/tags#apple"> apple </a>&nbsp;
-    
-      <a class="tag" href="/tags#apple-tv"> apple tv </a>&nbsp;
     
   
   </div>
