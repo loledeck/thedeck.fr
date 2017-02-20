@@ -52,6 +52,45 @@
 			<article>
 				<header class="post-header">
 					<div>
+						<span>Posted on </span><span class="post-meta">December 22, 2016</span>
+					</div>
+
+					<h2>
+						<a class="post-link" href="/2016/12/22/App-Transport-Security-enforcement-delay.html">App Transport Security enforcement delay</a>
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					<p><a href="https://developer.apple.com/news/?id=12212016b">Apple developper news</a>:</p>
+
+<p><br /></p>
+
+<blockquote>
+  <p>App Transport Security (ATS), introduced in iOS 9 and OS X v10.11, improves user security and privacy by requiring apps to use secure network connections over HTTPS. At WWDC 2016 we announced that apps submitted to the App Store will be required to support ATS at the end of the year. To give you additional time to prepare, this deadline has been extended and we will provide another update when a new deadline is confirmed.</p>
+</blockquote>
+
+<p>This is disappointing for the developers who had put in the effort necessary to make their apps comply with ATS. However, I suspect that Apple realized that there are just <em>too many edge cases</em> to really enforce this rule as is.</p>
+
+				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+      <a class="tag" href="/tags#apple"> apple </a>&nbsp;
+    
+      <a class="tag" href="/tags#coding"> coding </a>&nbsp;
+    
+  
+  </div>
+
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
 						<span>Posted on </span><span class="post-meta">December 21, 2016</span>
 					</div>
 
@@ -225,71 +264,6 @@ It’s frustrating that Apple sees the MacBook One as a worthwhile niche but doe
     <hr style="color: #787065;">
     
       <a class="tag" href="/tags#apple"> apple </a>&nbsp;
-    
-  
-  </div>
-
-			</article>
-		</li>
-		
-		<li>
-			<article>
-				<header class="post-header">
-					<div>
-						<span>Posted on </span><span class="post-meta">December 6, 2016</span>
-					</div>
-
-					<h2>
-						<a class="post-link" href="/2016/12/06/Change-font-size-screenshots-created-with-frameit.html">Change font size in screenshots created with Frameit</a>
-					</h2>
-				</header>
-
-				<div class="entry-content">
-					<p><a href="https://github.com/fastlane/fastlane/tree/master/frameit">Frameit</a> is a very nice utility to create nice looking App Store screenshots. It will take your images, add a device frame around them and optionaly a title of your choosing in multiple language. In short, it’s a godsend.</p>
-
-<p>But unfortunatly, as any tool, it has a few shortcomings. One of them (for my use case at least) is that there’s no way to choose the size of the font you’re using for your titles.</p>
-
-<p>For example, look at this screenshot for my app <a href="https://itunes.apple.com/us/app/librairie-ebook-cloud-reader/id742022507?mt=8&amp;at=1010lrXT">Librairie - Ebook Cloud Reader</a>:</p>
-
-<p><img src="/assets/images/201612/screenshot_bad.png" alt="Bad screenshot" /></p>
-
-<p>It’s not bad per se but it could be much better with a bigger font to add some punch. The corresponding json is:</p>
-
-<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="w">        </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"filter"</span><span class="p">:</span><span class="w"> </span><span class="s2">"collection"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#bc1626"</span><span class="w">
-                </span><span class="p">,</span><span class="nt">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Automatically sync and read all your ebooks stored in the cloud"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
-
-<p>The trick is to make Frameit think that the text will take more space and as a consequence use bigger font to fill that space. For this, you can use a new line character in your description. The <em>Framefile.json</em> becomes:</p>
-
-<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="w">        </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"filter"</span><span class="p">:</span><span class="w"> </span><span class="s2">"collection"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#bc1626"</span><span class="w">
-                </span><span class="p">,</span><span class="nt">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Automatically sync and read all\nyour ebooks stored in the cloud"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
-
-<p>And the rendered screenshot:</p>
-
-<p><img src="/assets/images/201612/screenshot_good.png" alt="Good screenshot" /></p>
-
-<p>Et voilà !</p>
-
-				</div>
-
-        <div>
-  
-    <hr style="color: #787065;">
-    
-      <a class="tag" href="/tags#coding"> coding </a>&nbsp;
     
   
   </div>

@@ -6,9 +6,38 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Feb 2017 10:17:33 +0100</pubDate>
-    <lastBuildDate>Wed, 01 Feb 2017 10:17:33 +0100</lastBuildDate>
+    <pubDate>Mon, 20 Feb 2017 10:31:05 +0100</pubDate>
+    <lastBuildDate>Mon, 20 Feb 2017 10:31:05 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>iBooks &quot;edge case&quot;</title>
+        <description>&lt;p&gt;Michael E. Cohen, &lt;a href=&quot;http://tidbits.com/article/17053&quot;&gt;writing for TidBITS&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;iBooks is not quite as unreliable and confusing as it was when I wrote about it last year, but neither has it improved nearly as much as loyal iBooks users deserve. Moreover, what little support documentation Apple provides is sketchy and inaccurate, leaving the impression that even the support and documentation departments within Apple are ignoring iBooks.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Federico Viticci, commenting at &lt;a href=&quot;http://tidbits.com/article/17053&quot;&gt;MacStories&lt;/a&gt; about the previous quote:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Cohen’s library may be an edge case with over 700 titles, but the problems he mentions are basic usability issues that should get fixed.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As the developper of an &lt;a href=&quot;http://librairie.cubesoft.fr&quot;&gt;iOS app to manage your ebooks library&lt;/a&gt;, let me tell you that 700 ebooks is &lt;em&gt;far&lt;/em&gt; from an edge case. A quick query in my stats showed me that the &lt;em&gt;average&lt;/em&gt; number of ebooks per active user in Librairie is 1134. This makes total sense when you think about it: people using this kind of apps are serious about managing their whole books library and are voracious readers.&lt;/p&gt;
+
+&lt;p&gt;As most Apple apps, iBooks is designed for casual users. The ones who will buy a handfull of ebooks in the iBooks Store and don’t even know what an ePub file is. If you’re an ebooks power user, &lt;a href=&quot;https://itunes.apple.com/us/app/librairie-ebook-cloud-reader-epub-mobi-azw3/id742022507?l=fr&amp;amp;ls=1&amp;amp;mt=8&quot;&gt;I have a solution for you&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Feb 2017 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2017/02/20/ibooks-edge-case.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/02/20/ibooks-edge-case.html</guid>
+        
+        <category>ibooks</category>
+        
+        
+      </item>
     
       <item>
         <title>Two Mac universes</title>
@@ -295,55 +324,6 @@ It’s frustrating that Apple sees the MacBook One as a worthwhile niche but doe
         <guid isPermaLink="true">http://localhost:4000/2016/12/13/mac-niches.html</guid>
         
         <category>apple</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Change font size in screenshots created with Frameit</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/fastlane/fastlane/tree/master/frameit&quot;&gt;Frameit&lt;/a&gt; is a very nice utility to create nice looking App Store screenshots. It will take your images, add a device frame around them and optionaly a title of your choosing in multiple language. In short, it’s a godsend.&lt;/p&gt;
-
-&lt;p&gt;But unfortunatly, as any tool, it has a few shortcomings. One of them (for my use case at least) is that there’s no way to choose the size of the font you’re using for your titles.&lt;/p&gt;
-
-&lt;p&gt;For example, look at this screenshot for my app &lt;a href=&quot;https://itunes.apple.com/us/app/librairie-ebook-cloud-reader/id742022507?mt=8&amp;amp;at=1010lrXT&quot;&gt;Librairie - Ebook Cloud Reader&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/201612/screenshot_bad.png&quot; alt=&quot;Bad screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s not bad per se but it could be much better with a bigger font to add some punch. The corresponding json is:&lt;/p&gt;
-
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;filter&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;collection&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;color&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#bc1626&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-                &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Automatically sync and read all your ebooks stored in the cloud&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The trick is to make Frameit think that the text will take more space and as a consequence use bigger font to fill that space. For this, you can use a new line character in your description. The &lt;em&gt;Framefile.json&lt;/em&gt; becomes:&lt;/p&gt;
-
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;filter&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;collection&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;color&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#bc1626&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-                &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Automatically sync and read all\nyour ebooks stored in the cloud&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;And the rendered screenshot:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/201612/screenshot_good.png&quot; alt=&quot;Good screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Et voilà !&lt;/p&gt;
-</description>
-        <pubDate>Tue, 06 Dec 2016 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2016/12/06/Change-font-size-screenshots-created-with-frameit.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/12/06/Change-font-size-screenshots-created-with-frameit.html</guid>
-        
-        <category>coding</category>
         
         
       </item>
