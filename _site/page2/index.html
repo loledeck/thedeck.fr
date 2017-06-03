@@ -52,6 +52,54 @@
 			<article>
 				<header class="post-header">
 					<div>
+						<span>Posted on </span><span class="post-meta">January 4, 2017</span>
+					</div>
+
+					<h2>
+						<a class="post-link" href="/2017/01/04/uti-of-a-pem-certificate-ios.html">Finding the UTI of a PEM certificate on iOS</a>
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					<p>UTI stands for “Uniform Type Identifiers”.</p>
+
+<p>It’s like the definition of a file type tying together files extensions, mime types and higher level UTIs.
+In iOS (and macOS also I guess) you have to provide UTI(s) to initialize the <code class="highlighter-rouge">UIDocumentMenuViewController</code> class, also known as the “iOS Document Picker”. This list will tell the system which type of files your Document Picker will be allowed to open.</p>
+
+<p>This is all good and well unless you don’t know which UTI to use for the file type your looking for.</p>
+
+<p>I was trying to import pem certificates into one of my apps and didn’t know which UTI to use for this task. Fear not, fair developer, Apple said ! Head to our official list of <a href="https://developer.apple.com/library/content//documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html">System Declared Uniform Type Identifiers</a>.</p>
+
+<p>Of course, no declared UTI covered my use case. Or so I thought …</p>
+
+<p>Having wrestled with this issue for the better part of the day I have at last found this <em>very</em> useful site: <a href="http://uti.schwa.io">UTI type browser</a>.</p>
+
+<p>It’s the UTI list that Apple should have provided. There are much more types available than the one listed in the official Apple documentation. Including the one I needed:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>public.x509-certificate
+</code></pre>
+</div>
+
+				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+      <a class="tag" href="/tags#coding"> coding </a>&nbsp;
+    
+      <a class="tag" href="/tags#ios"> iOS </a>&nbsp;
+    
+  
+  </div>
+
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
 						<span>Posted on </span><span class="post-meta">December 22, 2016</span>
 					</div>
 
@@ -217,45 +265,6 @@
 <p>So thanks Apple and next time would it be possible to … No, you know what, nevermind. It’s on me.</p>
 
 <p>Next time I won’t even try.</p>
-
-				</div>
-
-        <div>
-  
-    <hr style="color: #787065;">
-    
-      <a class="tag" href="/tags#apple"> apple </a>&nbsp;
-    
-  
-  </div>
-
-			</article>
-		</li>
-		
-		<li>
-			<article>
-				<header class="post-header">
-					<div>
-						<span>Posted on </span><span class="post-meta">December 13, 2016</span>
-					</div>
-
-					<h2>
-						<a class="post-link" href="/2016/12/13/mac-niches.html">Mac Niches</a>
-					</h2>
-				</header>
-
-				<div class="entry-content">
-					<p><a href="http://mjtsai.com/blog/2016/12/12/which-macs-are-people-using/">Micheal J. Tsai</a> speaking of the mac models used by the users of its macOS apps:</p>
-
-<p><br /></p>
-
-<blockquote>
-  <p>The numbers for the MacBook seem really low to me. The 2% (1.68% before rounding) includes both the MacBook One and the plastic MacBook that was discontinued in early 2012. The 12-inch MacBook never seemed attractive to me—overpriced and underpowered, not to mention the keyboard—but I would have expected to see more people using it. 
-<br /> […] <br />
-It’s frustrating that Apple sees the MacBook One as a worthwhile niche but doesn’t want to make a high-end MacBook Pro with a larger display, more RAM, a real keyboard and trackpad, etc.</p>
-</blockquote>
-
-<p>Some niches seem more comfy than other in the new Mac ecosystem.</p>
 
 				</div>
 
