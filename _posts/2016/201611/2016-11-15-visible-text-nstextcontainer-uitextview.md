@@ -9,15 +9,18 @@ You cannot easilly get the visible text of a `NSTextContainer` backed `UITextVie
 To get the currently displayed text, I use the following method on my `NSTextVIew subclasses:
 
 ```objc
-- (NSAttributedString *)visibleText {
+- (NSString *)visibleText {
 
-    CGRect bounds = self.bounds;
-    UITextPosition *start = [self characterRangeAtPoint:bounds.origin].start;
-    UITextPosition *end = [self characterRangeAtPoint:CGPointMake(CGRectGetMaxX(bounds), CGRectGetMaxY(bounds))].end;
-    NSRange visibleTextRange = NSMakeRange([self offsetFromPosition:self.beginningOfDocument toPosition:start],
-                                           [self offsetFromPosition:start toPosition:end]);
-    NSAttributedString *attrString = [self.attributedText attributedSubstringFromRange:visibleTextRange];
-    return attrString;
+    NSRange currentRange = [self.layoutManager glyphRangeForTextContainer:self.textContainer];
+
+    if (currentRange.location != NSNotFound && currentRange.location + currentRange.length <= self.textStorage.length) {
+        // It's safe to use range on str
+        NSString *currentString = [self.textStorage.string substringWithRange:currentRange];
+
+        return currentString;
+    } else {
+        return nil;
+    }
 }
 
 ```
