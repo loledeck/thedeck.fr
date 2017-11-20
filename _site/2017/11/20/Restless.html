@@ -12,18 +12,18 @@
 	
 
 	
-	<meta property="og:title" content="The Deck • Visible text in a NSTextContainer backed UITextView">
+	<meta property="og:title" content="The Deck • Restless">
 	
 
 	<link rel="icon" href="/favicon.png" type="image/png">
 
-	<title>Visible text in a NSTextContainer backed UITextView</title>
-	<meta name="description" content="You cannot easilly get the visible text of a NSTextContainer backed UITextView. If you look at the text or attributedText properties, you will get the whole ...">
+	<title>Restless</title>
+	<meta name="description" content="Please, meet my new Apple Watch app: Restless.">
 
 	<link rel='stylesheet' id='libretto-fonts-css'  href='https://fonts.googleapis.com/css?family=Libre+Baskerville%3A400%2C700%2C400italic%7CPlayfair+Display%3A400%2C700%2C400italic%2C700italic%7CPlayfair+Display+SC%3A700%2C700italic%7CMontserrat%3A400%7CDroid+Sans+Mono%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all'>
 
 	<link rel="stylesheet" href="http://localhost:4000/css/main.css">
-	<link rel="canonical" href="http://localhost:4000/2016/11/15/visible-text-nstextcontainer-uitextview.html">
+	<link rel="canonical" href="http://localhost:4000/2017/11/20/Restless.html">
 	<link rel="alternate" type="application/rss+xml" title="The Deck" href="http://localhost:4000/feed.xml">
 </head>
 
@@ -45,34 +45,31 @@
 		<div class="wrapper">
 			<header class="post-header">
 	<div>
-		<span>Posted on </span><span class="post-meta">November 15, 2016</span>
+		<span>Posted on </span><span class="post-meta">November 20, 2017</span>
 	</div>
 
-	<h1 class="post-title" itemprop="name headline">Visible text in a NSTextContainer backed UITextView</h1>
+	<h1 class="post-title" itemprop="name headline">Restless</h1>
 </header>
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="entry-content" itemprop="articleBody">
-		<p>You cannot easilly get the visible text of a <code class="highlighter-rouge">NSTextContainer</code> backed <code class="highlighter-rouge">UITextView</code>. If you look at the <code class="highlighter-rouge">text</code> or <code class="highlighter-rouge">attributedText</code> properties, you will get the whole text that you gave to your <code class="highlighter-rouge">NSTextStorage</code> object.</p>
+		<p>Please, meet my new Apple Watch app: <a href="https://itunes.apple.com/us/app/restless-never-fall-asleep/id1048930054?l=fr&amp;ls=1&amp;mt=8">Restless</a>.</p>
 
-<p>To get the currently displayed text, I use the following method on my <code class="highlighter-rouge">NSTextView</code> subclasses:</p>
+<p><br /></p>
 
-<div class="language-objc highlighter-rouge"><pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">visibleText</span> <span class="p">{</span>
+<p><img src="/assets/images/201711/app_icon.png" alt="Restless app" class="center-image" /></p>
 
-    <span class="n">NSRange</span> <span class="n">currentRange</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">layoutManager</span> <span class="nf">glyphRangeForTextContainer</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">textContainer</span><span class="p">];</span>
+<p><br /></p>
 
-    <span class="k">if</span> <span class="p">(</span><span class="n">currentRange</span><span class="p">.</span><span class="n">location</span> <span class="o">!=</span> <span class="n">NSNotFound</span> <span class="o">&amp;&amp;</span> <span class="n">currentRange</span><span class="p">.</span><span class="n">location</span> <span class="o">+</span> <span class="n">currentRange</span><span class="p">.</span><span class="n">length</span> <span class="o">&lt;=</span> <span class="n">self</span><span class="p">.</span><span class="n">textStorage</span><span class="p">.</span><span class="n">length</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// It's safe to use range on str
-</span>        <span class="n">NSString</span> <span class="o">*</span><span class="n">currentString</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">textStorage</span><span class="p">.</span><span class="n">string</span> <span class="nf">substringWithRange</span><span class="p">:</span><span class="n">currentRange</span><span class="p">];</span>
+<p>The app helps you stay awake when you really need to: 
+<br />
+when you’re driving late at night coming home after a party, when you want to pull an all-nighter to work for those midterms … etc.</p>
 
-        <span class="k">return</span> <span class="n">currentString</span><span class="p">;</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="nb">nil</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<p>It works by using the Apple Watch haptic feedback to keep you focused. You’ll receive a nudge regulary and when you’re heart rate is seemingly shows that you’re on the verge of falling asleep.</p>
 
-</code></pre>
-</div>
+<p>You can check it out on the App Store:</p>
+
+<p><a href="https://itunes.apple.com/us/app/restless-never-fall-asleep/id1048930054?l=fr&amp;ls=1&amp;mt=8">Restless - Never Fall Asleep !</a></p>
 
 	</div>
 
@@ -80,7 +77,7 @@
 	
 		<hr>
 		
-			<a class="tag" href="/tags#coding"> coding </a>&nbsp;
+			<a class="tag" href="/tags#projects"> projects </a>&nbsp;
 		
 	
 	</div>
@@ -90,18 +87,13 @@
 <div id="post-nav">
 	<div class="next">
 		
-		<a href="/2016/11/17/apple-axes-automation-product-manager.html">
-			<span>Next entry</span>
-			Apple terminates the position of Product Manager of Automation Technologies for macOS
-		</a>
-		
 	</div>
 
 	<div class="previous">
 		
-		<a href="/2016/11/15/macbookpro-angst.html">
+		<a href="/2017/06/03/apple-set-ta-expand-siri.html">
 			<span>Previous entry</span>
-			MacBook Pro angst
+			Apple set to expand Siri
 		</a>
 		
 	</div>

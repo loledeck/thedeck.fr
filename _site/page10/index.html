@@ -12,18 +12,19 @@
 	
 
 	
-	<meta property="og:title" content="The Deck • Visible text in a NSTextContainer backed UITextView">
+	<meta property="og:title" content="The Deck">
 	
 
 	<link rel="icon" href="/favicon.png" type="image/png">
 
-	<title>Visible text in a NSTextContainer backed UITextView</title>
-	<meta name="description" content="You cannot easilly get the visible text of a NSTextContainer backed UITextView. If you look at the text or attributedText properties, you will get the whole ...">
+	<title>The Deck</title>
+	<meta name="description" content="The Deck is a repository of my thoughts, rants and musings.<br> I am The Deck.
+">
 
 	<link rel='stylesheet' id='libretto-fonts-css'  href='https://fonts.googleapis.com/css?family=Libre+Baskerville%3A400%2C700%2C400italic%7CPlayfair+Display%3A400%2C700%2C400italic%2C700italic%7CPlayfair+Display+SC%3A700%2C700italic%7CMontserrat%3A400%7CDroid+Sans+Mono%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all'>
 
 	<link rel="stylesheet" href="http://localhost:4000/css/main.css">
-	<link rel="canonical" href="http://localhost:4000/2016/11/15/visible-text-nstextcontainer-uitextview.html">
+	<link rel="canonical" href="http://localhost:4000/page10/">
 	<link rel="alternate" type="application/rss+xml" title="The Deck" href="http://localhost:4000/feed.xml">
 </head>
 
@@ -43,68 +44,145 @@
 
 	<div class="page-content">
 		<div class="wrapper">
-			<header class="post-header">
-	<div>
-		<span>Posted on </span><span class="post-meta">November 15, 2016</span>
-	</div>
+			<div class="home">
 
-	<h1 class="post-title" itemprop="name headline">Visible text in a NSTextContainer backed UITextView</h1>
-</header>
-
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="entry-content" itemprop="articleBody">
-		<p>You cannot easilly get the visible text of a <code class="highlighter-rouge">NSTextContainer</code> backed <code class="highlighter-rouge">UITextView</code>. If you look at the <code class="highlighter-rouge">text</code> or <code class="highlighter-rouge">attributedText</code> properties, you will get the whole text that you gave to your <code class="highlighter-rouge">NSTextStorage</code> object.</p>
-
-<p>To get the currently displayed text, I use the following method on my <code class="highlighter-rouge">NSTextView</code> subclasses:</p>
-
-<div class="language-objc highlighter-rouge"><pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">visibleText</span> <span class="p">{</span>
-
-    <span class="n">NSRange</span> <span class="n">currentRange</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">layoutManager</span> <span class="nf">glyphRangeForTextContainer</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">textContainer</span><span class="p">];</span>
-
-    <span class="k">if</span> <span class="p">(</span><span class="n">currentRange</span><span class="p">.</span><span class="n">location</span> <span class="o">!=</span> <span class="n">NSNotFound</span> <span class="o">&amp;&amp;</span> <span class="n">currentRange</span><span class="p">.</span><span class="n">location</span> <span class="o">+</span> <span class="n">currentRange</span><span class="p">.</span><span class="n">length</span> <span class="o">&lt;=</span> <span class="n">self</span><span class="p">.</span><span class="n">textStorage</span><span class="p">.</span><span class="n">length</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// It's safe to use range on str
-</span>        <span class="n">NSString</span> <span class="o">*</span><span class="n">currentString</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">textStorage</span><span class="p">.</span><span class="n">string</span> <span class="nf">substringWithRange</span><span class="p">:</span><span class="n">currentRange</span><span class="p">];</span>
-
-        <span class="k">return</span> <span class="n">currentString</span><span class="p">;</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="nb">nil</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-</code></pre>
-</div>
-
-	</div>
-
-	<div>
-	
-		<hr>
+	<ul class="post-list">
 		
-			<a class="tag" href="/tags#coding"> coding </a>&nbsp;
-		
-	
-	</div>
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
+						<span>Posted on </span><span class="post-meta">January 31, 2013</span>
+					</div>
 
-</article>
+					<h2>
+						<a class="post-link" href="/2013/01/31/what-does-appletv-soc-mean.html">What does the new Apple TV SOC really mean ?</a>
+					</h2>
+				</header>
 
-<div id="post-nav">
-	<div class="next">
-		
-		<a href="/2016/11/17/apple-axes-automation-product-manager.html">
-			<span>Next entry</span>
-			Apple terminates the position of Product Manager of Automation Technologies for macOS
-		</a>
-		
-	</div>
+				<div class="entry-content">
+					<p>The news has come yesterday that a new Apple TV version is on its way.
+According to AnandTech, the updated device should sport a new SOC which would be a 32 nm version of the ipad 3 A5X.</p>
 
-	<div class="previous">
+<p>From this point, Marco Arment speculates that this new SOC is probably a test run of the one that would be used latter during the year in a future Retina iPad Mini.</p>
+
+<p>The may very well be true … but I think there’s another compelling reason that may drive this upgrade and that is really specific to the Apple TV:
+Apps. At last …</p>
+
+<p>Let’s do some math:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>iPhone 4 resolution (A5)</td>
+      <td>960*640     =    614,400 pxls</td>
+    </tr>
+    <tr>
+      <td>iPad 2 resolution (A5)</td>
+      <td>1024*768   =    786,432 pxls</td>
+    </tr>
+    <tr>
+      <td>ATV 3rd gen (1080p A5)</td>
+      <td>1920*1080 = 2,073,600 pxls</td>
+    </tr>
+    <tr>
+      <td>iPad 3 resolution (A5X)</td>
+      <td>2048*1536 = 3,145,728 pxls</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>What we can see here is that the A5 SOC is pushing relatively small resolutions except on the 3rd generation Apple TV. But on the ATV, the 1080p is used only to display video which is a hardware accelerated process.
+The conclusion is that the current ATV is probably not able to run iOS apps at a HDTV resolution.
+If you upgrade it with a A5X that’s a completely different story: although the A5X is not lightening fast on the iPad 3, at 1080p it would have almost 1/3 less pixels to push and would probably be a very good fit.</p>
+
+<p>And if you wonder of what kind of apps I’m thinking, the answer if of course games.
+And I’m not the only one to think that games on the ATV would be a. Pretty. Big. Deal :</p>
+
+<p><a href="http://m.9to5mac.com/9to5mac/%23!/entry/valves-gabe-newell-says-apple-tv-not-consoles-is-the,5109ac74d7fc7b56700eadb5">Valve’s Gabe Newell says Apple TV, not consoles, is the biggest threat to Steam Box</a></p>
+
+
+				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+      <a class="tag" href="/tags#apple"> apple </a>&nbsp;
+    
+      <a class="tag" href="/tags#apple-tv"> apple tv </a>&nbsp;
+    
+  
+  </div>
+
+			</article>
+		</li>
 		
-		<a href="/2016/11/15/macbookpro-angst.html">
-			<span>Previous entry</span>
-			MacBook Pro angst
-		</a>
-		
-	</div>
+	</ul>
+
+
+	<nav role="navigation">
+    	
+    	<div class="pagination">
+      		
+        	<a href="/page9">&laquo; Prev</a>
+      		
+
+      		
+        		
+          		<a href="/page9">1</a>
+        		
+      		
+        		
+          		<a href="/page2">2</a>
+        		
+      		
+        		
+          		<a href="/page3">3</a>
+        		
+      		
+        		
+          		<a href="/page4">4</a>
+        		
+      		
+        		
+          		<a href="/page5">5</a>
+        		
+      		
+        		
+          		<a href="/page6">6</a>
+        		
+      		
+        		
+          		<a href="/page7">7</a>
+        		
+      		
+        		
+          		<a href="/page8">8</a>
+        		
+      		
+        		
+          		<a href="/page9">9</a>
+        		
+      		
+        		
+          		<em>10</em>
+        		
+      		
+
+      		
+    		<span>&raquo;</span>
+      		
+    	</div>
+    	
+	</nav>
+
+	<br>
+
+	<br>
+
+	<p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+
 </div>
 
 		</div>

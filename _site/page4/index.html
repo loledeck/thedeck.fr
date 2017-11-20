@@ -56,6 +56,41 @@
 					</div>
 
 					<h2>
+						<a class="post-link" href="/2016/11/22/1-hit-where-it-hurts.html">Hit where it hurts</a>
+					</h2>
+				</header>
+
+				<div class="entry-content">
+					<p>Speaking of which, HP is trying to capitalize on the current backlash against Apple among its pro users:</p>
+
+<p><br /></p>
+
+<p><img src="/assets/images/201611/HP-store.png" alt="HP Store" /></p>
+
+<p>The screen capture is in french, for some reason I couldn’t get the english version. It says that “Pros are moving from the Mac to HP”. And they’re giving a few testimonials of video peoples.</p>
+
+				</div>
+
+        <div>
+  
+    <hr style="color: #787065;">
+    
+      <a class="tag" href="/tags#apple"> apple </a>&nbsp;
+    
+  
+  </div>
+
+			</article>
+		</li>
+		
+		<li>
+			<article>
+				<header class="post-header">
+					<div>
+						<span>Posted on </span><span class="post-meta">November 22, 2016</span>
+					</div>
+
+					<h2>
 						<a class="post-link" href="/2016/11/22/0-anti-halo-effect.html">Anti-halo effect</a>
 					</h2>
 				</header>
@@ -143,17 +178,20 @@
 				<div class="entry-content">
 					<p>You cannot easilly get the visible text of a <code class="highlighter-rouge">NSTextContainer</code> backed <code class="highlighter-rouge">UITextView</code>. If you look at the <code class="highlighter-rouge">text</code> or <code class="highlighter-rouge">attributedText</code> properties, you will get the whole text that you gave to your <code class="highlighter-rouge">NSTextStorage</code> object.</p>
 
-<p>To get the currently displayed text, I use the following method on my `NSTextVIew subclasses:</p>
+<p>To get the currently displayed text, I use the following method on my <code class="highlighter-rouge">NSTextView</code> subclasses:</p>
 
-<div class="language-objc highlighter-rouge"><pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSAttributedString</span> <span class="o">*</span><span class="p">)</span><span class="n">visibleText</span> <span class="p">{</span>
+<div class="language-objc highlighter-rouge"><pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">visibleText</span> <span class="p">{</span>
 
-    <span class="n">CGRect</span> <span class="n">bounds</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">bounds</span><span class="p">;</span>
-    <span class="n">UITextPosition</span> <span class="o">*</span><span class="n">start</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">characterRangeAtPoint</span><span class="p">:</span><span class="n">bounds</span><span class="p">.</span><span class="n">origin</span><span class="p">].</span><span class="n">start</span><span class="p">;</span>
-    <span class="n">UITextPosition</span> <span class="o">*</span><span class="n">end</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">characterRangeAtPoint</span><span class="p">:</span><span class="n">CGPointMake</span><span class="p">(</span><span class="n">CGRectGetMaxX</span><span class="p">(</span><span class="n">bounds</span><span class="p">),</span> <span class="n">CGRectGetMaxY</span><span class="p">(</span><span class="n">bounds</span><span class="p">))].</span><span class="n">end</span><span class="p">;</span>
-    <span class="n">NSRange</span> <span class="n">visibleTextRange</span> <span class="o">=</span> <span class="n">NSMakeRange</span><span class="p">([</span><span class="n">self</span> <span class="nf">offsetFromPosition</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">beginningOfDocument</span> <span class="nf">toPosition</span><span class="p">:</span><span class="n">start</span><span class="p">],</span>
-                                           <span class="p">[</span><span class="n">self</span> <span class="nf">offsetFromPosition</span><span class="p">:</span><span class="n">start</span> <span class="nf">toPosition</span><span class="p">:</span><span class="n">end</span><span class="p">]);</span>
-    <span class="n">NSAttributedString</span> <span class="o">*</span><span class="n">attrString</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">attributedText</span> <span class="nf">attributedSubstringFromRange</span><span class="p">:</span><span class="n">visibleTextRange</span><span class="p">];</span>
-    <span class="k">return</span> <span class="n">attrString</span><span class="p">;</span>
+    <span class="n">NSRange</span> <span class="n">currentRange</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">layoutManager</span> <span class="nf">glyphRangeForTextContainer</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">textContainer</span><span class="p">];</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">currentRange</span><span class="p">.</span><span class="n">location</span> <span class="o">!=</span> <span class="n">NSNotFound</span> <span class="o">&amp;&amp;</span> <span class="n">currentRange</span><span class="p">.</span><span class="n">location</span> <span class="o">+</span> <span class="n">currentRange</span><span class="p">.</span><span class="n">length</span> <span class="o">&lt;=</span> <span class="n">self</span><span class="p">.</span><span class="n">textStorage</span><span class="p">.</span><span class="n">length</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// It's safe to use range on str
+</span>        <span class="n">NSString</span> <span class="o">*</span><span class="n">currentString</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">textStorage</span><span class="p">.</span><span class="n">string</span> <span class="nf">substringWithRange</span><span class="p">:</span><span class="n">currentRange</span><span class="p">];</span>
+
+        <span class="k">return</span> <span class="n">currentString</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nb">nil</span><span class="p">;</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 
 </code></pre>
@@ -214,56 +252,6 @@
 			</article>
 		</li>
 		
-		<li>
-			<article>
-				<header class="post-header">
-					<div>
-						<span>Posted on </span><span class="post-meta">November 5, 2016</span>
-					</div>
-
-					<h2>
-						<a class="post-link" href="/2016/11/05/pricing-courage.html">Pricing courage</a>
-					</h2>
-				</header>
-
-				<div class="entry-content">
-					<p><a href="http://www.macrumors.com/2016/11/04/apple-lg-display-major-price-cut/">MacRumors</a></p>
-
-<p><br /></p>
-
-<blockquote>
-  <p>Apple has also introduced some significant price cuts to the 4K and 5K LG UltraFine Displays that were announced at its October 27 Mac event.</p>
-</blockquote>
-
-<p>Dan Moren at <a href="https://sixcolors.com/post/2016/11/apple-cuts-prices-on-usb-cthunderbolt-3-adapters-peripherals/">SixColors</a></p>
-
-<blockquote>
-  <p>Friday afternoon: the place where news goes to die.
-Apple dropped a statement to a number of outlets that it’s discounting USB-C/Thunderbolt 3 adapters and peripherals in its stores—both those of its own manufacture as well as those made by partners through the end of the year.<br />
-…<br />
-So, it’s easy to read this as purely being a response to complaints over the new MacBook Pro’s reliance on USB-C/Thunderbolt 3…and, yeah, that’s pretty much what’s happening here. Dropping the news on a late Friday afternoon suggests that Apple doesn’t want to garner a lot of attention about the fact it needs to make this move.</p>
-</blockquote>
-
-<p>Meanwhile, Phil Schiller at the <a href="http://www.independent.co.uk/life-style/gadgets-and-tech/features/apple-macbook-pro-new-philip-schiller-interview-phil-iphone-ios-criticism-a7393156.html">Independent</a></p>
-
-<blockquote>
-  <p>And we are proud to tell you that so far our online store has had more orders for the new MacBook Pro than any other pro notebook before. So there certainly are a lot of people as excited as we are about it.</p>
-</blockquote>
-
-				</div>
-
-        <div>
-  
-    <hr style="color: #787065;">
-    
-      <a class="tag" href="/tags#apple"> apple </a>&nbsp;
-    
-  
-  </div>
-
-			</article>
-		</li>
-		
 	</ul>
 
 
@@ -309,6 +297,10 @@ So, it’s easy to read this as purely being a response to complaints over the n
       		
         		
           		<a href="/page9">9</a>
+        		
+      		
+        		
+          		<a href="/page10">10</a>
         		
       		
 

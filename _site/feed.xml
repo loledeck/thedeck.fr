@@ -6,9 +6,38 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 03 Jun 2017 16:08:29 +0200</pubDate>
-    <lastBuildDate>Sat, 03 Jun 2017 16:08:29 +0200</lastBuildDate>
+    <pubDate>Mon, 20 Nov 2017 17:54:13 +0100</pubDate>
+    <lastBuildDate>Mon, 20 Nov 2017 17:54:13 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Restless</title>
+        <description>&lt;p&gt;Please, meet my new Apple Watch app: &lt;a href=&quot;https://itunes.apple.com/us/app/restless-never-fall-asleep/id1048930054?l=fr&amp;amp;ls=1&amp;amp;mt=8&quot;&gt;Restless&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/201711/app_icon.png&quot; alt=&quot;Restless app&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The app helps you stay awake when you really need to: 
+&lt;br /&gt;
+when you’re driving late at night coming home after a party, when you want to pull an all-nighter to work for those midterms … etc.&lt;/p&gt;
+
+&lt;p&gt;It works by using the Apple Watch haptic feedback to keep you focused. You’ll receive a nudge regulary and when you’re heart rate is seemingly shows that you’re on the verge of falling asleep.&lt;/p&gt;
+
+&lt;p&gt;You can check it out on the App Store:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/restless-never-fall-asleep/id1048930054?l=fr&amp;amp;ls=1&amp;amp;mt=8&quot;&gt;Restless - Never Fall Asleep !&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Nov 2017 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2017/11/20/Restless.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/20/Restless.html</guid>
+        
+        <category>projects</category>
+        
+        
+      </item>
     
       <item>
         <title>Apple set to expand Siri</title>
@@ -282,45 +311,6 @@ In iOS (and macOS also I guess) you have to provide UTI(s) to initialize the &lt
         <pubDate>Tue, 20 Dec 2016 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/2016/12/20/mac-desktop-sign-of-life-finally.html</link>
         <guid isPermaLink="true">http://localhost:4000/2016/12/20/mac-desktop-sign-of-life-finally.html</guid>
-        
-        <category>apple</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Nervermind Apple</title>
-        <description>&lt;p&gt;I just wanted to take advantage of one of the coolest looking feature of watchOS 3 : the auto unlocking of your mac.&lt;/p&gt;
-
-&lt;p&gt;Well, the first step is to enable &lt;em&gt;2 factors authentification&lt;/em&gt; for your iCloud account. My account was already on the &lt;em&gt;2 steps authorization&lt;/em&gt; scheme so that should be a piece of cake, right ?&lt;/p&gt;
-
-&lt;p&gt;Wrong, so f***ing wrong.&lt;/p&gt;
-
-&lt;p&gt;You first have to downgrade your account to go back to the classic protection by security questions. By doing so, macOS asked me to create a new user because I used my iCloud account to log into my mac and for some reason that was not possible anymore.&lt;/p&gt;
-
-&lt;p&gt;Okay … I guess ?&lt;/p&gt;
-
-&lt;p&gt;At this point I had no real choice anyway so let’s go ahead : create a new password and that’s it, you have your new user identical to the previous one (or so it seems, keep reading …).&lt;/p&gt;
-
-&lt;p&gt;Then upgrade your iCloud account to &lt;em&gt;2 factors auth&lt;/em&gt; : Oh boy ! There’s nothing that makes me like doing my taxes more than a good old fashioned self imposed Apple nightmare …&lt;/p&gt;
-
-&lt;p&gt;When you activate &lt;em&gt;2 factors auth&lt;/em&gt; you have to validate each device you use (iPhones, iPads, Macs) with a second factor. This second factor being (it’s the only option) a prompt that appears on one of your trusted devices. The problem being that each of my devices were then asking for a validation and that none of them was showing me the said prompt.&lt;/p&gt;
-
-&lt;p&gt;So what can you do ? After several reboots, logout / login again cycles … you give up. That’s for sure what I did. I reverted my iCloud account back to security by &lt;em&gt;security questions&lt;/em&gt; (because of course the &lt;em&gt;2 steps verification&lt;/em&gt; scheme is not available anymore once you have &lt;em&gt;upgraded&lt;/em&gt; to &lt;em&gt;2 factors auth&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;And now, the kicker: remember my macOS account that &lt;em&gt;seemed&lt;/em&gt; OK. Well it was not. The session password was now de-synchronized from the FileVault password that I have to provide at each reboot to decrypt my hard-drive. So each time I rebooted I had to enter the FileVault rescue key.&lt;/p&gt;
-
-&lt;p&gt;Had I not set a FileVault rescue key (which would have been stupid sure, but what if you’ve lost it ?) trying to unlock my Apple Mac with my Apple Watch through my Apple iCloud account would have nixed all my data.&lt;/p&gt;
-
-&lt;p&gt;Let that sink in.&lt;/p&gt;
-
-&lt;p&gt;So thanks Apple and next time would it be possible to … No, you know what, nevermind. It’s on me.&lt;/p&gt;
-
-&lt;p&gt;Next time I won’t even try.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 15 Dec 2016 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2016/12/15/nevermind-apple.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/12/15/nevermind-apple.html</guid>
         
         <category>apple</category>
         
